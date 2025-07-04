@@ -1,5 +1,3 @@
-
-
 <!doctype html>
 <html lang="ru">
 	<head>
@@ -7,20 +5,23 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
-		<!-- Bootstrap CSS -->
-		<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+		<!-- Bootstrap <?php echo get_template_directory_uri(); ?>/css/ -->
+		<!-- <link href="https://cdn.<?php echo get_template_directory_uri(); ?>/js/delivr.net/npm/bootstrap@5.1.3/dist/<?php echo get_template_directory_uri(); ?>/css//bootstrap.min.<?php echo get_template_directory_uri(); ?>/css/" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
 
         
-        <!-- Bootstrap CSS -->
-		<link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Bootstrap css -->
+		<link href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css" rel="stylesheet">
 
-		<!-- STYLE CSS -->
-		<link rel="stylesheet" href="css/theme-2.css">
-		<link href="css/theme.css" rel="stylesheet">
 		
-		<!-- Style CSS -->
-		<link rel="stylesheet" href="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/style.css">
-		<link rel="stylesheet" href="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/style-2.css">
+		
+		<!-- STYLE CSS
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style-2.css"> -->
+		
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/theme-2.css">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/theme.css">
+		
 		<meta name="description" content="В этой статье я поделюсь с Вами своим опытом и расскажу о том, как найти клиентов в интернете." />
 		<meta name="keywords" content="Создание и продвижение сайтов для бизнеса" />
 		<meta property="og:title" content="Как найти клиентов в интернете" />
@@ -31,14 +32,14 @@
 		<meta property="og:image" content="images/review.jpg" />
 		<meta property="og:url" content="index.php" />
 		
-		<!-- Messengers button CSS -->
-		<link href="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/css/messengers-button.css" rel="stylesheet">
+		<!-- Messengers button css -->
+		<link href="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/css//messengers-button.css" rel="stylesheet">
 		
 		<!-- Yandex.Metrika counter -->
 		<script type="text/javascript" >
 			(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
 			m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-			(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+			(window, document, "script", "https://mc.yandex.ru/metrika/tag.<?php echo get_template_directory_uri(); ?>/js/", "ym");
 
 			ym(70423057, "init", {
 				clickmap:true,
@@ -47,14 +48,14 @@
 				webvisor:true
 			});
 		</script>
-		<noscript><div><img src="https://mc.yandex.ru/watch/70423057" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+		<noscript><div><<?php echo get_template_directory_uri(); ?>/img/ src="https://mc.yandex.ru/watch/70423057" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 		
 		<!-- /Yandex.Metrika counter -->
 		<style>
 			li {
 				font-size: 1.125rem;
 			}
-			.wp-block-image img {
+			.wp-block-image <?php echo get_template_directory_uri(); ?>/img/ {
 				width: 100%!important;
 				height: auto!important;
 			}
@@ -66,7 +67,7 @@
 		
 		<!-- Yandex.RTB -->
 		<script>window.yaContextCb=window.yaContextCb||[]</script>
-		<script src="https://yandex.ru/ads/system/context.js" async></script>
+		<script src="https://yandex.ru/ads/system/context.<?php echo get_template_directory_uri(); ?>/js/" async></script>
 		
 		<title>Как найти клиентов в интернете</title>
 	</head>
@@ -114,10 +115,10 @@
                     </div>
                     <div class="d-none d-lg-flex ms-3 justify-content-end">
                         <a class="nav-link ico-button me-3" href="https://t.me/79307878068" target="_blank">
-							<img src="img/ico/telegram-ico.svg">
+							<<?php echo get_template_directory_uri(); ?>/img/ src="<?php echo get_template_directory_uri(); ?>/img//ico/telegram-ico.svg">
 						</a>
                         <a class="nav-link ico-button ps-0 pe-2" href="https://wa.me/79307878068" target="_blank">
-							<img src="img/ico/whatsapp-ico.svg">
+							<<?php echo get_template_directory_uri(); ?>/img/ src="<?php echo get_template_directory_uri(); ?>/img//ico/whatsapp-ico.svg">
 						</a>
                     </div>
                 </div>
@@ -188,10 +189,10 @@
                             </div>
                             <div class="d-flex d-lg-none justify-content-start">
                                 <a class="nav-link ico-button ps-0 pe-2" href="https://wa.me/79307878068" target="_blank">
-									<img src="img/ico/whatsapp-ico.svg">
+									<<?php echo get_template_directory_uri(); ?>/img/ src="<?php echo get_template_directory_uri(); ?>/img//ico/whatsapp-ico.svg">
 								</a>
                                 <a class="nav-link ico-button" href="https://t.me/79307878068" target="_blank">
-									<img src="img/ico/telegram-ico.svg">
+									<<?php echo get_template_directory_uri(); ?>/img/ src="<?php echo get_template_directory_uri(); ?>/img//ico/telegram-ico.svg">
 								</a>
                             </div>
                             </div>
@@ -259,10 +260,10 @@
                             </div>
                             <div class="d-flex d-lg-none justify-content-start">
                                 <a class="nav-link ico-button ps-0 pe-2" href="https://wa.me/79307878068" target="_blank">
-									<img src="img/ico/whatsapp-ico.svg">
+									<<?php echo get_template_directory_uri(); ?>/img/ src="<?php echo get_template_directory_uri(); ?>/img//ico/whatsapp-ico.svg">
 								</a>
                                 <a class="nav-link ico-button ms-3" href="https://t.me/79307878068" target="_blank">
-									<img src="img/ico/telegram-ico.svg">
+									<<?php echo get_template_directory_uri(); ?>/img/ src="<?php echo get_template_directory_uri(); ?>/img//ico/telegram-ico.svg">
 								</a>
                             </div>
                             </div>
@@ -354,7 +355,7 @@
 
 
 
-<figure class="wp-block-image size-large"><img fetchpriority="high" decoding="async" width="1024" height="576" src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2022/10/shutterstock_579801121-1-1024x576.webp" alt="" class="wp-image-500" srcset="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2022/10/shutterstock_579801121-1-1024x576.webp 1024w, https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2022/10/shutterstock_579801121-1-300x169.webp 300w, https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2022/10/shutterstock_579801121-1-768x432.webp 768w, https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2022/10/shutterstock_579801121-1-1536x864.webp 1536w, https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2022/10/shutterstock_579801121-1.webp 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image size-large"><<?php echo get_template_directory_uri(); ?>/img/ fetchpriority="high" decoding="async" width="1024" height="576" src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2022/10/shutterstock_579801121-1-1024x576.webp" alt="" class="wp-image-500" srcset="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2022/10/shutterstock_579801121-1-1024x576.webp 1024w, https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2022/10/shutterstock_579801121-1-300x169.webp 300w, https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2022/10/shutterstock_579801121-1-768x432.webp 768w, https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2022/10/shutterstock_579801121-1-1536x864.webp 1536w, https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2022/10/shutterstock_579801121-1.webp 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 
 
 
@@ -374,7 +375,7 @@
 
 
 
-<figure class="wp-block-image size-large"><img decoding="async" width="1024" height="576" src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2023/05/nastraivaem_yandexdirect_1-1024x576.jpg" alt="" class="wp-image-617" srcset="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2023/05/nastraivaem_yandexdirect_1-1024x576.jpg 1024w, https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2023/05/nastraivaem_yandexdirect_1-300x169.jpg 300w, https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2023/05/nastraivaem_yandexdirect_1-768x432.jpg 768w, https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2023/05/nastraivaem_yandexdirect_1-1536x864.jpg 1536w, https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2023/05/nastraivaem_yandexdirect_1.jpg 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image size-large"><<?php echo get_template_directory_uri(); ?>/img/ decoding="async" width="1024" height="576" src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2023/05/nastraivaem_yandexdirect_1-1024x576.jpg" alt="" class="wp-image-617" srcset="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2023/05/nastraivaem_yandexdirect_1-1024x576.jpg 1024w, https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2023/05/nastraivaem_yandexdirect_1-300x169.jpg 300w, https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2023/05/nastraivaem_yandexdirect_1-768x432.jpg 768w, https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2023/05/nastraivaem_yandexdirect_1-1536x864.jpg 1536w, https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2023/05/nastraivaem_yandexdirect_1.jpg 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 
 
 
@@ -390,7 +391,7 @@
 
 
 
-<figure class="wp-block-image size-large"><img decoding="async" width="1024" height="576" src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2021/10/c1559e_33668140cfad4155a8e0f48486c6e8ab-scaled-1-1024x576.jpg" alt="" class="wp-image-287" srcset="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2021/10/c1559e_33668140cfad4155a8e0f48486c6e8ab-scaled-1-1024x576.jpg 1024w, https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2021/10/c1559e_33668140cfad4155a8e0f48486c6e8ab-scaled-1-300x169.jpg 300w, https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2021/10/c1559e_33668140cfad4155a8e0f48486c6e8ab-scaled-1-768x432.jpg 768w, https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2021/10/c1559e_33668140cfad4155a8e0f48486c6e8ab-scaled-1-1536x864.jpg 1536w, https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2021/10/c1559e_33668140cfad4155a8e0f48486c6e8ab-scaled-1.jpg 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image size-large"><<?php echo get_template_directory_uri(); ?>/img/ decoding="async" width="1024" height="576" src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2021/10/c1559e_33668140cfad4155a8e0f48486c6e8ab-scaled-1-1024x576.jpg" alt="" class="wp-image-287" srcset="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2021/10/c1559e_33668140cfad4155a8e0f48486c6e8ab-scaled-1-1024x576.jpg 1024w, https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2021/10/c1559e_33668140cfad4155a8e0f48486c6e8ab-scaled-1-300x169.jpg 300w, https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2021/10/c1559e_33668140cfad4155a8e0f48486c6e8ab-scaled-1-768x432.jpg 768w, https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2021/10/c1559e_33668140cfad4155a8e0f48486c6e8ab-scaled-1-1536x864.jpg 1536w, https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2021/10/c1559e_33668140cfad4155a8e0f48486c6e8ab-scaled-1.jpg 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 
 
 
@@ -402,7 +403,7 @@
 
 
 
-<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="800" height="450" src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2021/10/yandex-spravochnik.jpg" alt="" class="wp-image-29" srcset="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2021/10/yandex-spravochnik.jpg 800w, https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2021/10/yandex-spravochnik-300x169.jpg 300w, https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2021/10/yandex-spravochnik-768x432.jpg 768w" sizes="auto, (max-width: 800px) 100vw, 800px" /></figure>
+<figure class="wp-block-image size-full"><<?php echo get_template_directory_uri(); ?>/img/ loading="lazy" decoding="async" width="800" height="450" src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2021/10/yandex-spravochnik.jpg" alt="" class="wp-image-29" srcset="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2021/10/yandex-spravochnik.jpg 800w, https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2021/10/yandex-spravochnik-300x169.jpg 300w, https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2021/10/yandex-spravochnik-768x432.jpg 768w" sizes="auto, (max-width: 800px) 100vw, 800px" /></figure>
 
 
 
@@ -494,7 +495,7 @@
 								
 																		<div class="col-md-4 mt-5 project-entry" style=""> <!-- max-height: 250px; overflow: hidden; -->
 											<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d0%ba%d0%b0%d0%ba-%d1%81%d0%b4%d0%b5%d0%bb%d0%b0%d1%82%d1%8c-%d1%85%d0%be%d1%80%d0%be%d1%88%d0%b8%d0%b9-%d1%81%d0%b0%d0%b9%d1%82/" class="d-block figure rounded shadow">
-												<img src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2022/10/shutterstock_579801121.webp" alt="Image" class="img-fluid">
+												<<?php echo get_template_directory_uri(); ?>/img/ src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2022/10/shutterstock_579801121.webp" alt="Image" class="<?php echo get_template_directory_uri(); ?>/img/-fluid">
 											</a>
 											<h3 class="mt-3">Как сделать хороший сайт</h3>
 											<p class="fw-light">В этой статье я поделюсь с Вами своим опытом и расскажу о том, как сделать хороший сайт.</p>
@@ -502,7 +503,7 @@
 										</div>
 																			<div class="col-md-4 mt-5 project-entry" style=""> <!-- max-height: 250px; overflow: hidden; -->
 											<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d0%ba%d0%b0%d0%ba-%d0%bf%d1%80%d0%b0%d0%b2%d0%b8%d0%bb%d1%8c%d0%bd%d0%be-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b3%d0%b0%d1%82%d1%8c-%d1%81%d0%b0%d0%b8%d1%82%d1%8b-%d0%b4%d0%bb%d1%8f-%d0%b1%d0%b8/" class="d-block figure rounded shadow">
-												<img src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2021/10/c1559e_33668140cfad4155a8e0f48486c6e8ab-scaled-1.jpg" alt="Image" class="img-fluid">
+												<<?php echo get_template_directory_uri(); ?>/img/ src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2021/10/c1559e_33668140cfad4155a8e0f48486c6e8ab-scaled-1.jpg" alt="Image" class="<?php echo get_template_directory_uri(); ?>/img/-fluid">
 											</a>
 											<h3 class="mt-3">Как правильно продвигать сайты для бизнеса</h3>
 											<p class="fw-light">В этой статье я хочу поделиться с Вами своим опытом и рассказать о том, как правильно продвигать сайты для бизнеса. Время прочтения 5 мин.</p>
@@ -510,7 +511,7 @@
 										</div>
 																			<div class="col-md-4 mt-5 project-entry" style=""> <!-- max-height: 250px; overflow: hidden; -->
 											<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d1%87%d1%82%d0%be-%d1%82%d0%b0%d0%ba%d0%be%d0%b5-%d1%8f%d0%bd%d0%b4%d0%b5%d0%ba%d1%81-%d1%81%d0%bf%d1%80%d0%b0%d0%b2%d0%be%d1%87%d0%bd%d0%b8%d0%ba/" class="d-block figure rounded shadow">
-												<img src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2021/10/yandex-spravochnik.jpg" alt="Image" class="img-fluid">
+												<<?php echo get_template_directory_uri(); ?>/img/ src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2021/10/yandex-spravochnik.jpg" alt="Image" class="<?php echo get_template_directory_uri(); ?>/img/-fluid">
 											</a>
 											<h3 class="mt-3">Что такое Яндекс.Справочник (Яндекс.Бизнес)</h3>
 											<p class="fw-light">После создания сайта его необходимо как можно быстрее добавить в Яндекс.Справочник (Яндекс.Бизнес). Данные из этого справочника показываются вместе&#8230;</p>
@@ -518,7 +519,7 @@
 										</div>
 																			<div class="col-md-4 mt-5 project-entry" style=""> <!-- max-height: 250px; overflow: hidden; -->
 											<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d0%b7%d0%b0%d1%87%d0%b5%d0%bc-%d0%bd%d1%83%d0%b6%d0%b5%d0%bd-ssl-%d1%81%d0%b5%d1%80%d1%82%d0%b8%d1%84%d0%b8%d0%ba%d0%b0%d1%82-%d0%b1%d0%b5%d0%b7%d0%be%d0%bf%d0%b0%d1%81%d0%bd%d0%be%d1%81%d1%82%d0%b8/" class="d-block figure rounded shadow">
-												<img src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2021/10/ssl-certificate.jpg" alt="Image" class="img-fluid">
+												<<?php echo get_template_directory_uri(); ?>/img/ src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2021/10/ssl-certificate.jpg" alt="Image" class="<?php echo get_template_directory_uri(); ?>/img/-fluid">
 											</a>
 											<h3 class="mt-3">Зачем нужен SSL сертификат безопасности</h3>
 											<p class="fw-light">SSL сертификат безопасности создавался для того, чтобы защитить персональные данные пользователей, которые взаимодействуют с сайтом (вводя свои данные&#8230;</p>
@@ -526,7 +527,7 @@
 										</div>
 																			<div class="col-md-4 mt-5 project-entry" style=""> <!-- max-height: 250px; overflow: hidden; -->
 											<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d1%87%d0%b5%d0%ba-%d0%bb%d0%b8%d1%81%d1%82-%d0%b4%d0%bb%d1%8f-%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b8-%d1%8f%d0%bd%d0%b4%d0%b5%d0%ba%d1%81-%d0%b4%d0%b8%d1%80%d0%b5%d0%ba%d1%82/" class="d-block figure rounded shadow">
-												<img src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2021/10/yandex-direct-setup.jpg" alt="Image" class="img-fluid">
+												<<?php echo get_template_directory_uri(); ?>/img/ src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2021/10/yandex-direct-setup.jpg" alt="Image" class="<?php echo get_template_directory_uri(); ?>/img/-fluid">
 											</a>
 											<h3 class="mt-3">Чек-лист для настройки Яндекс.Директ</h3>
 											<p class="fw-light">Пошаговая инструкция по настройке Яндекс.Директ (чек лист).</p>
@@ -534,7 +535,7 @@
 										</div>
 																			<div class="col-md-4 mt-5 project-entry" style=""> <!-- max-height: 250px; overflow: hidden; -->
 											<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d0%be%d0%bf%d1%82%d0%b8%d0%bc%d0%b8%d0%b7%d0%b0%d1%86%d0%b8%d1%8f-%d1%80%d0%b5%d0%ba%d0%bb%d0%b0%d0%bc%d0%bd%d0%be%d0%b8-%d0%ba%d0%b0%d0%bc%d0%bf%d0%b0%d0%bd%d0%b8%d0%b8-%d1%8f%d0%bd%d0%b4%d0%b5/" class="d-block figure rounded shadow">
-												<img src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2021/10/optimizatsiyyandex-direct.jpg" alt="Image" class="img-fluid">
+												<<?php echo get_template_directory_uri(); ?>/img/ src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2021/10/optimizatsiyyandex-direct.jpg" alt="Image" class="<?php echo get_template_directory_uri(); ?>/img/-fluid">
 											</a>
 											<h3 class="mt-3">Оптимизация рекламной кампании Яндекс.Директ</h3>
 											<p class="fw-light">В статье Вы узнаете как улучшить рекламную кампанию в Яндекс.Директ.<br>Время прочтения 7 мин.</p>
@@ -542,7 +543,7 @@
 										</div>
 																			<div class="col-md-4 mt-5 project-entry" style=""> <!-- max-height: 250px; overflow: hidden; -->
 											<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d0%ba%d0%b0%d0%ba-%d1%83%d0%b7%d0%bd%d0%b0%d1%82%d1%8c-%d0%bf%d0%be%d1%81%d0%b5%d1%89%d0%b0%d0%b5%d0%bc%d0%be%d1%81%d1%82%d1%8c-%d0%ba%d0%be%d0%bd%d0%ba%d1%80%d0%b5%d1%82%d0%bd%d0%be%d0%b9-%d1%81/" class="d-block figure rounded shadow">
-												<img src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2021/11/dP2EdvGeVDU.jpg" alt="Image" class="img-fluid">
+												<<?php echo get_template_directory_uri(); ?>/img/ src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2021/11/dP2EdvGeVDU.jpg" alt="Image" class="<?php echo get_template_directory_uri(); ?>/img/-fluid">
 											</a>
 											<h3 class="mt-3">Как узнать посещаемость конкретной страницы сайта</h3>
 											<p class="fw-light">Как узнать посещаемость конкретной страницы сайта, если сайт состоит из большого количества отдельных страниц (чек-лист).</p>
@@ -550,7 +551,7 @@
 										</div>
 																			<div class="col-md-4 mt-5 project-entry" style=""> <!-- max-height: 250px; overflow: hidden; -->
 											<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d0%ba%d0%b0%d0%ba-%d0%bf%d0%b5%d1%80%d0%b5%d0%bd%d0%b5%d1%81%d1%82%d0%b8-%d1%81%d0%b0%d0%b9%d1%82-wordpress-%d0%bd%d0%b0-%d0%b4%d1%80%d1%83%d0%b3%d0%be%d0%b9-%d1%85%d0%be%d1%81%d1%82%d0%b8%d0%bd/" class="d-block figure rounded shadow">
-												<img src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2021/11/перенести-сайт-на-wordpress-на-новый-хостинг.jpg" alt="Image" class="img-fluid">
+												<<?php echo get_template_directory_uri(); ?>/img/ src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2021/11/перенести-сайт-на-wordpress-на-новый-хостинг.jpg" alt="Image" class="<?php echo get_template_directory_uri(); ?>/img/-fluid">
 											</a>
 											<h3 class="mt-3">Как перенести сайт WordPress на другой хостинг</h3>
 											<p class="fw-light">Как перенести сайт на WordPress с одного хостинга на другой, простой чек-лист из 7 шагов.</p>
@@ -558,7 +559,7 @@
 										</div>
 																			<div class="col-md-4 mt-5 project-entry" style=""> <!-- max-height: 250px; overflow: hidden; -->
 											<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d0%ba%d0%b0%d0%ba-%d0%bf%d1%80%d0%b0%d0%b2%d0%b8%d0%bb%d1%8c%d0%bd%d0%be-%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b8%d1%82%d1%8c-%d1%86%d0%b5%d0%bb%d1%8c-%d0%b2-%d0%bc%d0%b5%d1%82%d1%80%d0%b8%d0%ba/" class="d-block figure rounded shadow">
-												<img src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2021/11/dP2EdvGeVDU.jpg" alt="Image" class="img-fluid">
+												<<?php echo get_template_directory_uri(); ?>/img/ src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2021/11/dP2EdvGeVDU.jpg" alt="Image" class="<?php echo get_template_directory_uri(); ?>/img/-fluid">
 											</a>
 											<h3 class="mt-3">Как правильно настроить цель в метрике «Отправка формы»</h3>
 											<p class="fw-light">Как правильно добавить цель в Яндекс Метрике «Отправка формы».</p>
@@ -566,7 +567,7 @@
 										</div>
 																			<div class="col-md-4 mt-5 project-entry" style=""> <!-- max-height: 250px; overflow: hidden; -->
 											<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d0%ba%d0%b0%d0%ba-%d1%83%d0%b7%d0%bd%d0%b0%d1%82%d1%8c-%d1%80%d0%b5%d0%b7%d1%83%d0%bb%d1%8c%d1%82%d0%b0%d1%82%d1%8b-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d1%8f-%d1%81%d0%b0/" class="d-block figure rounded shadow">
-												<img src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2022/03/Untitled-1.jpg" alt="Image" class="img-fluid">
+												<<?php echo get_template_directory_uri(); ?>/img/ src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2022/03/Untitled-1.jpg" alt="Image" class="<?php echo get_template_directory_uri(); ?>/img/-fluid">
 											</a>
 											<h3 class="mt-3">Как узнать результаты продвижения сайта</h3>
 											<p class="fw-light">Как узнать результаты продвижения сайта.</p>
@@ -574,7 +575,7 @@
 										</div>
 																			<div class="col-md-4 mt-5 project-entry" style=""> <!-- max-height: 250px; overflow: hidden; -->
 											<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d0%b3%d0%b4%d0%b5-%d0%ba%d1%83%d0%bf%d0%b8%d1%82%d1%8c-%d0%b8-%d0%ba%d0%b0%d0%ba-%d1%83%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%b8%d1%82%d1%8c-ssl-%d1%81%d0%b5%d1%80%d1%82%d0%b8%d1%84%d0%b8%d0%ba/" class="d-block figure rounded shadow">
-												<img src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2021/10/ssl-certificate.jpg" alt="Image" class="img-fluid">
+												<<?php echo get_template_directory_uri(); ?>/img/ src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2021/10/ssl-certificate.jpg" alt="Image" class="<?php echo get_template_directory_uri(); ?>/img/-fluid">
 											</a>
 											<h3 class="mt-3">Где купить и как установить SSL сертификат безопасности</h3>
 											<p class="fw-light">Где купить и как установить SSL сертификат безопасности.</p>
@@ -582,7 +583,7 @@
 										</div>
 																			<div class="col-md-4 mt-5 project-entry" style=""> <!-- max-height: 250px; overflow: hidden; -->
 											<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d0%ba%d0%b0%d0%ba-%d0%be%d1%82%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d1%8f%d1%82%d1%8c-%d0%b7%d0%b0%d1%8f%d0%b2%d0%ba%d0%b8-%d1%81-%d1%81%d0%b0%d0%b9%d1%82%d0%b0-%d0%b2-%d1%82%d0%b5%d0%bb%d0%b5%d0%b3%d1%80/" class="d-block figure rounded shadow">
-												<img src="" alt="Image" class="img-fluid">
+												<<?php echo get_template_directory_uri(); ?>/img/ src="" alt="Image" class="<?php echo get_template_directory_uri(); ?>/img/-fluid">
 											</a>
 											<h3 class="mt-3">Как отправлять заявки с сайта в Телеграм</h3>
 											<p class="fw-light">Создаем бота Отправлять заявки в чат будет бот. Поэтому первым шагом мы создадими настроим его. Для создания бота&#8230;</p>
@@ -590,7 +591,7 @@
 										</div>
 																			<div class="col-md-4 mt-5 project-entry" style=""> <!-- max-height: 250px; overflow: hidden; -->
 											<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d0%bc%d0%bd%d0%be%d0%b3%d0%be%d1%83%d1%80%d0%be%d0%b2%d0%bd%d0%b5%d0%b2%d0%be%d0%b5-%d0%bc%d0%b5%d0%bd%d1%8e-bootstrap-5-%d0%b4%d0%bb%d1%8f-wordpress/" class="d-block figure rounded shadow">
-												<img src="" alt="Image" class="img-fluid">
+												<<?php echo get_template_directory_uri(); ?>/img/ src="" alt="Image" class="<?php echo get_template_directory_uri(); ?>/img/-fluid">
 											</a>
 											<h3 class="mt-3">Многоуровневое меню Bootstrap 5 для WordPress</h3>
 											<p class="fw-light">Скачать для HTML Скачать для WordPress</p>
@@ -598,7 +599,7 @@
 										</div>
 																			<div class="col-md-4 mt-5 project-entry" style=""> <!-- max-height: 250px; overflow: hidden; -->
 											<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d0%ba%d0%b0%d0%ba-%d1%81%d0%b0%d0%bc%d0%be%d1%81%d1%82%d0%be%d1%8f%d1%82%d0%b5%d0%bb%d1%8c%d0%bd%d0%be-%d0%b8-%d0%b1%d0%b5%d1%81%d0%bf%d0%bb%d0%b0%d1%82%d0%bd%d0%be-%d0%b4%d0%be%d0%b1%d0%b0%d0%b2/" class="d-block figure rounded shadow">
-												<img src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2024/02/2.jpg" alt="Image" class="img-fluid">
+												<<?php echo get_template_directory_uri(); ?>/img/ src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2024/02/2.jpg" alt="Image" class="<?php echo get_template_directory_uri(); ?>/img/-fluid">
 											</a>
 											<h3 class="mt-3">Как самостоятельно и бесплатно добавить кнопки мессенджеров на сайт</h3>
 											<p class="fw-light">Готовый скрипт кнопки мессенджеров для любого сайта.</p>
@@ -606,7 +607,7 @@
 										</div>
 																			<div class="col-md-4 mt-5 project-entry" style=""> <!-- max-height: 250px; overflow: hidden; -->
 											<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d0%ba%d0%b0%d0%ba-%d1%83%d0%b2%d0%b5%d0%bb%d0%b8%d1%87%d0%b8%d1%82%d1%8c-%d0%b4%d0%bb%d0%b8%d0%bd%d1%83-%d1%81%d1%81%d1%8b%d0%bb%d0%ba%d0%b8-%d0%b2-wordpress/" class="d-block figure rounded shadow">
-												<img src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2024/09/image.jpg" alt="Image" class="img-fluid">
+												<<?php echo get_template_directory_uri(); ?>/img/ src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2024/09/image.jpg" alt="Image" class="<?php echo get_template_directory_uri(); ?>/img/-fluid">
 											</a>
 											<h3 class="mt-3">Как увеличить длину ссылки в WordPress</h3>
 											<p class="fw-light">В этой статье я расскажу Вам как можно увеличить длину ссылки в WordPress.</p>
@@ -614,7 +615,7 @@
 										</div>
 																			<div class="col-md-4 mt-5 project-entry" style=""> <!-- max-height: 250px; overflow: hidden; -->
 											<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d0%bf%d0%be%d0%b4%d1%81%d0%ba%d0%b0%d0%b7%d0%ba%d0%b8-%d0%bf%d0%be-wordpress-%d0%b8-woocommerce/" class="d-block figure rounded shadow">
-												<img src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2024/09/service-img-1-2.jpg" alt="Image" class="img-fluid">
+												<<?php echo get_template_directory_uri(); ?>/img/ src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2024/09/service-<?php echo get_template_directory_uri(); ?>/img/-1-2.jpg" alt="Image" class="<?php echo get_template_directory_uri(); ?>/img/-fluid">
 											</a>
 											<h3 class="mt-3">Подсказки по WordPress и WooCommerce</h3>
 											<p class="fw-light">Здесь я собрал подсказки по функциям WordPress и Woocommerce, которые сам часто использую.</p>
@@ -622,7 +623,7 @@
 										</div>
 																			<div class="col-md-4 mt-5 project-entry" style=""> <!-- max-height: 250px; overflow: hidden; -->
 											<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d0%ba%d0%b0%d0%ba-%d1%83%d0%b2%d0%b5%d0%bb%d0%b8%d1%87%d0%b8%d1%82%d1%8c-%d1%80%d0%b0%d0%b7%d0%bc%d0%b5%d1%80-%d0%b7%d0%b0%d0%b3%d1%80%d1%83%d0%b6%d0%b0%d0%b5%d0%bc%d0%be%d0%b3%d0%be-%d1%84%d0%b0%d0%/" class="d-block figure rounded shadow">
-												<img src="" alt="Image" class="img-fluid">
+												<<?php echo get_template_directory_uri(); ?>/img/ src="" alt="Image" class="<?php echo get_template_directory_uri(); ?>/img/-fluid">
 											</a>
 											<h3 class="mt-3">Как увеличить размер загружаемого файла в WordPress</h3>
 											<p class="fw-light">1. Увеличиваем размер загружаемого файла в WordPress с помощью файла .htaccess php_value upload_max_filesize 20M php_value post_max_size 20M 2&#8230;.</p>
@@ -630,7 +631,7 @@
 										</div>
 																			<div class="col-md-4 mt-5 project-entry" style=""> <!-- max-height: 250px; overflow: hidden; -->
 											<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d0%bc%d0%be%d0%b4%d1%83%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d0%b4%d0%b8%d0%b7%d0%b0%d0%b9%d0%bd-%d1%81%d0%b0%d0%b9%d1%82%d0%b0/" class="d-block figure rounded shadow">
-												<img src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2024/11/8745338b158589d7cdf78c1f42e43072-2.webp" alt="Image" class="img-fluid">
+												<<?php echo get_template_directory_uri(); ?>/img/ src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2024/11/8745338b158589d7cdf78c1f42e43072-2.webp" alt="Image" class="<?php echo get_template_directory_uri(); ?>/img/-fluid">
 											</a>
 											<h3 class="mt-3">Модульный дизайн сайта</h3>
 											<p class="fw-light">В статье Вы узнаете: что такое модульный дизайн сайта, кому подойдет модульный дизайн сайта, увидите примеры модульного дизайна сайта. Время прочтения 1 мин.</p>
@@ -663,9 +664,9 @@
 						<p class="mb-4">E-mail: vasilyev-r@mail.ru</p>
 						<div class="row pb-5 pb-md-4 pt-4 pt-md-5">
 							<div class="col">
-								<a href="whatsapp://send?phone=+79307878068"><img src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/img/ico/whatsapp.svg" class="mr-3"></a>
-								<a href="viber://chat?number=%2B79307878068"><img src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/img/ico/viber.svg" class="mr-3"></a>
-								<a href="https://vk.com/vasilyev_r" target="_blank"><img src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/img/ico/vkontakte.svg"></a>
+								<a href="whatsapp://send?phone=+79307878068"><<?php echo get_template_directory_uri(); ?>/img/ src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/<?php echo get_template_directory_uri(); ?>/img//ico/whatsapp.svg" class="mr-3"></a>
+								<a href="viber://chat?number=%2B79307878068"><<?php echo get_template_directory_uri(); ?>/img/ src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/<?php echo get_template_directory_uri(); ?>/img//ico/viber.svg" class="mr-3"></a>
+								<a href="https://vk.com/vasilyev_r" target="_blank"><<?php echo get_template_directory_uri(); ?>/img/ src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/<?php echo get_template_directory_uri(); ?>/img//ico/vkontakte.svg"></a>
 							</div>
 						</div>
 					</div>
@@ -718,7 +719,7 @@
 					</div>
 					<div class="col-xl-3 text-end">
 						<a href="tel:‪89307878068" class="contacts-phone fw-semibold">‪
-							<img src="img/ico/mobile-phone-ico.svg" class="me-2" style="position: relative; bottom: 1px;">+7 <span class="color-red">(930)</span> 78-78-0-68‬
+							<<?php echo get_template_directory_uri(); ?>/img/ src="<?php echo get_template_directory_uri(); ?>/img//ico/mobile-phone-ico.svg" class="me-2" style="position: relative; bottom: 1px;">+7 <span class="color-red">(930)</span> 78-78-0-68‬
 						</a>
 					</div>
 				</div>
@@ -729,7 +730,7 @@
 								<a class="nav-link" href="#">
 									<div style="display: flex;" class="align-items-center">
 										<div class="nav-li-float-left">
-											<img src="img/ico/location-ico.svg">
+											<<?php echo get_template_directory_uri(); ?>/img/ src="<?php echo get_template_directory_uri(); ?>/img//ico/location-ico.svg">
 										</div>
 										<div class="nav-li-float-right link-item" >
 											<span>гор. Москва,<br>ул. Митинская, д. 43</span>
@@ -742,7 +743,7 @@
 								<a class="nav-link" href="#">
 									<div style="display: flex;" class="align-items-center">
 										<div class="nav-li-float-left">
-											<img src="img/ico/clock-ico.svg" class="pt-1">
+											<<?php echo get_template_directory_uri(); ?>/img/ src="<?php echo get_template_directory_uri(); ?>/img//ico/clock-ico.svg" class="pt-1">
 										</div>
 										<div class="nav-li-float-right link-item" >
 											<span>Без выходных<br>с 9:00 до 21:00</span>
@@ -755,7 +756,7 @@
 								<a href="mailto:vasilyev-r@mail.ru" class="nav-link">
 									<div style="display: flex;" class="align-items-center">
 										<div class="nav-li-float-left">
-											<img src="img/ico/email-ico.svg">
+											<<?php echo get_template_directory_uri(); ?>/img/ src="<?php echo get_template_directory_uri(); ?>/img//ico/email-ico.svg">
 										</div>
 										<div class="nav-li-float-right link-item">
 											<span>vasilyev-r@mail.ru</span>
@@ -768,7 +769,7 @@
 								<a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#callbackModal">
 									<div style="display: flex;" class="align-items-center">
 										<div class="nav-li-float-left">
-											<img src="img/ico/callback-ico.svg" >
+											<<?php echo get_template_directory_uri(); ?>/img/ src="<?php echo get_template_directory_uri(); ?>/img//ico/callback-ico.svg" >
 										</div>
 										<div class="nav-li-float-right link-item" >
 											<span>Обратный звонок</span>
@@ -785,12 +786,12 @@
 						<ul class="nav justify-content-center">
 							<li class="nav-item">
 								<a class="nav-link ico-button px-2" href="https://wa.me/79307878068" target="_blank">
-									<img src="img/ico/whatsapp-ico.svg">
+									<<?php echo get_template_directory_uri(); ?>/img/ src="<?php echo get_template_directory_uri(); ?>/img//ico/whatsapp-ico.svg">
 								</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link ico-button px-3" href="https://t.me/79307878068" target="_blank">
-									<img src="img/ico/telegram-ico.svg">
+									<<?php echo get_template_directory_uri(); ?>/img/ src="<?php echo get_template_directory_uri(); ?>/img//ico/telegram-ico.svg">
 								</a>
 							</li>
 						</ul>
@@ -810,7 +811,7 @@
 								<a href="#" class="nav-link ps-0 pb-1">
 									<div style="display: flex;" class="align-items-center">
 										<div class="nav-li-float-left">
-											<img src="img/ico/location-ico.svg">
+											<<?php echo get_template_directory_uri(); ?>/img/ src="<?php echo get_template_directory_uri(); ?>/img//ico/location-ico.svg">
 										</div>
 										<div class="nav-li-float-right link-item" >
 											<span>гор. Москва, ул. Митинская, д. 43</span>
@@ -823,7 +824,7 @@
 								<a href="#" class="nav-link ps-0 py-1">
 									<div style="display: flex;" class="align-items-center">
 										<div class="nav-li-float-left">
-											<img src="img/ico/clock-ico.svg" class="pt-1">
+											<<?php echo get_template_directory_uri(); ?>/img/ src="<?php echo get_template_directory_uri(); ?>/img//ico/clock-ico.svg" class="pt-1">
 										</div>
 										<div class="nav-li-float-right link-item" >
 											<span>Пн-Вс, с 9:00 до 21:00</span>
@@ -836,7 +837,7 @@
 								<a href="mailto:vasilyev-r@mail.ru" class="nav-link ps-0 py-1">
 									<div style="display: flex;" class="align-items-center">
 										<div class="nav-li-float-left">
-											<img src="img/ico/email-ico.svg">
+											<<?php echo get_template_directory_uri(); ?>/img/ src="<?php echo get_template_directory_uri(); ?>/img//ico/email-ico.svg">
 										</div>
 										<div class="nav-li-float-right link-item">
 											<span>vasilyev-r@mail.ru</span>
@@ -849,7 +850,7 @@
 								<a href="#" class="nav-link ps-0 pt-1">
 									<div style="display: flex;" class="align-items-center">
 										<div class="nav-li-float-left">
-											<img src="img/ico/callback-ico.svg" >
+											<<?php echo get_template_directory_uri(); ?>/img/ src="<?php echo get_template_directory_uri(); ?>/img//ico/callback-ico.svg" >
 										</div>
 										<div class="nav-li-float-right link-item" >
 											<span>Обратный звонок</span>
@@ -862,7 +863,7 @@
 								<a href="#" class="nav-link ps-0 pt-1">
 									<div style="display: flex;" class="align-items-center">
 										<div class="nav-li-float-left">
-											<img src="img/ico/calculator.svg" >
+											<<?php echo get_template_directory_uri(); ?>/img/ src="<?php echo get_template_directory_uri(); ?>/img//ico/calculator.svg" >
 										</div>
 										<div class="nav-li-float-right link-item" >
 											<span>Рассчитать стоимость</span>
@@ -875,7 +876,7 @@
 						<a href="tel:‪89307878068" class="contacts-phone">
 							<div style="display: flex;" class="align-items-center">
 								<div class="nav-li-float-left">
-									<img src="img/ico/mobile-phone-ico.svg" style="position: relative; bottom: 1px;">
+									<<?php echo get_template_directory_uri(); ?>/img/ src="<?php echo get_template_directory_uri(); ?>/img//ico/mobile-phone-ico.svg" style="position: relative; bottom: 1px;">
 								</div>
 								<div class="nav-li-float-right phone-link" >
 									+7 <span>(930)</span> 78-78-0-68
@@ -886,12 +887,12 @@
 						<ul class="nav pt-4 pb-3">
 							<li class="nav-item">
 								<a class="nav-link ico-button ps-0 pe-2" href="https://wa.me/79307878068" target="_blank">
-									<img src="img/ico/whatsapp-ico.svg">
+									<<?php echo get_template_directory_uri(); ?>/img/ src="<?php echo get_template_directory_uri(); ?>/img//ico/whatsapp-ico.svg">
 								</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link ico-button px-2" href="https://t.me/79307878068" target="_blank">
-									<img src="img/ico/telegram-ico.svg">
+									<<?php echo get_template_directory_uri(); ?>/img/ src="<?php echo get_template_directory_uri(); ?>/img//ico/telegram-ico.svg">
 								</a>
 							</li>
 						</ul>
@@ -1013,10 +1014,10 @@
 			
 			</div>
 			<div id="messenger-1" class="rounded-circle">
-				<a href="whatsapp://send?phone=+79307878068"><img src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/img/ico/whatsapp.png"></a>
+				<a href="whatsapp://send?phone=+79307878068"><<?php echo get_template_directory_uri(); ?>/img/ src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/<?php echo get_template_directory_uri(); ?>/img//ico/whatsapp.png"></a>
 			</div>
 			<div id="messenger-2" class="rounded-circle">
-				<a href="tg://resolve?domain=vasilyevr"><img src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/img/ico/telegram.png"></a>
+				<a href="tg://resolve?domain=vasilyevr"><<?php echo get_template_directory_uri(); ?>/img/ src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/<?php echo get_template_directory_uri(); ?>/img//ico/telegram.png"></a>
 			</div>
 		</div>
 		
@@ -1027,12 +1028,12 @@
 				if ( mes1Right == "0px" || mes1Right == 0 ) {
 					document.getElementById('messenger-1').style.right = "80px";
 					document.getElementById('messenger-2').style.right = "160px";
-					document.getElementById('messengers-2-button').style.background = "url(https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/img/ico/close-icon.png) center";
+					document.getElementById('messengers-2-button').style.background = "url(https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/<?php echo get_template_directory_uri(); ?>/img//ico/close-icon.png) center";
 					document.getElementById('messengers-2-button').style.backgroundSize = "contain";
 				} else {
 					document.getElementById('messenger-1').style.right = "0px";
 					document.getElementById('messenger-2').style.right = "0px";
-					document.getElementById('messengers-2-button').style.background = "url(https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/img/ico/messenger.png) center";
+					document.getElementById('messengers-2-button').style.background = "url(https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/<?php echo get_template_directory_uri(); ?>/img//ico/messenger.png) center";
 					document.getElementById('messengers-2-button').style.backgroundSize = "contain";
 				}
 			}
@@ -1042,19 +1043,19 @@
 		<!-- Optional JavaScript; choose one of the two! -->
 
 		<!-- Option 1: Bootstrap Bundle with Popper -->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+		<script src="https://cdn.js/delivr.net/npm/bootstrap@5.1.3/dist/js//bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-		<!-- Option 2: Separate Popper and Bootstrap JS -->
+		<!-- Option 2: Separate Popper and Bootstrap <?php echo get_template_directory_uri(); ?>/js/ -->
 		<!--
-		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> -->
+		<script src="https://cdn.<?php echo get_template_directory_uri(); ?>/js/delivr.net/npm/@popper<?php echo get_template_directory_uri(); ?>/js//core@2.10.2/dist/umd/popper.min.<?php echo get_template_directory_uri(); ?>/js/" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+		<script src="https://cdn.<?php echo get_template_directory_uri(); ?>/js/delivr.net/npm/bootstrap@5.1.3/dist/<?php echo get_template_directory_uri(); ?>/js//bootstrap.min.<?php echo get_template_directory_uri(); ?>/js/" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> -->
 		
 		
 		<!-- For phone mask -->
-		<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
-		<script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.js" type="text/javascript"></script>
+		<script src="https://cdn.<?php echo get_template_directory_uri(); ?>/js/delivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
+		<script src="https://cdn.js/delivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.<?php echo get_template_directory_uri(); ?>/js/" type="text/javascript"></script>
 		
-		<!-- Messengers button JS -->
+		<!-- Messengers button js -->
 		<script src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/js/messengers-button.js"></script>
 		
 		<!-- For second option -->

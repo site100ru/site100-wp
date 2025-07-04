@@ -309,164 +309,39 @@
 				<div class="col">
 					<div class="row">
 						
-														<div class="col-md-4 mt-5 project-entry" style=""> <!-- max-height: 250px; overflow: hidden; -->
-									<a href="article1.html" class="d-block figure rounded shadow">
-										<img src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2023/05/oPm6neCHxn4.jpg" alt="Image" class="img-fluid">
+						<?php
+							// параметры по умолчанию
+							$posts = get_posts( array(
+								'numberposts' => 0,
+								'category'    => 0,
+								'orderby'     => 'date',
+								'order'       => 'ASC',
+								'include'     => array(),
+								'exclude'     => array(),
+								'meta_key'    => '',
+								'meta_value'  =>'',
+								'post_type'   => 'post',
+								'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
+							) );
+
+							foreach( $posts as $post ) { setup_postdata($post); ?>
+								<div class="col-md-4 mt-5 project-entry" style=""> <!-- max-height: 250px; overflow: hidden; -->
+									<a href="<?php echo the_permalink(); ?>" class="d-block figure rounded shadow">
+										<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Image" class="img-fluid">
 									</a>
-									<h3 class="mt-3">Как найти клиентов в интернете</h3>
-									<p class="fw-light">В этой статье я поделюсь с Вами своим опытом и расскажу о том, как найти клиентов в интернете.</p>
-									<a href="article1.html" type="button" class="btn btn-sm btn-danger">Читать далее...</a>
+									<h3 class="mt-3"><?php the_title(); ?></h3>
+									<p class="fw-light"><?php the_excerpt(); ?></p>
+									<a href="<?php echo the_permalink(); ?>" type="button" class="btn btn-sm btn-danger">Читать далее...</a>
 								</div>
-															<div class="col-md-4 mt-5 project-entry" style=""> <!-- max-height: 250px; overflow: hidden; -->
-									<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d0%ba%d0%b0%d0%ba-%d1%81%d0%b4%d0%b5%d0%bb%d0%b0%d1%82%d1%8c-%d1%85%d0%be%d1%80%d0%be%d1%88%d0%b8%d0%b9-%d1%81%d0%b0%d0%b9%d1%82/" class="d-block figure rounded shadow">
-										<img src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2022/10/shutterstock_579801121.webp" alt="Image" class="img-fluid">
-									</a>
-									<h3 class="mt-3">Как сделать хороший сайт</h3>
-									<p class="fw-light">В этой статье я поделюсь с Вами своим опытом и расскажу о том, как сделать хороший сайт.</p>
-									<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d0%ba%d0%b0%d0%ba-%d1%81%d0%b4%d0%b5%d0%bb%d0%b0%d1%82%d1%8c-%d1%85%d0%be%d1%80%d0%be%d1%88%d0%b8%d0%b9-%d1%81%d0%b0%d0%b9%d1%82/" type="button" class="btn btn-sm btn-danger">Читать далее...</a>
-								</div>
-															<div class="col-md-4 mt-5 project-entry" style=""> <!-- max-height: 250px; overflow: hidden; -->
-									<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d0%ba%d0%b0%d0%ba-%d0%bf%d1%80%d0%b0%d0%b2%d0%b8%d0%bb%d1%8c%d0%bd%d0%be-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b3%d0%b0%d1%82%d1%8c-%d1%81%d0%b0%d0%b8%d1%82%d1%8b-%d0%b4%d0%bb%d1%8f-%d0%b1%d0%b8/" class="d-block figure rounded shadow">
-										<img src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2021/10/c1559e_33668140cfad4155a8e0f48486c6e8ab-scaled-1.jpg" alt="Image" class="img-fluid">
-									</a>
-									<h3 class="mt-3">Как правильно продвигать сайты для бизнеса</h3>
-									<p class="fw-light">В этой статье я хочу поделиться с Вами своим опытом и рассказать о том, как правильно продвигать сайты для бизнеса. Время прочтения 5 мин.</p>
-									<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d0%ba%d0%b0%d0%ba-%d0%bf%d1%80%d0%b0%d0%b2%d0%b8%d0%bb%d1%8c%d0%bd%d0%be-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b3%d0%b0%d1%82%d1%8c-%d1%81%d0%b0%d0%b8%d1%82%d1%8b-%d0%b4%d0%bb%d1%8f-%d0%b1%d0%b8/" type="button" class="btn btn-sm btn-danger">Читать далее...</a>
-								</div>
-															<div class="col-md-4 mt-5 project-entry" style=""> <!-- max-height: 250px; overflow: hidden; -->
-									<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d1%87%d1%82%d0%be-%d1%82%d0%b0%d0%ba%d0%be%d0%b5-%d1%8f%d0%bd%d0%b4%d0%b5%d0%ba%d1%81-%d1%81%d0%bf%d1%80%d0%b0%d0%b2%d0%be%d1%87%d0%bd%d0%b8%d0%ba/" class="d-block figure rounded shadow">
-										<img src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2021/10/yandex-spravochnik.jpg" alt="Image" class="img-fluid">
-									</a>
-									<h3 class="mt-3">Что такое Яндекс.Справочник (Яндекс.Бизнес)</h3>
-									<p class="fw-light">После создания сайта его необходимо как можно быстрее добавить в Яндекс.Справочник (Яндекс.Бизнес). Данные из этого справочника показываются вместе&#8230;</p>
-									<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d1%87%d1%82%d0%be-%d1%82%d0%b0%d0%ba%d0%be%d0%b5-%d1%8f%d0%bd%d0%b4%d0%b5%d0%ba%d1%81-%d1%81%d0%bf%d1%80%d0%b0%d0%b2%d0%be%d1%87%d0%bd%d0%b8%d0%ba/" type="button" class="btn btn-sm btn-danger">Читать далее...</a>
-								</div>
-															<div class="col-md-4 mt-5 project-entry" style=""> <!-- max-height: 250px; overflow: hidden; -->
-									<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d0%b7%d0%b0%d1%87%d0%b5%d0%bc-%d0%bd%d1%83%d0%b6%d0%b5%d0%bd-ssl-%d1%81%d0%b5%d1%80%d1%82%d0%b8%d1%84%d0%b8%d0%ba%d0%b0%d1%82-%d0%b1%d0%b5%d0%b7%d0%be%d0%bf%d0%b0%d1%81%d0%bd%d0%be%d1%81%d1%82%d0%b8/" class="d-block figure rounded shadow">
-										<img src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2021/10/ssl-certificate.jpg" alt="Image" class="img-fluid">
-									</a>
-									<h3 class="mt-3">Зачем нужен SSL сертификат безопасности</h3>
-									<p class="fw-light">SSL сертификат безопасности создавался для того, чтобы защитить персональные данные пользователей, которые взаимодействуют с сайтом (вводя свои данные&#8230;</p>
-									<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d0%b7%d0%b0%d1%87%d0%b5%d0%bc-%d0%bd%d1%83%d0%b6%d0%b5%d0%bd-ssl-%d1%81%d0%b5%d1%80%d1%82%d0%b8%d1%84%d0%b8%d0%ba%d0%b0%d1%82-%d0%b1%d0%b5%d0%b7%d0%be%d0%bf%d0%b0%d1%81%d0%bd%d0%be%d1%81%d1%82%d0%b8/" type="button" class="btn btn-sm btn-danger">Читать далее...</a>
-								</div>
-															<div class="col-md-4 mt-5 project-entry" style=""> <!-- max-height: 250px; overflow: hidden; -->
-									<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d1%87%d0%b5%d0%ba-%d0%bb%d0%b8%d1%81%d1%82-%d0%b4%d0%bb%d1%8f-%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b8-%d1%8f%d0%bd%d0%b4%d0%b5%d0%ba%d1%81-%d0%b4%d0%b8%d1%80%d0%b5%d0%ba%d1%82/" class="d-block figure rounded shadow">
-										<img src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2021/10/yandex-direct-setup.jpg" alt="Image" class="img-fluid">
-									</a>
-									<h3 class="mt-3">Чек-лист для настройки Яндекс.Директ</h3>
-									<p class="fw-light">Пошаговая инструкция по настройке Яндекс.Директ (чек лист).</p>
-									<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d1%87%d0%b5%d0%ba-%d0%bb%d0%b8%d1%81%d1%82-%d0%b4%d0%bb%d1%8f-%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b8-%d1%8f%d0%bd%d0%b4%d0%b5%d0%ba%d1%81-%d0%b4%d0%b8%d1%80%d0%b5%d0%ba%d1%82/" type="button" class="btn btn-sm btn-danger">Читать далее...</a>
-								</div>
-															<div class="col-md-4 mt-5 project-entry" style=""> <!-- max-height: 250px; overflow: hidden; -->
-									<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d0%be%d0%bf%d1%82%d0%b8%d0%bc%d0%b8%d0%b7%d0%b0%d1%86%d0%b8%d1%8f-%d1%80%d0%b5%d0%ba%d0%bb%d0%b0%d0%bc%d0%bd%d0%be%d0%b8-%d0%ba%d0%b0%d0%bc%d0%bf%d0%b0%d0%bd%d0%b8%d0%b8-%d1%8f%d0%bd%d0%b4%d0%b5/" class="d-block figure rounded shadow">
-										<img src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2021/10/optimizatsiyyandex-direct.jpg" alt="Image" class="img-fluid">
-									</a>
-									<h3 class="mt-3">Оптимизация рекламной кампании Яндекс.Директ</h3>
-									<p class="fw-light">В статье Вы узнаете как улучшить рекламную кампанию в Яндекс.Директ.<br>Время прочтения 7 мин.</p>
-									<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d0%be%d0%bf%d1%82%d0%b8%d0%bc%d0%b8%d0%b7%d0%b0%d1%86%d0%b8%d1%8f-%d1%80%d0%b5%d0%ba%d0%bb%d0%b0%d0%bc%d0%bd%d0%be%d0%b8-%d0%ba%d0%b0%d0%bc%d0%bf%d0%b0%d0%bd%d0%b8%d0%b8-%d1%8f%d0%bd%d0%b4%d0%b5/" type="button" class="btn btn-sm btn-danger">Читать далее...</a>
-								</div>
-															<div class="col-md-4 mt-5 project-entry" style=""> <!-- max-height: 250px; overflow: hidden; -->
-									<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d0%ba%d0%b0%d0%ba-%d1%83%d0%b7%d0%bd%d0%b0%d1%82%d1%8c-%d0%bf%d0%be%d1%81%d0%b5%d1%89%d0%b0%d0%b5%d0%bc%d0%be%d1%81%d1%82%d1%8c-%d0%ba%d0%be%d0%bd%d0%ba%d1%80%d0%b5%d1%82%d0%bd%d0%be%d0%b9-%d1%81/" class="d-block figure rounded shadow">
-										<img src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2021/11/dP2EdvGeVDU.jpg" alt="Image" class="img-fluid">
-									</a>
-									<h3 class="mt-3">Как узнать посещаемость конкретной страницы сайта</h3>
-									<p class="fw-light">Как узнать посещаемость конкретной страницы сайта, если сайт состоит из большого количества отдельных страниц (чек-лист).</p>
-									<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d0%ba%d0%b0%d0%ba-%d1%83%d0%b7%d0%bd%d0%b0%d1%82%d1%8c-%d0%bf%d0%be%d1%81%d0%b5%d1%89%d0%b0%d0%b5%d0%bc%d0%be%d1%81%d1%82%d1%8c-%d0%ba%d0%be%d0%bd%d0%ba%d1%80%d0%b5%d1%82%d0%bd%d0%be%d0%b9-%d1%81/" type="button" class="btn btn-sm btn-danger">Читать далее...</a>
-								</div>
-															<div class="col-md-4 mt-5 project-entry" style=""> <!-- max-height: 250px; overflow: hidden; -->
-									<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d0%ba%d0%b0%d0%ba-%d0%bf%d0%b5%d1%80%d0%b5%d0%bd%d0%b5%d1%81%d1%82%d0%b8-%d1%81%d0%b0%d0%b9%d1%82-wordpress-%d0%bd%d0%b0-%d0%b4%d1%80%d1%83%d0%b3%d0%be%d0%b9-%d1%85%d0%be%d1%81%d1%82%d0%b8%d0%bd/" class="d-block figure rounded shadow">
-										<img src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2021/11/перенести-сайт-на-wordpress-на-новый-хостинг.jpg" alt="Image" class="img-fluid">
-									</a>
-									<h3 class="mt-3">Как перенести сайт WordPress на другой хостинг</h3>
-									<p class="fw-light">Как перенести сайт на WordPress с одного хостинга на другой, простой чек-лист из 7 шагов.</p>
-									<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d0%ba%d0%b0%d0%ba-%d0%bf%d0%b5%d1%80%d0%b5%d0%bd%d0%b5%d1%81%d1%82%d0%b8-%d1%81%d0%b0%d0%b9%d1%82-wordpress-%d0%bd%d0%b0-%d0%b4%d1%80%d1%83%d0%b3%d0%be%d0%b9-%d1%85%d0%be%d1%81%d1%82%d0%b8%d0%bd/" type="button" class="btn btn-sm btn-danger">Читать далее...</a>
-								</div>
-															<div class="col-md-4 mt-5 project-entry" style=""> <!-- max-height: 250px; overflow: hidden; -->
-									<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d0%ba%d0%b0%d0%ba-%d0%bf%d1%80%d0%b0%d0%b2%d0%b8%d0%bb%d1%8c%d0%bd%d0%be-%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b8%d1%82%d1%8c-%d1%86%d0%b5%d0%bb%d1%8c-%d0%b2-%d0%bc%d0%b5%d1%82%d1%80%d0%b8%d0%ba/" class="d-block figure rounded shadow">
-										<img src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2021/11/dP2EdvGeVDU.jpg" alt="Image" class="img-fluid">
-									</a>
-									<h3 class="mt-3">Как правильно настроить цель в метрике «Отправка формы»</h3>
-									<p class="fw-light">Как правильно добавить цель в Яндекс Метрике «Отправка формы».</p>
-									<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d0%ba%d0%b0%d0%ba-%d0%bf%d1%80%d0%b0%d0%b2%d0%b8%d0%bb%d1%8c%d0%bd%d0%be-%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b8%d1%82%d1%8c-%d1%86%d0%b5%d0%bb%d1%8c-%d0%b2-%d0%bc%d0%b5%d1%82%d1%80%d0%b8%d0%ba/" type="button" class="btn btn-sm btn-danger">Читать далее...</a>
-								</div>
-															<div class="col-md-4 mt-5 project-entry" style=""> <!-- max-height: 250px; overflow: hidden; -->
-									<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d0%ba%d0%b0%d0%ba-%d1%83%d0%b7%d0%bd%d0%b0%d1%82%d1%8c-%d1%80%d0%b5%d0%b7%d1%83%d0%bb%d1%8c%d1%82%d0%b0%d1%82%d1%8b-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d1%8f-%d1%81%d0%b0/" class="d-block figure rounded shadow">
-										<img src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2022/03/Untitled-1.jpg" alt="Image" class="img-fluid">
-									</a>
-									<h3 class="mt-3">Как узнать результаты продвижения сайта</h3>
-									<p class="fw-light">Как узнать результаты продвижения сайта.</p>
-									<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d0%ba%d0%b0%d0%ba-%d1%83%d0%b7%d0%bd%d0%b0%d1%82%d1%8c-%d1%80%d0%b5%d0%b7%d1%83%d0%bb%d1%8c%d1%82%d0%b0%d1%82%d1%8b-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d1%8f-%d1%81%d0%b0/" type="button" class="btn btn-sm btn-danger">Читать далее...</a>
-								</div>
-															<div class="col-md-4 mt-5 project-entry" style=""> <!-- max-height: 250px; overflow: hidden; -->
-									<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d0%b3%d0%b4%d0%b5-%d0%ba%d1%83%d0%bf%d0%b8%d1%82%d1%8c-%d0%b8-%d0%ba%d0%b0%d0%ba-%d1%83%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%b8%d1%82%d1%8c-ssl-%d1%81%d0%b5%d1%80%d1%82%d0%b8%d1%84%d0%b8%d0%ba/" class="d-block figure rounded shadow">
-										<img src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2021/10/ssl-certificate.jpg" alt="Image" class="img-fluid">
-									</a>
-									<h3 class="mt-3">Где купить и как установить SSL сертификат безопасности</h3>
-									<p class="fw-light">Где купить и как установить SSL сертификат безопасности.</p>
-									<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d0%b3%d0%b4%d0%b5-%d0%ba%d1%83%d0%bf%d0%b8%d1%82%d1%8c-%d0%b8-%d0%ba%d0%b0%d0%ba-%d1%83%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%b8%d1%82%d1%8c-ssl-%d1%81%d0%b5%d1%80%d1%82%d0%b8%d1%84%d0%b8%d0%ba/" type="button" class="btn btn-sm btn-danger">Читать далее...</a>
-								</div>
-															<div class="col-md-4 mt-5 project-entry" style=""> <!-- max-height: 250px; overflow: hidden; -->
-									<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d0%ba%d0%b0%d0%ba-%d0%be%d1%82%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d1%8f%d1%82%d1%8c-%d0%b7%d0%b0%d1%8f%d0%b2%d0%ba%d0%b8-%d1%81-%d1%81%d0%b0%d0%b9%d1%82%d0%b0-%d0%b2-%d1%82%d0%b5%d0%bb%d0%b5%d0%b3%d1%80/" class="d-block figure rounded shadow">
-										<img src="" alt="Image" class="img-fluid">
-									</a>
-									<h3 class="mt-3">Как отправлять заявки с сайта в Телеграм</h3>
-									<p class="fw-light">Создаем бота Отправлять заявки в чат будет бот. Поэтому первым шагом мы создадими настроим его. Для создания бота&#8230;</p>
-									<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d0%ba%d0%b0%d0%ba-%d0%be%d1%82%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d1%8f%d1%82%d1%8c-%d0%b7%d0%b0%d1%8f%d0%b2%d0%ba%d0%b8-%d1%81-%d1%81%d0%b0%d0%b9%d1%82%d0%b0-%d0%b2-%d1%82%d0%b5%d0%bb%d0%b5%d0%b3%d1%80/" type="button" class="btn btn-sm btn-danger">Читать далее...</a>
-								</div>
-															<div class="col-md-4 mt-5 project-entry" style=""> <!-- max-height: 250px; overflow: hidden; -->
-									<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d0%bc%d0%bd%d0%be%d0%b3%d0%be%d1%83%d1%80%d0%be%d0%b2%d0%bd%d0%b5%d0%b2%d0%be%d0%b5-%d0%bc%d0%b5%d0%bd%d1%8e-bootstrap-5-%d0%b4%d0%bb%d1%8f-wordpress/" class="d-block figure rounded shadow">
-										<img src="" alt="Image" class="img-fluid">
-									</a>
-									<h3 class="mt-3">Многоуровневое меню Bootstrap 5 для WordPress</h3>
-									<p class="fw-light">Скачать для HTML Скачать для WordPress</p>
-									<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d0%bc%d0%bd%d0%be%d0%b3%d0%be%d1%83%d1%80%d0%be%d0%b2%d0%bd%d0%b5%d0%b2%d0%be%d0%b5-%d0%bc%d0%b5%d0%bd%d1%8e-bootstrap-5-%d0%b4%d0%bb%d1%8f-wordpress/" type="button" class="btn btn-sm btn-danger">Читать далее...</a>
-								</div>
-															<div class="col-md-4 mt-5 project-entry" style=""> <!-- max-height: 250px; overflow: hidden; -->
-									<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d0%ba%d0%b0%d0%ba-%d1%81%d0%b0%d0%bc%d0%be%d1%81%d1%82%d0%be%d1%8f%d1%82%d0%b5%d0%bb%d1%8c%d0%bd%d0%be-%d0%b8-%d0%b1%d0%b5%d1%81%d0%bf%d0%bb%d0%b0%d1%82%d0%bd%d0%be-%d0%b4%d0%be%d0%b1%d0%b0%d0%b2/" class="d-block figure rounded shadow">
-										<img src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2024/02/2.jpg" alt="Image" class="img-fluid">
-									</a>
-									<h3 class="mt-3">Как самостоятельно и бесплатно добавить кнопки мессенджеров на сайт</h3>
-									<p class="fw-light">Готовый скрипт кнопки мессенджеров для любого сайта.</p>
-									<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d0%ba%d0%b0%d0%ba-%d1%81%d0%b0%d0%bc%d0%be%d1%81%d1%82%d0%be%d1%8f%d1%82%d0%b5%d0%bb%d1%8c%d0%bd%d0%be-%d0%b8-%d0%b1%d0%b5%d1%81%d0%bf%d0%bb%d0%b0%d1%82%d0%bd%d0%be-%d0%b4%d0%be%d0%b1%d0%b0%d0%b2/" type="button" class="btn btn-sm btn-danger">Читать далее...</a>
-								</div>
-															<div class="col-md-4 mt-5 project-entry" style=""> <!-- max-height: 250px; overflow: hidden; -->
-									<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d0%ba%d0%b0%d0%ba-%d1%83%d0%b2%d0%b5%d0%bb%d0%b8%d1%87%d0%b8%d1%82%d1%8c-%d0%b4%d0%bb%d0%b8%d0%bd%d1%83-%d1%81%d1%81%d1%8b%d0%bb%d0%ba%d0%b8-%d0%b2-wordpress/" class="d-block figure rounded shadow">
-										<img src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2024/09/image.jpg" alt="Image" class="img-fluid">
-									</a>
-									<h3 class="mt-3">Как увеличить длину ссылки в WordPress</h3>
-									<p class="fw-light">В этой статье я расскажу Вам как можно увеличить длину ссылки в WordPress.</p>
-									<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d0%ba%d0%b0%d0%ba-%d1%83%d0%b2%d0%b5%d0%bb%d0%b8%d1%87%d0%b8%d1%82%d1%8c-%d0%b4%d0%bb%d0%b8%d0%bd%d1%83-%d1%81%d1%81%d1%8b%d0%bb%d0%ba%d0%b8-%d0%b2-wordpress/" type="button" class="btn btn-sm btn-danger">Читать далее...</a>
-								</div>
-															<div class="col-md-4 mt-5 project-entry" style=""> <!-- max-height: 250px; overflow: hidden; -->
-									<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d0%bf%d0%be%d0%b4%d1%81%d0%ba%d0%b0%d0%b7%d0%ba%d0%b8-%d0%bf%d0%be-wordpress-%d0%b8-woocommerce/" class="d-block figure rounded shadow">
-										<img src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2024/09/service-img-1-2.jpg" alt="Image" class="img-fluid">
-									</a>
-									<h3 class="mt-3">Подсказки по WordPress и WooCommerce</h3>
-									<p class="fw-light">Здесь я собрал подсказки по функциям WordPress и Woocommerce, которые сам часто использую.</p>
-									<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d0%bf%d0%be%d0%b4%d1%81%d0%ba%d0%b0%d0%b7%d0%ba%d0%b8-%d0%bf%d0%be-wordpress-%d0%b8-woocommerce/" type="button" class="btn btn-sm btn-danger">Читать далее...</a>
-								</div>
-															<div class="col-md-4 mt-5 project-entry" style=""> <!-- max-height: 250px; overflow: hidden; -->
-									<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d0%ba%d0%b0%d0%ba-%d1%83%d0%b2%d0%b5%d0%bb%d0%b8%d1%87%d0%b8%d1%82%d1%8c-%d1%80%d0%b0%d0%b7%d0%bc%d0%b5%d1%80-%d0%b7%d0%b0%d0%b3%d1%80%d1%83%d0%b6%d0%b0%d0%b5%d0%bc%d0%be%d0%b3%d0%be-%d1%84%d0%b0%d0%/" class="d-block figure rounded shadow">
-										<img src="" alt="Image" class="img-fluid">
-									</a>
-									<h3 class="mt-3">Как увеличить размер загружаемого файла в WordPress</h3>
-									<p class="fw-light">1. Увеличиваем размер загружаемого файла в WordPress с помощью файла .htaccess php_value upload_max_filesize 20M php_value post_max_size 20M 2&#8230;.</p>
-									<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d0%ba%d0%b0%d0%ba-%d1%83%d0%b2%d0%b5%d0%bb%d0%b8%d1%87%d0%b8%d1%82%d1%8c-%d1%80%d0%b0%d0%b7%d0%bc%d0%b5%d1%80-%d0%b7%d0%b0%d0%b3%d1%80%d1%83%d0%b6%d0%b0%d0%b5%d0%bc%d0%be%d0%b3%d0%be-%d1%84%d0%b0%d0%/" type="button" class="btn btn-sm btn-danger">Читать далее...</a>
-								</div>
-															<div class="col-md-4 mt-5 project-entry" style=""> <!-- max-height: 250px; overflow: hidden; -->
-									<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d0%bc%d0%be%d0%b4%d1%83%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d0%b4%d0%b8%d0%b7%d0%b0%d0%b9%d0%bd-%d1%81%d0%b0%d0%b9%d1%82%d0%b0/" class="d-block figure rounded shadow">
-										<img src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/uploads/2024/11/8745338b158589d7cdf78c1f42e43072-2.webp" alt="Image" class="img-fluid">
-									</a>
-									<h3 class="mt-3">Модульный дизайн сайта</h3>
-									<p class="fw-light">В статье Вы узнаете: что такое модульный дизайн сайта, кому подойдет модульный дизайн сайта, увидите примеры модульного дизайна сайта. Время прочтения 1 мин.</p>
-									<a href="https://xn--100-5cd9b6bj.xn--p1ai/%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2/%d0%bc%d0%be%d0%b4%d1%83%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d0%b4%d0%b8%d0%b7%d0%b0%d0%b9%d0%bd-%d1%81%d0%b0%d0%b9%d1%82%d0%b0/" type="button" class="btn btn-sm btn-danger">Читать далее...</a>
-								</div>
-												</div>
+							<?php }
+
+							wp_reset_postdata();
+						?>
+					</div>
 				</div>
 			 </div>
 		</div>
 	</div>
-	<!-- Portfolio -->
 </section>
 
 

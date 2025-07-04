@@ -1,5 +1,22 @@
 <?php
 	
+	
+	// Добавляем возможность использовать миниатюры записей
+	add_theme_support('post-thumbnails');
+	
+	
+	// Изменяем количество символов в превью the_excerpt()
+	add_filter( 'excerpt_length', function(){
+		return 18;
+	} );
+	
+	
+	// Меняем окончание превью the_excerpt()
+	add_filter('excerpt_more', function($more) {
+		return '...';
+	});
+	
+	
 	/*** ОБНОВЛЕНИЕ THEME ***/
 	add_filter('pre_set_site_transient_update_themes', 'check_custom_theme_updates');
 
@@ -36,4 +53,6 @@
 		return $transient;
 	}
 	/*** END ОБНОВЛЕНИЕ THEME ***/
+	
+	
 ?>
