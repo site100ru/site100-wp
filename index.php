@@ -1,19 +1,13 @@
 <?php
-/**
- * Template Name: Home
- * Template Post Type: page
- */
+	
+	/**
+	 * Template Name: Home
+	 * Template Post Type: page
+	 */
  
- // Временный диагностический код (удалить после проверки)
-if (is_admin()) return;
-echo '<pre style="background:#fff;padding:20px;margin:20px;border:2px solid red;">';
-echo 'Requested URL: ' . $_SERVER['REQUEST_URI'] . "\n";
-echo 'Post Type: ' . get_post_type() . "\n";
-echo 'Is Post Type Archive: ' . (is_post_type_archive() ? 'Yes' : 'No') . "\n";
-echo 'Current Template: ' . (isset($template) ? $template : 'Not defined');
-echo '</pre>';
-// Конец диагностического кода
 ?>
+
+
 <!doctype html>
 <html lang="ru">
 	<head>
@@ -41,7 +35,7 @@ echo '</pre>';
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Glory:wght@600&display=swap" rel="stylesheet">
 
-		<title>Создание, продвижение и поддержка сайтов в Москве и МО | сайт100.рф | 8 (930) 787-80-68</title>
+		<title>Создание, продвижение и поддержка сайтов в Москве и МО | site100.ru | 8 (930) 787-80-68</title>
 		
 	</head>
 	<body> <!-- data-spy="scroll" data-target="nav" style="position: relative;" add in body -->
@@ -100,7 +94,7 @@ echo '</pre>';
 				<nav class="d-none d-lg-flex burger-menu header-nav-bottom navbar navbar-expand-lg navbar-light start-0 align-items-center justify-content-lg-between justify-content-around mt-0" style="z-index: 100;">
 					<div class="container-fluid container-lg px-0 d-flex">
 						<div class="container d-flex justify-content-between align-items-center" style="z-index: 1000;">
-							<a class="navbar-brand logo me-1" href="https://сайт100.рф">site<span class="text-danger">100</span>.ru</a>
+							<a class="navbar-brand logo me-1" href="https://site100.ru">site<span class="text-danger">100</span>.ru</a>
 								<div class="add-info-block d-flex flex-column align-items-center d-lg-none py-1 me-2 me-sm-5">
 									<a class="link-item fw-bold phone-link" href="tel: +79307878068">+7 (930) 78-78-0-68</a>
 									<div class="d-flex navbar-brand fw-normal me-1 align-items-center py-1">
@@ -133,10 +127,10 @@ echo '</pre>';
 												  </ul>
 												</li>
 												<li class="nav-item">
-												  <a class="nav-link" href="blog.html" data-target="blog-page">блог</a>
+												  <a class="nav-link" href="<?php echo site_url('/blog/'); ?>" data-target="blog-page">Блог</a>
 												</li>
 												<li class="nav-item">
-												  <a class="nav-link last" href="#" data-target="contacts-page">КОНТАКТЫ</a>
+												  <a class="nav-link last" href="#" data-target="contacts-page">Контакты</a>
 												</li>
 											  </ul>
 										<div class="navbar-brand d-lg-none me-5 d-flex align-items-center">
@@ -174,7 +168,7 @@ echo '</pre>';
 				<nav class="fixed-menu header-nav-bottom navbar navbar-expand-lg navbar-light start-0 d-flex align-items-center justify-content-lg-between justify-content-around mt-0 py-1" >
 					<div class="container-fluid container-lg px-0 d-flex">
 						<div class="container d-flex justify-content-between align-items-center">
-							<a class="navbar-brand logo me-1" href="https://сайт100.рф">site<span class="text-danger">100</span>.ru</a>
+							<a class="navbar-brand logo me-1" href="https://site100.ru">site<span class="text-danger">100</span>.ru</a>
 								<div class="add-info-block d-flex flex-column align-items-center d-lg-none py-1 me-2 me-sm-5">
 									<a class="link-item phone-link-mobile" href="tel: +79307878068">+7 (930) 78-78-0-68</a>
 									<div class="d-flex navbar-brand fw-normal me-1 align-items-center py-1">
@@ -208,7 +202,7 @@ echo '</pre>';
 												  </ul>
 												</li>
 												<li class="nav-item">
-												  <a class="nav-link" href="blog.html" data-target="blog-page">блог</a>
+												  <a class="nav-link" href="<?php echo site_url('/blog/'); ?>" data-target="blog-page">Блог</a>
 												</li>
 												<li class="nav-item">
 												  <a class="nav-link last" href="#" data-target="contacts-page">КОНТАКТЫ</a>
@@ -550,7 +544,7 @@ echo '</pre>';
 							<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 								<div class="row pt-3">
 									<div class="col-md-4 mb-5">
-										<a href="https://сайт100.рф/wp-content/themes/site100theme/портфолио/2022/himmel/PHP" target="_blank">
+										<a href="https://site100.ru/wp-content/themes/site100theme/портфолио/2022/himmel/PHP" target="_blank">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/site-portfolio/site-portfolio-himmel-2.jpg" class="img-fluid mb-4" style="border-radius: 20px;">
 										</a>
 										<h5 style="font-family: var(--font-family); font-size: 24px; color: #fff;">Потолочные системы</h5>
@@ -574,13 +568,13 @@ echo '</pre>';
 										<h5 style="font-family: var(--font-family); font-size: 24px; color: #fff;">Производство мебели 2</h5>
 									</div>
 									<div class="col-md-4 mb-5">
-										<a href="https://сайт100.рф/wp-content/themes/site100theme/портфолио/2019/glyanets-potolki" target="_blank">
+										<a href="https://site100.ru/wp-content/themes/site100theme/портфолио/2019/glyanets-potolki" target="_blank">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/site-portfolio/site-portfolio-23.png" class="img-fluid mb-4">
 										</a>
 										<h5 style="font-family: var(--font-family); font-size: 24px; color: #fff;">Натяжные потолки</h5>
 									</div>
 									<div class="col-md-4 mb-5">
-										<a href="https://сайт100.рф/wp-content/themes/site100theme/портфолио/2020/himmelaero" target="_blank">
+										<a href="https://site100.ru/wp-content/themes/site100theme/портфолио/2020/himmelaero" target="_blank">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/site-portfolio/site-portfolio-24.png" class="img-fluid mb-4">
 										</a>
 										<h5 style="font-family: var(--font-family); font-size: 24px; color: #fff;">Реечные потолки</h5>
@@ -592,7 +586,7 @@ echo '</pre>';
 										<h5 style="font-family: var(--font-family); font-size: 24px; color: #fff;">Сайт бани, сауны</h5>
 									</div>
 									<div class="col-md-4 mb-5">
-										<a href="http://сайт100.рф/wp-content/themes/site100theme/портфолио/2019/auto-ryazan" target="_blank">
+										<a href="http://site100.ru/wp-content/themes/site100theme/портфолио/2019/auto-ryazan" target="_blank">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/site-portfolio/site-portfolio-21.png" class="img-fluid mb-4">
 										</a>
 										<h5 style="font-family: var(--font-family); font-size: 24px; color: #fff;">Купля/продажа авто</h5>
@@ -613,7 +607,7 @@ echo '</pre>';
 										<h5 style="font-family: var(--font-family); font-size: 24px; color: #fff;">Продажа пиломатериалов</h5>
 									</div>
 									<div class="col-md-4 mb-5">
-										<a href="https://сайт100.рф/unistyle-mebel/" target="_blank">
+										<a href="https://site100.ru/unistyle-mebel/" target="_blank">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/site-portfolio/unistyle-mebel.jpg" class="img-fluid mb-4" style="border-radius: 20px;">
 										</a>
 										<h5 style="font-family: var(--font-family); font-size: 24px; color: #fff;">Производство и продажа корпусной мебели</h5>
@@ -637,7 +631,7 @@ echo '</pre>';
 										<h5 style="font-family: var(--font-family); font-size: 24px; color: #fff;">Производство и продажа жалюзи</h5>
 									</div>
 									<div class="col-md-4 mb-5">
-										<a href="https://сайт100.рф/wp-content/themes/site100theme/portfolio/kvartet" target="_blank">
+										<a href="https://site100.ru/wp-content/themes/site100theme/portfolio/kvartet" target="_blank">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/site-portfolio/site-portfolio-17.png" class="img-fluid mb-4">
 										</a>
 										<h5 style="font-family: var(--font-family); font-size: 24px; color: #fff;">Производство мебели</h5>
@@ -665,7 +659,7 @@ echo '</pre>';
 							<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
 								<div class="row pt-3">
 									<div class="col-md-4 mb-5">
-										<a href="https://сайт100.рф/site100-lumber/" target="_blank">
+										<a href="https://site100.ru/site100-lumber/" target="_blank">
 											<img src="<?php echo get_template_directory_uri(); ?>/img/site-portfolio/stock-line.jpg" class="img-fluid mb-4" style="border-radius: 20px;">
 										</a>
 										<h5 style="font-family: var(--font-family); font-size: 24px; color: #fff;">Продажа пиломатериалов</h5>
@@ -1522,7 +1516,7 @@ echo '</pre>';
 				<div class="row align-items-center">
 					<div class="col-xl-3">
 						<a href="#">
-							<a class="navbar-brand" href="https://сайт100.рф">site<span class="text-danger">100</span>.ru</a>
+							<a class="navbar-brand" href="https://site100.ru">site<span class="text-danger">100</span>.ru</a>
 						</a>
 					</div>
 					<div class="col-xl-6">
@@ -1542,10 +1536,10 @@ echo '</pre>';
 							  </ul>
 							</li>
 							<li class="nav-item">
-							  <a class="nav-link" href="blog.html" data-target="blog-page">блог</a>
+							  <a class="nav-link" href="<?php echo site_url('/blog/'); ?>" data-target="blog-page">Блог</a>
 							</li>
 							<li class="nav-item">
-							  <a class="nav-link last" href="#" data-target="contacts-page">КОНТАКТЫ</a>
+							  <a class="nav-link last" href="#" data-target="contacts-page">Контакты</a>
 							</li>
 						  </ul>
 					</div>
@@ -1636,7 +1630,7 @@ echo '</pre>';
 				<div class="row">
 					<div class="col pt-5 pb-0 pb-xl-5">
 						<a href="#">						
-							<a class="navbar-brand" href="https://сайт100.рф">site<span class="text-danger">100</span>.ru</a>
+							<a class="navbar-brand" href="https://site100.ru">site<span class="text-danger">100</span>.ru</a>
 						</a>
 						<ul class="ps-0 pt-3 pb-2 list-unstyled">
 							<li class="nav-item">
@@ -1732,10 +1726,10 @@ echo '</pre>';
 							<div class="col-6">
 								<ul class="nav flex-column">
 									<li class="nav-item dropdown">
-										<a class="nav-link ps-0 active" aria-current="page" href="#">ГЛАВНАЯ</a>
+										<a class="nav-link ps-0 active" aria-current="page" href="#">Главная</a>
 									</li>
 									<li class="nav-item">
-										<a class="nav-link ps-0" href="#">блог</a>
+										<a class="nav-link ps-0" href="<?php echo site_url('/blog/'); ?>">блог</a>
 									</li>
 								</ul>
 							</div>
@@ -1749,11 +1743,11 @@ echo '</pre>';
 										  <li><a class="dropdown-item" href="#">создание сайтов</a></li>
 										  <li><a class="dropdown-item" href="#">продвижение сайтов</a></li>
 										  <li><a class="dropdown-item" href="#">поддержка сайтов</a></li>
-										  <li><a class="dropdown-item" href="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/%D0%BF%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE/2024/gaziza/2-g/kitchen.html">клиенты на корпусную мебель</a></li>
+										  <li><a class="dropdown-item" href="https://site100.ru/wp-content/themes/site100-theme/%D0%BF%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE/2024/gaziza/2-g/kitchen.html">клиенты на корпусную мебель</a></li>
 										</ul>
 									</li>
 									<li class="nav-item">
-										<a class="nav-link last" href="#">КОНТАКТЫ</a>
+										<a class="nav-link last" href="#">Контакты</a>
 									</li>
 								</ul>
 							</div>
@@ -1764,7 +1758,7 @@ echo '</pre>';
 
 			<hr class="footer-hr" style="border: none; background-color: #7D7D7D; height: 1px">
 		   <div class="footer-bottom-block container-fluid">
-			<p class="footer-bottom-text text-start text-sm-center mb-0">Создание, продвижение и поддержка сайтов: <a href="https://xn--100-5cd9b6bj.xn--p1ai/">сайт100.рф</a></p>
+			<p class="footer-bottom-text text-start text-sm-center mb-0">Создание, продвижение и поддержка сайтов: <a href="https://site100.ru">site100.ru</a></p>
 		   </div>
 			
 		</footer>
@@ -1880,7 +1874,7 @@ echo '</pre>';
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body">
-						<form method="post" action="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/mails/callback-mail.php">
+						<form method="post" action="https://site100.ru/wp-content/themes/site100-theme/mails/callback-mail.php">
 							<p><input type="text" name="name" class="form-control" placeholder="Имя"></p>
 							<p><input type="text" id="phone_mask_1" name="tel" class="form-control phone_mask_1" required></p>
 							<button type="submit" class="btn btn-danger" style="width: 100%;">Заказать</button>
@@ -1900,7 +1894,7 @@ echo '</pre>';
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body">
-						<form method="post" action="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/mails/mail_2.php">
+						<form method="post" action="https://site100.ru/wp-content/themes/site100-theme/mails/mail_2.php">
 							<p><input type="text" name="name" class="form-control" placeholder="Имя"></p>
 							<p><input type="text" id="phone_mask_2" name="tel" class="form-control phone_mask_2" required></p>
 							<button type="submit" class="btn btn-danger" style="width: 100%;">Оставить заявку</button>
@@ -1916,10 +1910,10 @@ echo '</pre>';
 			
 			</div>
 			<div id="messenger-1" class="rounded-circle">
-				<a href="whatsapp://send?phone=+79307878068"><img src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/<?php echo get_template_directory_uri(); ?>/img/ico/whatsapp.png"></a>
+				<a href="whatsapp://send?phone=+79307878068"><img src="https://site100.ru/wp-content/themes/site100-theme/<?php echo get_template_directory_uri(); ?>/img/ico/whatsapp.png"></a>
 			</div>
 			<div id="messenger-2" class="rounded-circle">
-				<a href="tg://resolve?domain=vasilyevr"><img src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/<?php echo get_template_directory_uri(); ?>/img/ico/telegram.png"></a>
+				<a href="tg://resolve?domain=vasilyevr"><img src="https://site100.ru/wp-content/themes/site100-theme/<?php echo get_template_directory_uri(); ?>/img/ico/telegram.png"></a>
 			</div>
 		</div>
 		
@@ -1930,12 +1924,12 @@ echo '</pre>';
 				if ( mes1Right == "0px" || mes1Right == 0 ) {
 					document.getElementById('messenger-1').style.right = "80px";
 					document.getElementById('messenger-2').style.right = "160px";
-					document.getElementById('messengers-2-button').style.background = "url(https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/<?php echo get_template_directory_uri(); ?>/img/ico/close-icon.png) center";
+					document.getElementById('messengers-2-button').style.background = "url(https://site100.ru/wp-content/themes/site100-theme/<?php echo get_template_directory_uri(); ?>/img/ico/close-icon.png) center";
 					document.getElementById('messengers-2-button').style.backgroundSize = "contain";
 				} else {
 					document.getElementById('messenger-1').style.right = "0px";
 					document.getElementById('messenger-2').style.right = "0px";
-					document.getElementById('messengers-2-button').style.background = "url(https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/<?php echo get_template_directory_uri(); ?>/img/ico/messenger.png) center";
+					document.getElementById('messengers-2-button').style.background = "url(https://site100.ru/wp-content/themes/site100-theme/<?php echo get_template_directory_uri(); ?>/img/ico/messenger.png) center";
 					document.getElementById('messengers-2-button').style.backgroundSize = "contain";
 				}
 			}
@@ -1957,7 +1951,7 @@ echo '</pre>';
 		<script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.js" type="text/javascript"></script>
 		
 		<!-- Messengers button JS -->
-		<script src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/js/messengers-button.js"></script>
+		<script src="https://site100.ru/wp-content/themes/site100-theme/js/messengers-button.js"></script>
 		
 		<!-- For second option -->
 		<script>

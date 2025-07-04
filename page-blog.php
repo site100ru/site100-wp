@@ -1,57 +1,13 @@
 <?php
-/**
- * Template Name: Posts Archive
- * Template Post Type: post
- */
- 
-// Добавьте в начало archive-post.php
-echo '<pre style="background:#f5f5f5;padding:20px;border:2px solid red;margin:20px;">';
-print_r([
-    'is_archive' => is_archive(),
-    'is_post_type_archive' => is_post_type_archive(),
-    'post_type' => get_post_type(),
-    'current_blog' => get_current_blog_id(),
-    'template' => get_page_template_slug()
-]);
-echo '</pre>';
-?>
-<?php
-/**
- * Force Post Archive Template
- */
-global $wp_query;
-$wp_query->is_archive = true;
-$wp_query->is_post_type_archive = true;
 
-// Переопределяем запрос
-query_posts([
-    'post_type' => 'post',
-    'posts_per_page' => 10,
-    'ignore_sticky_posts' => true
-]);
+	/**
+	 * Template Name: Blog
+	 * Template Post Type: page
+	 */
 
-get_header();
 ?>
 
-<main class="archive-container">
-    <?php if (have_posts()) : ?>
-        <h1>Архив записей</h1>
-        <?php while (have_posts()) : the_post(); ?>
-            <article <?php post_class('archive-item'); ?>>
-                <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                <?php the_excerpt(); ?>
-            </article>
-        <?php endwhile; ?>
-        
-        <div class="pagination">
-            <?php the_posts_pagination(); ?>
-        </div>
-    <?php else : ?>
-        <p>Записей не найдено</p>
-    <?php endif; ?>
-</main>
 
-<?php get_footer(); ?>
 <!doctype html>
 <html lang="ru">
 <head>
@@ -69,11 +25,11 @@ get_header();
 	<meta property="og:url" content="index.php" />
 
 	<!-- Bootstrap CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- STYLE CSS -->
-    <link rel="stylesheet" href="css/theme-2.css">
-	<link href="css/theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/theme-2.css">
+	<link href="<?php echo get_template_directory_uri(); ?>/css/theme.css" rel="stylesheet">
 
 	<!-- Style CSS -->
 	<link rel="stylesheet" href="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/style.css">
@@ -137,10 +93,10 @@ get_header();
                     </div>
                     <div class="d-none d-lg-flex ms-3 justify-content-end">
                         <a class="nav-link ico-button me-3" href="https://t.me/79307878068" target="_blank">
-							<img src="img/ico/telegram-ico.svg">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/ico/telegram-ico.svg">
 						</a>
                         <a class="nav-link ico-button ps-0 pe-2" href="https://wa.me/79307878068" target="_blank">
-							<img src="img/ico/whatsapp-ico.svg">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/ico/whatsapp-ico.svg">
 						</a>
                     </div>
                 </div>
@@ -211,10 +167,10 @@ get_header();
                             </div>
                             <div class="d-flex d-lg-none justify-content-start">
                                 <a class="nav-link ico-button ps-0 pe-2" href="https://wa.me/79307878068" target="_blank">
-									<img src="img/ico/whatsapp-ico.svg">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/ico/whatsapp-ico.svg">
 								</a>
                                 <a class="nav-link ico-button" href="https://t.me/79307878068" target="_blank">
-									<img src="img/ico/telegram-ico.svg">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/ico/telegram-ico.svg">
 								</a>
                             </div>
                             </div>
@@ -282,10 +238,10 @@ get_header();
                             </div>
                             <div class="d-flex d-lg-none justify-content-start">
                                 <a class="nav-link ico-button ps-0 pe-2" href="https://wa.me/79307878068" target="_blank">
-									<img src="img/ico/whatsapp-ico.svg">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/ico/whatsapp-ico.svg">
 								</a>
                                 <a class="nav-link ico-button ms-3" href="https://t.me/79307878068" target="_blank">
-									<img src="img/ico/telegram-ico.svg">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/ico/telegram-ico.svg">
 								</a>
                             </div>
                             </div>
@@ -533,9 +489,9 @@ get_header();
 						<p class="mb-4">E-mail: vasilyev-r@mail.ru</p>
 						<div class="row pb-5 pb-md-4 pt-4 pt-md-5">
 							<div class="col">
-								<a href="whatsapp://send?phone=+79307878068"><img src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/img/ico/whatsapp.svg" class="mr-3"></a>
-								<a href="viber://chat?number=%2B79307878068"><img src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/img/ico/viber.svg" class="mr-3"></a>
-								<a href="https://vk.com/vasilyev_r" target="_blank"><img src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/img/ico/vkontakte.svg"></a>
+								<a href="whatsapp://send?phone=+79307878068"><img src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/<?php echo get_template_directory_uri(); ?>/img/ico/whatsapp.svg" class="mr-3"></a>
+								<a href="viber://chat?number=%2B79307878068"><img src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/<?php echo get_template_directory_uri(); ?>/img/ico/viber.svg" class="mr-3"></a>
+								<a href="https://vk.com/vasilyev_r" target="_blank"><img src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/<?php echo get_template_directory_uri(); ?>/img/ico/vkontakte.svg"></a>
 							</div>
 						</div>
 					</div>
@@ -588,7 +544,7 @@ get_header();
 					</div>
 					<div class="col-xl-3 text-end">
 						<a href="tel:‪89307878068" class="contacts-phone fw-semibold">‪
-							<img src="img/ico/mobile-phone-ico.svg" class="me-2" style="position: relative; bottom: 1px;">+7 <span class="color-red">(930)</span> 78-78-0-68‬
+							<img src="<?php echo get_template_directory_uri(); ?>/img/ico/mobile-phone-ico.svg" class="me-2" style="position: relative; bottom: 1px;">+7 <span class="color-red">(930)</span> 78-78-0-68‬
 						</a>
 					</div>
 				</div>
@@ -599,7 +555,7 @@ get_header();
 								<a class="nav-link" href="#">
 									<div style="display: flex;" class="align-items-center">
 										<div class="nav-li-float-left">
-											<img src="img/ico/location-ico.svg">
+											<img src="<?php echo get_template_directory_uri(); ?>/img/ico/location-ico.svg">
 										</div>
 										<div class="nav-li-float-right link-item" >
 											<span>гор. Москва,<br>ул. Митинская, д. 43</span>
@@ -612,7 +568,7 @@ get_header();
 								<a class="nav-link" href="#">
 									<div style="display: flex;" class="align-items-center">
 										<div class="nav-li-float-left">
-											<img src="img/ico/clock-ico.svg" class="pt-1">
+											<img src="<?php echo get_template_directory_uri(); ?>/img/ico/clock-ico.svg" class="pt-1">
 										</div>
 										<div class="nav-li-float-right link-item" >
 											<span>Без выходных<br>с 9:00 до 21:00</span>
@@ -625,7 +581,7 @@ get_header();
 								<a href="mailto:vasilyev-r@mail.ru" class="nav-link">
 									<div style="display: flex;" class="align-items-center">
 										<div class="nav-li-float-left">
-											<img src="img/ico/email-ico.svg">
+											<img src="<?php echo get_template_directory_uri(); ?>/img/ico/email-ico.svg">
 										</div>
 										<div class="nav-li-float-right link-item">
 											<span>vasilyev-r@mail.ru</span>
@@ -638,7 +594,7 @@ get_header();
 								<a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#callbackModal">
 									<div style="display: flex;" class="align-items-center">
 										<div class="nav-li-float-left">
-											<img src="img/ico/callback-ico.svg" >
+											<img src="<?php echo get_template_directory_uri(); ?>/img/ico/callback-ico.svg" >
 										</div>
 										<div class="nav-li-float-right link-item" >
 											<span>Обратный звонок</span>
@@ -655,12 +611,12 @@ get_header();
 						<ul class="nav justify-content-center">
 							<li class="nav-item">
 								<a class="nav-link ico-button px-2" href="https://wa.me/79307878068" target="_blank">
-									<img src="img/ico/whatsapp-ico.svg">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/ico/whatsapp-ico.svg">
 								</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link ico-button px-3" href="https://t.me/79307878068" target="_blank">
-									<img src="img/ico/telegram-ico.svg">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/ico/telegram-ico.svg">
 								</a>
 							</li>
 						</ul>
@@ -680,7 +636,7 @@ get_header();
 								<a href="#" class="nav-link ps-0 pb-1">
 									<div style="display: flex;" class="align-items-center">
 										<div class="nav-li-float-left">
-											<img src="img/ico/location-ico.svg">
+											<img src="<?php echo get_template_directory_uri(); ?>/img/ico/location-ico.svg">
 										</div>
 										<div class="nav-li-float-right link-item" >
 											<span>гор. Москва, ул. Митинская, д. 43</span>
@@ -693,7 +649,7 @@ get_header();
 								<a href="#" class="nav-link ps-0 py-1">
 									<div style="display: flex;" class="align-items-center">
 										<div class="nav-li-float-left">
-											<img src="img/ico/clock-ico.svg" class="pt-1">
+											<img src="<?php echo get_template_directory_uri(); ?>/img/ico/clock-ico.svg" class="pt-1">
 										</div>
 										<div class="nav-li-float-right link-item" >
 											<span>Пн-Вс, с 9:00 до 21:00</span>
@@ -706,7 +662,7 @@ get_header();
 								<a href="mailto:vasilyev-r@mail.ru" class="nav-link ps-0 py-1">
 									<div style="display: flex;" class="align-items-center">
 										<div class="nav-li-float-left">
-											<img src="img/ico/email-ico.svg">
+											<img src="<?php echo get_template_directory_uri(); ?>/img/ico/email-ico.svg">
 										</div>
 										<div class="nav-li-float-right link-item">
 											<span>vasilyev-r@mail.ru</span>
@@ -719,7 +675,7 @@ get_header();
 								<a href="#" class="nav-link ps-0 pt-1">
 									<div style="display: flex;" class="align-items-center">
 										<div class="nav-li-float-left">
-											<img src="img/ico/callback-ico.svg" >
+											<img src="<?php echo get_template_directory_uri(); ?>/img/ico/callback-ico.svg" >
 										</div>
 										<div class="nav-li-float-right link-item" >
 											<span>Обратный звонок</span>
@@ -732,7 +688,7 @@ get_header();
 								<a href="#" class="nav-link ps-0 pt-1">
 									<div style="display: flex;" class="align-items-center">
 										<div class="nav-li-float-left">
-											<img src="img/ico/calculator.svg" >
+											<img src="<?php echo get_template_directory_uri(); ?>/img/ico/calculator.svg" >
 										</div>
 										<div class="nav-li-float-right link-item" >
 											<span>Рассчитать стоимость</span>
@@ -745,7 +701,7 @@ get_header();
 						<a href="tel:‪89307878068" class="contacts-phone">
 							<div style="display: flex;" class="align-items-center">
 								<div class="nav-li-float-left">
-									<img src="img/ico/mobile-phone-ico.svg" style="position: relative; bottom: 1px;">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/ico/mobile-phone-ico.svg" style="position: relative; bottom: 1px;">
 								</div>
 								<div class="nav-li-float-right phone-link" >
 									+7 <span>(930)</span> 78-78-0-68
@@ -756,12 +712,12 @@ get_header();
 						<ul class="nav pt-4 pb-3">
 							<li class="nav-item">
 								<a class="nav-link ico-button ps-0 pe-2" href="https://wa.me/79307878068" target="_blank">
-									<img src="img/ico/whatsapp-ico.svg">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/ico/whatsapp-ico.svg">
 								</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link ico-button px-2" href="https://t.me/79307878068" target="_blank">
-									<img src="img/ico/telegram-ico.svg">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/ico/telegram-ico.svg">
 								</a>
 							</li>
 						</ul>
@@ -875,10 +831,10 @@ get_header();
 			
 			</div>
 			<div id="messenger-1" class="rounded-circle">
-				<a href="whatsapp://send?phone=+79307878068"><img src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/img/ico/whatsapp.png"></a>
+				<a href="whatsapp://send?phone=+79307878068"><img src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/<?php echo get_template_directory_uri(); ?>/img/ico/whatsapp.png"></a>
 			</div>
 			<div id="messenger-2" class="rounded-circle">
-				<a href="tg://resolve?domain=vasilyevr"><img src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/img/ico/telegram.png"></a>
+				<a href="tg://resolve?domain=vasilyevr"><img src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/<?php echo get_template_directory_uri(); ?>/img/ico/telegram.png"></a>
 			</div>
 		</div>
 		
@@ -889,12 +845,12 @@ get_header();
 				if ( mes1Right == "0px" || mes1Right == 0 ) {
 					document.getElementById('messenger-1').style.right = "80px";
 					document.getElementById('messenger-2').style.right = "160px";
-					document.getElementById('messengers-2-button').style.background = "url(https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/img/ico/close-icon.png) center";
+					document.getElementById('messengers-2-button').style.background = "url(https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/<?php echo get_template_directory_uri(); ?>/img/ico/close-icon.png) center";
 					document.getElementById('messengers-2-button').style.backgroundSize = "contain";
 				} else {
 					document.getElementById('messenger-1').style.right = "0px";
 					document.getElementById('messenger-2').style.right = "0px";
-					document.getElementById('messengers-2-button').style.background = "url(https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/img/ico/messenger.png) center";
+					document.getElementById('messengers-2-button').style.background = "url(https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/<?php echo get_template_directory_uri(); ?>/img/ico/messenger.png) center";
 					document.getElementById('messengers-2-button').style.backgroundSize = "contain";
 				}
 			}
@@ -927,19 +883,19 @@ get_header();
 		<!-- Optional JavaScript; choose one of the two! -->
 
 		<!-- Option 1: Bootstrap Bundle with Popper -->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/<?php echo get_template_directory_uri(); ?>/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 		<!-- Option 2: Separate Popper and Bootstrap JS -->
 		<!--
-		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> -->
+		<script src="https://cdn.jsdelivr.net/npm/@popper<?php echo get_template_directory_uri(); ?>/js/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> -->
 		
 		<!-- For phone mask -->
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
 		<script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.js" type="text/javascript"></script>
 		
 		<!-- Messengers button JS -->
-		<script src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/js/messengers-button.js"></script>
+		<script src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/<?php echo get_template_directory_uri(); ?>/js/messengers-button.js"></script>
 		
 		<!-- For second option -->
 		<!-- <script>
@@ -1148,7 +1104,7 @@ get_header();
 
 <!-- Contacts section 1 --
 <div id="sp-contacts" class="scroll-points"></div>
-<section class="contacts-section text-light" style="background-image: url(https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/img/main-bg.jpg);">
+<section class="contacts-section text-light" style="background-image: url(https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/<?php echo get_template_directory_uri(); ?>/img/main-bg.jpg);">
 	<div class="container pt-5">
 		<div class="row">
 			<div class="col">
@@ -1169,7 +1125,7 @@ get_header();
 					
 					<!--div class="col-md-4 pb-5 order-md-1">
 						<div class="rounded overflow-hidden">
-							<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A15b2d3869d4203a547fbd3ebf658911b025f12844f8df72fb9b396920ffd1324&amp;width=100%25&amp;height=350&amp;lang=ru_RU&amp;scroll=true"></script>
+							<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/<?php echo get_template_directory_uri(); ?>/js/?um=constructor%3A15b2d3869d4203a547fbd3ebf658911b025f12844f8df72fb9b396920ffd1324&amp;width=100%25&amp;height=350&amp;lang=ru_RU&amp;scroll=true"></script>
 						</div>
 					</div--
 					
@@ -1302,12 +1258,12 @@ get_header();
 		<!-- Optional JavaScript; choose one of the two! -->
 
 		<!-- Option 1: Bootstrap Bundle with Popper --
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/<?php echo get_template_directory_uri(); ?>/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
 		<!-- Option 2: Separate Popper and Bootstrap JS -->
 		<!--
-		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popper<?php echo get_template_directory_uri(); ?>/js/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
 		--
 		<script src="scripts/jquery-1.5.1.min.js"></script>
 		<!-- Main scripts --
@@ -1393,7 +1349,7 @@ get_header();
 					
 					let col = document.createElement('div'); // Создаем див.
 					col.className = "col"; // Добавляем классы создаваемому диву.
-					col.innerHTML = '<img src="images/carousel-img/'+item+'" class="d-block w-100" alt="...">'; // Записываем внутрь дива.
+					col.innerHTML = '<img src="images/carousel-<?php echo get_template_directory_uri(); ?>/img/'+item+'" class="d-block w-100" alt="...">'; // Записываем внутрь дива.
 					
 					let carouselInnerOne = document.getElementById('carouselInnerOne'); // Определяем куда нужно выводить созданный див.
 					
@@ -1409,7 +1365,7 @@ get_header();
 					
 					let col = document.createElement('div'); // Создаем див.
 					col.className = "col"; // Добавляем классы создаваемому диву.
-					col.innerHTML = '<img src="images/carousel-img/'+item+'" class="d-block w-100" alt="...">'; // Записываем внутрь дива.
+					col.innerHTML = '<img src="images/carousel-<?php echo get_template_directory_uri(); ?>/img/'+item+'" class="d-block w-100" alt="...">'; // Записываем внутрь дива.
 					
 					let carouselInnerOne = document.getElementById('carouselInnerOne'); // Определяем куда нужно выводить созданный див.
 					
@@ -1432,7 +1388,7 @@ get_header();
 					
 					let col = document.createElement('div'); // Создаем див.
 					col.className = "col-4"; // Добавляем классы создаваемому диву.
-					col.innerHTML = '<img src="images/carousel-img/'+item+'" class="d-block w-100" alt="...">'; // Записываем внутрь дива.
+					col.innerHTML = '<img src="images/carousel-<?php echo get_template_directory_uri(); ?>/img/'+item+'" class="d-block w-100" alt="...">'; // Записываем внутрь дива.
 					
 					let carouselInnerOne = document.getElementById('carouselInnerOne'); // Определяем куда нужно выводить созданный див.
 					
@@ -1448,7 +1404,7 @@ get_header();
 					
 					let col = document.createElement('div'); // Создаем див.
 					col.className = "col-4"; // Добавляем классы создаваемому диву.
-					col.innerHTML = '<img src="images/carousel-img/'+item+'" class="d-block w-100" alt="...">'; // Записываем внутрь дива.
+					col.innerHTML = '<img src="images/carousel-<?php echo get_template_directory_uri(); ?>/img/'+item+'" class="d-block w-100" alt="...">'; // Записываем внутрь дива.
 					
 					let row = document.getElementById(rowId); // Определяем куда нужно выводить созданный див.
 					
@@ -1466,7 +1422,7 @@ get_header();
 					
 					let col = document.createElement('div'); // Создаем див.
 					col.className = "col-4"; // Добавляем классы создаваемому диву.
-					col.innerHTML = '<img src="images/carousel-img/'+item+'" class="d-block w-100" alt="...">'; // Записываем внутрь дива.
+					col.innerHTML = '<img src="images/carousel-<?php echo get_template_directory_uri(); ?>/img/'+item+'" class="d-block w-100" alt="...">'; // Записываем внутрь дива.
 					
 					let carouselInnerOne = document.getElementById('carouselInnerOne'); // Определяем куда нужно выводить созданный див.
 					
