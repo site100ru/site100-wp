@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+			
+		<!-- Style CSS -->
+		<link href="css/theme.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/theme-2.css">
+			
+		<!-- Quiz CSS -->
+		<!--link href="css/quiz.css" rel="stylesheet"-->
+
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">	
+
+		<title>сайт100</title>
+	</head>
+	<body>
+		
+		<!-- Top menu header -->		
+		<nav class="navbar navbar-expand-xl navbar-light bg-light d-none d-lg-block py-3 py-md-0">
+			<div class="container">
+				<div class="collapse navbar-collapse" id="navbarSupportedContent1">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+						<li class="nav-item me-4">
+							<a class="nav-link" href="#">
+								<div style="display: flex;" class="align-items-center">
+									<div class="nav-li-float-left">
+										<img src="img/ico/location-ico.svg">
+									</div>
+									<div class="nav-li-float-right" >
+										гор. Москва,<br>ул. Митинская, д.43
+									</div>
+									<div style="clear: both;"></div>
+								</div>
+							</a>
+						</li>
+						<li class="nav-item me-4">
+							<a class="nav-link" href="#">
+								<div style="display: flex;" class="align-items-center">
+									<div class="nav-li-float-left">
+										<img src="img/ico/clock-ico.svg" class="pt-1">
+									</div>
+									<div class="nav-li-float-right" >
+										Без выходных<br>с 9:00 до 21:00
+									</div>
+									<div style="clear: both;"></div>
+								</div>
+							</a>
+						</li>
+						<li class="nav-item me-4">
+							<a class="nav-link" href="#">
+								<div style="display: flex;" class="align-items-center">
+									<div class="nav-li-float-left">
+										<img src="img/ico/email-ico.svg" class="pt-1">
+									</div>
+									<div class="nav-li-float-right" >
+										vasilyev-r@mail.ru
+									</div>
+									<div style="clear: both;"></div>
+								</div>
+							</a>
+						</li>
+						<li class="nav-item me-4">
+							<a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#callbackModal">
+								<div style="display: flex;" class="align-items-center">
+									<div class="nav-li-float-left">
+										<img src="img/ico/callback-ico.svg" >
+									</div>
+									<div class="nav-li-float-right" >
+										Обратный звонок
+									</div>
+									<div style="clear: both;"></div>
+								</div>
+							</a>
+						</li>
+						<li class="nav-item me-4">
+							<a class="top-menu-tel nav-link" href="tel:89307878068">
+								<div style="display: flex;" class="align-items-center">
+									<div class="nav-li-float-left">
+										<img src="img/ico/mobile-phone-ico.svg">
+									</div>
+									<div class="nav-li-float-right" >
+										8 (930) 78-78-0-68
+									</div>
+									<div style="clear: both;"></div>
+								</div>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link ico-button pe-0" href="whatsapp://send?phone=+79307878068">
+								<img src="img/ico/whatsapp-ico.svg">
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link ico-button pe-0" href="https://t.me/vasilyevr">
+								<img src="img/ico/telegram-ico.svg">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- /Top menu header  -->
+
+		<!-- Menu header -->
+		<nav id="top-menu-2" class="navbar navbar-expand-xl navbar-light bg-white shadow py-2 py-md-3">
+			<div class="container">
+				<a class="navbar-brand d-none d-md-block" href="index.html">
+					<img src="img/ico/logo-dark.svg">
+				</a>
+				<a class="navbar-brand d-md-none me-0" href="index.html">
+					<img src="img/ico/logo-dark1.svg">
+				</a>
+				<div class="d-xl-none">
+					<a class="top-menu-tel pt-1 pb-0" style="font-size: 14px;" href="tel:89307878068">8 (930) 78-78-0-68</a>
+					<div style="font-size: 12px; font-family: HelveticaNeueCyr-Light; text-transform: none;">
+						<img src="img/ico/clock-ico.svg" style="width: 10px; position: relative; top: -1px;" class="me-1">Ежедневно 9:00-21:00
+					</div>
+				</div>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				
+				<div class="collapse navbar-collapse" id="main-menu">			
+					<ul id="menu-main-menu" class="navbar-nav ms-auto mb-2 mb-lg-0 mt-3 mt-lg-0">
+						<li class="menu-item nav-item">
+							<a href="index.html" class="nav-link active">Главная</a>
+						</li>
+						<li class="nav-item d-none d-xl-inline">
+							<span class="nav-link px-1">
+								<img src="img/ico/menu-point.svg" class="pb-2">
+							</span>
+						</li>
+						<li class="menu-item nav-item">
+							<a href="#" class="nav-link">Услуги</a>
+						</li>
+						<li class="nav-item d-none d-xl-inline">
+							<span class="nav-link px-1">
+								<img src="img/ico/menu-point.svg" class="pb-2">
+							</span>
+						</li>
+						<li class="menu-item nav-item">
+							<a href="#" class="nav-link">Портфолио</a>
+						</li>
+						<li class="nav-item d-none d-xl-inline">
+							<span class="nav-link px-1">
+								<img src="img/ico/menu-point.svg" class="pb-2">
+							</span>
+						</li>
+						<li class="menu-item nav-item">
+							<a href="#" class="nav-link">Проекты</a>
+						</li>
+						<li class="nav-item d-none d-xl-inline">
+							<span class="nav-link px-1">
+								<img src="img/ico/menu-point.svg" class="pb-2">
+							</span>
+						</li>
+						<li class="menu-item nav-item">
+							<a href="#" class="nav-link">Блог</a>
+						</li>
+						<li class="nav-item d-none d-xl-inline">
+							<span class="nav-link px-1">
+								<img src="img/ico/menu-point.svg" class="pb-2">
+							</span>
+						</li>
+						<li class="menu-item nav-item">
+							<a href="#" class="nav-link">Обо мне</a>
+						</li>
+						<li class="nav-item d-none d-xl-inline">
+							<span class="nav-link px-1">
+								<img src="img/ico/menu-point.svg" class="pb-2">
+							</span>
+						</li>
+						<li  class="menu-item nav-item">
+							<a href="contacts.html" class="nav-link">Контакты</a>
+						</li>
+
+						<!-- Mobile menu -->
+						<li class="nav-item d-xl-none">
+							<a class="nav-link top-menu-tel pt-1 pb-2" href="tel:89307878068">8 (930) 78-78-0-68</a>
+							<div style="font-size: 12px; font-family: HelveticaNeueCyr-Light; text-transform: none;">
+								<img src="img/ico/location-ico.svg" style="width: 10px;" class="me-1">
+									<span>Москва</span>
+							</div>
+							<!--div style="font-size: 12px; font-family: HelveticaNeueCyr-Light; text-transform: none;">
+								<img src="img/ico/clock-ico.svg" style="width: 10px; position: relative; top: -1px;" class="me-1">Ежедневно с 9:00 до 21:00
+							</div-->
+						</li>
+						<li class="nav-item d-xl-none pt-3">
+							<a class="ico-button pe-2" href="whatsapp://send?phone=+79307878068"><img src="img/ico/whatsapp-ico.svg"></a>
+							<a class="ico-button pe-2" href="https://t.me/vasilyevr"><img src="img/ico/telegram-ico.svg"></a>
+						</li>
+						<!-- End mobile menu -->
+
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- /Menu header -->
+
+		<!-- Home -->
+		<header id="template-home-header" class="home-header">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<h1 class="home-template-title">Бесплатные шаблоны дизайнов сайтов в Фигме</h1>
+						<h2 class="home-template-subtitle mb-3">Бесплатные шаблоны дизайнов сайтов в Фигме</h2>
+						<h3 class="home-template-title__text">Бесплатные шаблоны дизайнов сайтов в Фигме.</h3>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- /Home -->
+
+		<!-- DESIGN-TEMPLATE -->
+		<section class="design-template bg-white py-5">
+			<div class="container ">
+				<div class="row">
+					<div class="col text-center mb-5">
+						<h2 class="mb-3">Бесплатные шаблоны дизайнов сайтов в Фигме</h2>
+						<img src="img/ico/section-title-decoration.svg">
+					</div>
+				</div>
+				<div class="row mb-0 mb-md-5 mb-xl-0">
+					<div class="col-md-4 mb-5">
+						<a href="#">
+							<div class="approximation project-container-2 rounded">
+								<img src="img/service-img-1.png" class="border-0" alt="">					
+							</div>
+						</a>
+						<h4 class="pt-3 pb-4 pb-xl-0 mb-5">Бесплатный шаблон дизайна сайта в Фигме стоматологической клиники</h4>		
+					</div>
+					<div class="col-md-4 mb-5">
+						<a href="#">
+							<div class="approximation project-container-2 rounded">
+								<img src="img/service-img-1.png" class="border-0" alt="">	
+							</div>
+						</a>	
+						<h4 class="pt-3 pb-4 pb-xl-0 mb-5">Бесплатный шаблон дизайна сайта в Фигме стоматологической клиники</h4>
+					</div>
+					<div class="col-md-4 mb-5">
+						<a href="#">
+							<div class="approximation project-container-2 rounded">
+								<img src="img/service-img-1.png" class="border-0" alt="">	
+							</div>
+						</a>	
+						<h4 class="pt-3 pb-4 pb-xl-0 mb-5">Бесплатный шаблон дизайна сайта в Фигме стоматологической клиники</h4>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 mb-5 mb-xl-0">
+						<a href="#">
+							<div class="approximation project-container-2 rounded ">
+								<img src="img/service-img-1.png" class="border-0" alt="">			
+							</div>
+						</a>
+						<h4 class="pt-3 pb-4 pb-xl-0 mb-5">Бесплатный шаблон дизайна сайта в Фигме стоматологической клиники</h4>
+					</div>
+					<div class="col-md-4 mb-5 mb-xl-0">
+						<a href="#">
+							<div class="approximation project-container-2 rounded">
+								<img src="img/service-img-1.png" class="border-0" alt="">
+							</div>
+						</a>
+						<h4 class="pt-3 pb-4 pb-xl-0 mb-5">Бесплатный шаблон дизайна сайта в Фигме стоматологической клиники</h4>
+					</div>
+					<div class="col-md-4 mb-5 mb-xl-0">
+						<a href="#">
+							<div class="approximation project-container-2 rounded">
+								<img src="img/service-img-1.png" class="border-0" alt="">		
+							</div>
+						</a>	
+						<h4 class="pt-3 pb-0 mb-5">Бесплатный шаблон дизайна сайта в Фигме стоматологической клиники</h4>
+					</div>
+				</div>
+			</div>
+		</section>			
+		<!-- /DESIGN-TEMPLATE -->
+
+		<!-- Contacts -->
+		<div id="contacts-sp" class="scroll-point"></div>
+		<section class="contacts-section pt-5">
+			<div class="container"><!-- section .container -->
+				<div class="row align-items-center justify-content-center"><!-- section .row -->
+					<div class="col-md-12 pt-2 pb-4">
+						<nav id="contacts-menu-1" class="navbar-light">
+							
+							<!-- Desktop version -->
+							<div class="row h-100 justify-content-center align-items-center d-none d-lg-flex">
+								<div class="col-2">
+									<a class="navbar-brand navbar-logo navbar-logo-white" href="#">
+										<img src="img/ico/logo-light.svg">
+									</a>
+								</div>
+								<div class="col-7 col-xl-8">
+									<nav id="contacts-menu-2" class="navbar navbar-expand-xl navbar-light">
+										<div class="collapse navbar-collapse">
+											<ul id="menu-main-menu-2" class="navbar-nav mx-auto mb-2 mb-lg-0">
+												<li class="menu-item nav-item">
+													<a href="index.html" class="nav-link active" aria-current="page">Главная</a>
+												</li>
+												<li class="nav-item d-none d-xl-inline">
+													<span class="nav-link px-2">
+														<img src="img/ico/menu-point.svg">
+													</span>
+												</li>
+												<li class="menu-item nav-item">
+													<a href="#" class="nav-link">Услуги</a>
+												</li>
+												<li class="nav-item d-none d-xl-inline">
+													<span class="nav-link px-2">
+														<img src="img/ico/menu-point.svg">
+													</span>
+												</li>
+												<li class="menu-item nav-item">
+													<a href="#" class="nav-link">Портфолио</a>
+												</li>
+												<li class="menu-item nav-item d-none d-xl-inline">
+													<span class="nav-link px-2">
+														<img src="img/ico/menu-point.svg">
+													</span>
+												</li>
+												<li class="menu-item nav-item">
+													<a href="#" class="nav-link">Проекты</a>
+												</li>
+												<li class="nav-item d-none d-xl-inline">
+													<span class="nav-link px-2">
+														<img src="img/ico/menu-point.svg">
+													</span>
+												</li>
+												<li class="menu-item nav-item">
+													<a href="#" class="nav-link">Блог</a>
+												</li>
+												<li class="nav-item d-none d-xl-inline">
+													<span class="nav-link px-2">
+														<img src="img/ico/menu-point.svg">
+													</span>
+												</li>
+												<li class="menu-item nav-item">
+													<a href="#" class="nav-link">Обо мне</a>
+												</li>
+												<li class="nav-item d-none d-xl-inline">
+													<span class="nav-link px-2">
+														<img src="img/ico/menu-point.svg">
+													</span>
+												</li>
+												<li class="menu-item nav-item">
+													<a href="contacts-sp" class="nav-link">Контакты</a>
+												</li>
+
+												<!-- Mobile menu -->
+												<li class="nav-item d-xl-none">
+													<a class="nav-link" href="tel:‪89307878068">8 <span>(930)</span> 78-78-0-68</a>
+												</li>
+												<li class="nav-item d-xl-none">
+													<a class="nav-link" href="#‬">‪Обратный звонок‬</a>
+												</li>
+												<li class="nav-item d-xl-none mb-2">
+													<a class="ico-button pe-2" href="#"><img src="img/ico/whatsapp-ico.svg"></a>
+													<a class="ico-button pe-2" href="#"><img src="img/ico/telegram-ico.svg"></a>
+													<!--a class="ico-button pe-2" href="#"><img src="img/ico/instagram-circle-ico.svg"></a>
+													<a class="ico-button" href="#"><img src="img/ico/vk-circle-ico.svg"></a-->
+												</li>
+												<!-- End mobile menu -->
+											</ul>
+										</div>
+									</nav>
+						
+									
+									
+								</div>
+								<div class="col-3 col-xl-2 text-end">
+									<a href="tel:‪89307878068" class="header-phone text-light">‪8 <span>(930)</span> 78-78-0-68</a>
+								</div>
+							</div>
+							<!-- End Desktop version -->
+							
+							<!-- Mobail version -->
+							<div class="row d-lg-none">
+								<div class="col-12 mb-3">
+									<a class="navbar-brand navbar-logo navbar-logo-white" href="#">
+										<img src="img/ico/logo-light.svg">
+									</a>
+								</div>
+								<div class="col-12 mb-3">
+									<a href="#" class="nav-link ps-0">
+										<div style="display: flex;" class="align-items-center">
+										<div class="nav-li-float-left">
+											<img src="img/ico/location-ico.svg">
+										</div>
+										<div class="nav-li-float-right" >
+											гор. Москва,<br>ул. Митинская, д.43
+										</div>
+										<div style="clear: both;"></div>
+									</div>
+									</a>
+								</div>	
+								<div class="col-12 mb-3">		
+									<a href="mailto:vasilyev-r@mail.ru" class="nav-link ps-0">
+										<div style="display: flex;" class="align-items-center">
+											<div class="nav-li-float-left">
+												<img src="img/ico/email-ico.svg" class="pt-1">
+											</div>
+											<div class="nav-li-float-right" >
+												vasilyev-r@mail.ru
+											</div>
+											<div style="clear: both;"></div>
+										</div>
+									</a>
+								</div>
+								<div class="col-12 mb-3">	
+									<a href="#" class="nav-link ps-0">
+										<div style="display: flex;" class="align-items-center">
+											<div class="nav-li-float-left">
+												<img src="img/ico/clock-ico.svg" class="pt-1">
+											</div>
+											<div class="nav-li-float-right" >
+												Без выходных<br>с 9:00 до 21:00
+											</div>
+											<div style="clear: both;"></div>
+										</div>
+									</a>	
+								</div>
+								<div class="col-12 py-3">
+									<a href="tel:‪88008808088" class="header-phone text-light">‪8 <span>(800)</span> 880-80-88</a>
+								</div>
+							</div><!-- END Mobail version -->
+						</nav>
+					</div>
+				</div><!-- /section .row -->
+
+				<div class="row mb-5 d-none d-lg-flex">
+					<div class="col">
+						<ul class="nav justify-content-center align-items-center">
+							<li class="nav-item">
+								<a class="nav-link" href="#">
+									<div style="display: flex;" class="align-items-center">
+										<div class="nav-li-float-left">
+											<img src="img/ico/location-ico.svg">
+										</div>
+										<div class="nav-li-float-right" >
+											гор. Москва,<br>ул. Митинская, д.43
+										</div>
+										<div style="clear: both;"></div>
+									</div>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">
+									<div style="display: flex;" class="align-items-center">
+										<div class="nav-li-float-left">
+											<img src="img/ico/clock-ico.svg" class="pt-1">
+										</div>
+										<div class="nav-li-float-right" >
+											Без выходных<br>с 9:00 до 21:00
+										</div>
+										<div style="clear: both;"></div>
+									</div>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">
+									<div style="display: flex;" class="align-items-center">
+										<div class="nav-li-float-left">
+											<img src="img/ico/email-ico.svg" class="pt-1">
+										</div>
+										<div class="nav-li-float-right" >
+											vasilyev-r@mail.ru
+										</div>
+										<div style="clear: both;"></div>
+									</div>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#callbackModal">
+									<div style="display: flex;" class="align-items-center">
+										<div class="nav-li-float-left">
+											<img src="img/ico/callback-ico.svg" >
+										</div>
+										<div class="nav-li-float-right" >
+											Обратный звонок
+										</div>
+										<div style="clear: both;"></div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="row mb-5">
+					<div class="col text-md-center">
+						<a class="ico-button pe-2" href="#"><img src="img/ico/whatsapp-ico.svg"></a>
+						<a class="ico-button pe-2" href="#"><img src="img/ico/telegram-ico.svg"></a>
+					</div>
+				</div>		
+				
+			</div>
+			<!-- container -->
+	
+			<footer>
+				<div class="container">
+					<div class="row">
+						<div class="col text-center">
+							<!--div id="company-in-footer">©2023 100 окон - производство и установка окон</div-->
+							<div id="im-in-footer">Создание и продвижение сайтов: <a href="https://сайт100.рф" class="text-light">сайт100.рф</a></div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</section>
+		<!-- /Contacts -->
+
+
+
+	</body>
+	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+
+	<!-- Main scripts -->
+	<script src="js/theme.js"></script>
+</html>		
