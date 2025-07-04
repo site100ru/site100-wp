@@ -1,10 +1,10 @@
 <?php
-	
+
 	/**
 	 * Template Name: Home
 	 * Template Post Type: page
 	 */
- 
+
 ?>
 
 
@@ -111,28 +111,28 @@
 								<div class="collapse navbar-collapse w-100 justify-content-end" id="adapt-menu-collapse">
 									<div class="adapt-menu d-flex pb-3 px-3 px-sm-5 pb-lg-0 px-lg-0 justify-content-lg-end">
 										<div class="navbar-nav">
-											<ul class="footer-menu nav justify-content-center">
-												<li class="nav-item">
-												  <a class="nav-link active" aria-current="page" href="index.html" data-target="main-page">ГЛАВНАЯ</a>
-												</li>
-												<li class="nav-item dropdown">
-												  <a class="nav-link dropdown-toggle arrow-element" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-target="services-dropdown">
-													услуги
-												  </a>
-												  <ul class="dropdown-menu">
-													<li><a class="dropdown-item" href="#" data-target="service-web">создание сайтов</a></li>
-													<li><a class="dropdown-item" href="#" data-target="service-promotion">продвижение сайтов</a></li>
-													<li><a class="dropdown-item" href="#" data-target="service-support">поддержка сайтов</a></li>
-													<li><a class="dropdown-item" href="kitchen.html" data-target="service-kitchen">клиенты на корпусную мебель</a></li>
-												  </ul>
-												</li>
-												<li class="nav-item">
-												  <a class="nav-link" href="<?php echo site_url('/blog/'); ?>" data-target="blog-page">Блог</a>
-												</li>
-												<li class="nav-item">
-												  <a class="nav-link last" href="#" data-target="contacts-page">Контакты</a>
-												</li>
-											  </ul>
+												<ul class="footer-menu nav justify-content-center">
+													<li class="nav-item">
+														<a class="nav-link active" aria-current="page" href="<?php echo site_url('/'); ?>" data-target="main-page">Главная</a>
+													</li>
+													<!--li class="nav-item dropdown">
+														<a class="nav-link dropdown-toggle arrow-element" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-target="services-dropdown">
+															Услуги
+														</a>
+														<ul class="dropdown-menu">
+															<li><a class="dropdown-item" href="#" data-target="service-web">создание сайтов</a></li>
+															<li><a class="dropdown-item" href="#" data-target="service-promotion">продвижение сайтов</a></li>
+															<li><a class="dropdown-item" href="#" data-target="service-support">поддержка сайтов</a></li>
+															<li><a class="dropdown-item" href="kitchen.html" data-target="service-kitchen">клиенты на корпусную мебель</a></li>
+														</ul>
+													</li-->
+													<li class="nav-item">
+														<a class="nav-link" href="<?php echo site_url('/blog/'); ?>" data-target="blog-page">Блог</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link last" href="#contacts-sp" data-target="contacts-page">Контакты</a>
+													</li>
+												</ul>
 										<div class="navbar-brand d-lg-none me-5 d-flex align-items-center">
 											<svg width="10" height="13" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M13.1109 23.4607C15.5156 20.4435 21 13.1309 21 9.02335C21 4.04171 16.9688 0 12 0C7.03125 0 3 4.04171 3 9.02335C3 13.1309 8.48438 20.4435 10.8891 23.4607C11.4656 24.1798 12.5344 24.1798 13.1109 23.4607ZM12 6.01557C12.7956 6.01557 13.5587 6.33246 14.1213 6.89653C14.6839 7.4606 15 8.22564 15 9.02335C15 9.82106 14.6839 10.5861 14.1213 11.1502C13.5587 11.7142 12.7956 12.0311 12 12.0311C11.2044 12.0311 10.4413 11.7142 9.87868 11.1502C9.31607 10.5861 9 9.82106 9 9.02335C9 8.22564 9.31607 7.4606 9.87868 6.89653C10.4413 6.33246 11.2044 6.01557 12 6.01557Z" fill="#DC3545"/>
@@ -188,24 +188,24 @@
 										<div class="nav-item dropdown">
 											<ul class="footer-menu nav flex-column flex-lg-row justify-content-center">
 												<li class="nav-item">
-												  <a class="nav-link active" aria-current="page" href="index.html" data-target="main-page">ГЛАВНАЯ</a>
+												  <a class="nav-link active" aria-current="page" href="<?php echo site_url('/'); ?>" data-target="main-page">Главная</a>
 												</li>
-												<li class="nav-item dropdown">
-												  <a class="nav-link dropdown-toggle arrow-element" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-target="services-dropdown">
-													услуги
-												  </a>
-												  <ul class="dropdown-menu">
-													<li><a class="dropdown-item" href="#" data-target="service-web">создание сайтов</a></li>
-													<li><a class="dropdown-item" href="#" data-target="service-promotion">продвижение сайтов</a></li>
-													<li><a class="dropdown-item" href="#" data-target="service-support">поддержка сайтов</a></li>
-													<li><a class="dropdown-item" href="kitchen.html" data-target="service-kitchen">клиенты на корпусную мебель</a></li>
-												  </ul>
+												<!--li class="nav-item dropdown">
+													<a class="nav-link dropdown-toggle arrow-element" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-target="services-dropdown">
+														Услуги
+													</a>
+													<ul class="dropdown-menu">
+														<li><a class="dropdown-item" href="#" data-target="service-web">Создание сайтов</a></li>
+														<li><a class="dropdown-item" href="#" data-target="service-promotion">Продвижение сайтов</a></li>
+														<li><a class="dropdown-item" href="#" data-target="service-support">Поддержка сайтов</a></li>
+														<li><a class="dropdown-item" href="kitchen.html" data-target="service-kitchen">Клиенты на корпусную мебель</a></li>
+													</ul>
+												</li-->
+												<li class="nav-item">
+													<a class="nav-link" href="<?php echo site_url('/blog/'); ?>" data-target="blog-page">Блог</a>
 												</li>
 												<li class="nav-item">
-												  <a class="nav-link" href="<?php echo site_url('/blog/'); ?>" data-target="blog-page">Блог</a>
-												</li>
-												<li class="nav-item">
-												  <a class="nav-link last" href="#" data-target="contacts-page">КОНТАКТЫ</a>
+													<a class="nav-link last" href="#contacts-sp" data-target="contacts-page">Контакты</a>
 												</li>
 											  </ul>
 										<div class="navbar-brand d-lg-none me-5 d-flex align-items-center">
@@ -1211,7 +1211,7 @@
 										<div class="support-service-number">04</div>
 									</div>
 									<div class="col-9 col-md-7">
-										<p class="card-text">BOM (методология);</p>
+										<p class="card-text">BEM (методология);</p>
 									</div>
 								</div>
 							</div>
@@ -1509,8 +1509,9 @@
 		<!-- END PROCESS -->
 		</main>
 
+		
 		<!-- FOOTER -->
-
+		<div id="contacts-sp"></div>
 		<footer class="footer">
 			<div class="container pt-5 pb-3 d-none d-xl-block">
 				<div class="row align-items-center">
@@ -1522,24 +1523,24 @@
 					<div class="col-xl-6">
 						<ul class="footer-menu nav justify-content-center">
 							<li class="nav-item">
-							  <a class="nav-link active" aria-current="page" href="index.html" data-target="main-page">ГЛАВНАЯ</a>
+							  <a class="nav-link active" aria-current="page" href="index.html" data-target="main-page">Главная</a>
 							</li>
-							<li class="nav-item dropdown">
-							  <a class="nav-link dropdown-toggle arrow-element" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-target="services-dropdown">
-								услуги
-							  </a>
-							  <ul class="dropdown-menu">
-								<li><a class="dropdown-item" href="#" data-target="service-web">создание сайтов</a></li>
-								<li><a class="dropdown-item" href="#" data-target="service-promotion">продвижение сайтов</a></li>
-								<li><a class="dropdown-item" href="#" data-target="service-support">поддержка сайтов</a></li>
-								<li><a class="dropdown-item" href="kitchen.html" data-target="service-kitchen">клиенты на корпусную мебель</a></li>
-							  </ul>
-							</li>
+							<!--li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle arrow-element" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-target="services-dropdown">
+									Услуги
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#" data-target="service-web">создание сайтов</a></li>
+									<li><a class="dropdown-item" href="#" data-target="service-promotion">продвижение сайтов</a></li>
+									<li><a class="dropdown-item" href="#" data-target="service-support">поддержка сайтов</a></li>
+									<li><a class="dropdown-item" href="kitchen.html" data-target="service-kitchen">клиенты на корпусную мебель</a></li>
+								</ul>
+							</li-->
 							<li class="nav-item">
 							  <a class="nav-link" href="<?php echo site_url('/blog/'); ?>" data-target="blog-page">Блог</a>
 							</li>
 							<li class="nav-item">
-							  <a class="nav-link last" href="#" data-target="contacts-page">Контакты</a>
+							  <a class="nav-link last" href="#contacts-sp" data-target="contacts-page">Контакты</a>
 							</li>
 						  </ul>
 					</div>
@@ -1726,18 +1727,18 @@
 							<div class="col-6">
 								<ul class="nav flex-column">
 									<li class="nav-item dropdown">
-										<a class="nav-link ps-0 active" aria-current="page" href="#">Главная</a>
+										<a class="nav-link ps-0 active" aria-current="page" href="<?php echo site_url('/'); ?>">Главная</a>
 									</li>
 									<li class="nav-item">
-										<a class="nav-link ps-0" href="<?php echo site_url('/blog/'); ?>">блог</a>
+										<a class="nav-link ps-0" href="<?php echo site_url('/blog/'); ?>">Блог</a>
 									</li>
 								</ul>
 							</div>
 							<div class="col-6">
 								<ul class="nav flex-column">
-									<li class="nav-item dropdown">
+									<!--li class="nav-item dropdown">
 										<a class="nav-link dropdown-toggle arrow-element" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-											услуги
+											Услуги
 										</a>
 										<ul class="dropdown-menu">
 										  <li><a class="dropdown-item" href="#">создание сайтов</a></li>
@@ -1745,9 +1746,9 @@
 										  <li><a class="dropdown-item" href="#">поддержка сайтов</a></li>
 										  <li><a class="dropdown-item" href="https://site100.ru/wp-content/themes/site100-theme/%D0%BF%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE/2024/gaziza/2-g/kitchen.html">клиенты на корпусную мебель</a></li>
 										</ul>
-									</li>
+									</li-->
 									<li class="nav-item">
-										<a class="nav-link last" href="#">Контакты</a>
+										<a class="nav-link last" href="#contacts-sp">Контакты</a>
 									</li>
 								</ul>
 							</div>
