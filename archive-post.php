@@ -1,3 +1,57 @@
+<?php
+/**
+ * Template Name: Posts Archive
+ * Template Post Type: post
+ */
+ 
+// Добавьте в начало archive-post.php
+echo '<pre style="background:#f5f5f5;padding:20px;border:2px solid red;margin:20px;">';
+print_r([
+    'is_archive' => is_archive(),
+    'is_post_type_archive' => is_post_type_archive(),
+    'post_type' => get_post_type(),
+    'current_blog' => get_current_blog_id(),
+    'template' => get_page_template_slug()
+]);
+echo '</pre>';
+?>
+<?php
+/**
+ * Force Post Archive Template
+ */
+global $wp_query;
+$wp_query->is_archive = true;
+$wp_query->is_post_type_archive = true;
+
+// Переопределяем запрос
+query_posts([
+    'post_type' => 'post',
+    'posts_per_page' => 10,
+    'ignore_sticky_posts' => true
+]);
+
+get_header();
+?>
+
+<main class="archive-container">
+    <?php if (have_posts()) : ?>
+        <h1>Архив записей</h1>
+        <?php while (have_posts()) : the_post(); ?>
+            <article <?php post_class('archive-item'); ?>>
+                <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                <?php the_excerpt(); ?>
+            </article>
+        <?php endwhile; ?>
+        
+        <div class="pagination">
+            <?php the_posts_pagination(); ?>
+        </div>
+    <?php else : ?>
+        <p>Записей не найдено</p>
+    <?php endif; ?>
+</main>
+
+<?php get_footer(); ?>
 <!doctype html>
 <html lang="ru">
 <head>

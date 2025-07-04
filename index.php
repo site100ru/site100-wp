@@ -1,4 +1,19 @@
-
+<?php
+/**
+ * Template Name: Home
+ * Template Post Type: page
+ */
+ 
+ // Временный диагностический код (удалить после проверки)
+if (is_admin()) return;
+echo '<pre style="background:#fff;padding:20px;margin:20px;border:2px solid red;">';
+echo 'Requested URL: ' . $_SERVER['REQUEST_URI'] . "\n";
+echo 'Post Type: ' . get_post_type() . "\n";
+echo 'Is Post Type Archive: ' . (is_post_type_archive() ? 'Yes' : 'No') . "\n";
+echo 'Current Template: ' . (isset($template) ? $template : 'Not defined');
+echo '</pre>';
+// Конец диагностического кода
+?>
 <!doctype html>
 <html lang="ru">
 	<head>
