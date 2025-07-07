@@ -182,28 +182,7 @@
 							<div class="post-content">
 								<?php the_content(); ?>
 							</div>
-
-							<!-- Мета информация поста -->
-							<div class="post-meta mt-4 pt-4 border-top">
-								<p class="text-muted">
-									<small>
-										Опубликовано: <?php echo get_the_date(); ?> |
-										Автор: <?php the_author(); ?>
-										<?php if (has_category()): ?>
-											| Категория: <?php the_category(', '); ?>
-										<?php endif; ?>
-									</small>
-								</p>
-							</div>
-
 						<?php endwhile; endif; ?>
-
-					<!-- Комментарии -->
-					<?php
-					if (comments_open() || get_comments_number()):
-						comments_template();
-					endif;
-					?>
 				</div>
 
 				<!-- Sidebar -->
