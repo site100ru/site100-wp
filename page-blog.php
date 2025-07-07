@@ -767,10 +767,10 @@
 						<div class="col-6">
 							<ul class="nav flex-column">
 								<li class="nav-item dropdown">
-									<a class="nav-link ps-0 active" aria-current="page" href="#">ГЛАВНАЯ</a>
+									<a class="nav-link ps-0 " aria-current="page" href="#">ГЛАВНАЯ</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link ps-0" href="#">блог</a>
+									<a class="nav-link ps-0 active" href="#">блог</a>
 								</li>
 							</ul>
 						</div>

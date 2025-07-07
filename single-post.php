@@ -180,7 +180,7 @@
 						<div class="navbar-nav">
 							<ul class="header-menu nav justify-content-center">
 								<li class="nav-item">
-									<a class="nav-link active" aria-current="page" href="<?php echo site_url('/'); ?>"
+									<a class="nav-link" aria-current="page" href="<?php echo site_url('/'); ?>"
 										data-target="main-page">Главная</a>
 								</li>
 
@@ -205,7 +205,7 @@
 								</li>
 
 								<li class="nav-item">
-									<a class="nav-link" href="<?php echo site_url('/blog/'); ?>" data-target="blog-page">Блог</a>
+									<a class="nav-link active" href="<?php echo site_url('/blog/'); ?>" data-target="blog-page">Блог</a>
 								</li>
 
 								<li class="nav-item d-none d-lg-inline">
@@ -283,7 +283,7 @@
 							<div class="nav-item dropdown">
 								<ul class="header-menu nav flex-column flex-lg-row justify-content-center">
 									<li class="nav-item">
-										<a class="nav-link active" aria-current="page" href="<?php echo site_url('/'); ?>"
+										<a class="nav-link " aria-current="page" href="<?php echo site_url('/'); ?>"
 											data-target="main-page">Главная</a>
 									</li>
 
@@ -309,7 +309,7 @@
 									</li>
 
 									<li class="nav-item">
-										<a class="nav-link" href="<?php echo site_url('/blog/'); ?>" data-target="blog-page">Блог</a>
+										<a class="nav-link active" href="<?php echo site_url('/blog/'); ?>" data-target="blog-page">Блог</a>
 									</li>
 
 									<li class="nav-item d-none d-lg-inline">
@@ -476,7 +476,7 @@
 				<div class="col-xl-6">
 					<ul class="footer-menu nav justify-content-center">
 						<li class="nav-item">
-							<a class="nav-link active" href="<?php echo site_url('/'); ?>" data-target="main-page">Главная</a>
+							<a class="nav-link " href="<?php echo site_url('/'); ?>" data-target="main-page">Главная</a>
 						</li>
 
 						<li class="nav-item d-none d-lg-inline">
@@ -500,7 +500,7 @@
 						</li>
 
 						<li class="nav-item">
-							<a class="nav-link" href="<?php echo site_url('/blog/'); ?>" data-target="blog-page">Блог</a>
+							<a class="nav-link active" href="<?php echo site_url('/blog/'); ?>" data-target="blog-page">Блог</a>
 						</li>
 
 						<li class="nav-item d-none d-lg-inline">
@@ -685,10 +685,10 @@
 						<div class="col-6">
 							<ul class="nav flex-column">
 								<li class="nav-item dropdown">
-									<a class="nav-link ps-0 active" aria-current="page" href="<?php echo site_url('/'); ?>">Главная</a>
+									<a class="nav-link ps-0 " aria-current="page" href="<?php echo site_url('/'); ?>">Главная</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link ps-0" href="<?php echo site_url('/blog/'); ?>">Блог</a>
+									<a class="nav-link ps-0 active" href="<?php echo site_url('/blog/'); ?>">Блог</a>
 								</li>
 							</ul>
 						</div>
