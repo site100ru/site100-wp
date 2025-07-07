@@ -175,7 +175,7 @@
 								</li>
 
 								<li class="nav-item">
-									<a class="nav-link active" href="blog" data-target="blog-page">блог</a>
+									<a class="nav-link" href="<?php echo site_url('/blog/'); ?>" data-target="blog-page">Блог</a>
 								</li>
 
 								<li class="nav-item d-none d-lg-inline">
@@ -277,7 +277,7 @@
 									</li>
 
 									<li class="nav-item">
-										<a class="nav-link active" href="blog" data-target="blog-page">блог</a>
+										<a class="nav-link" href="<?php echo site_url('/blog/'); ?>" data-target="blog-page">Блог</a>
 									</li>
 
 									<li class="nav-item d-none d-lg-inline">
@@ -719,19 +719,6 @@
 									</div>
 									<div class="nav-li-float-right link-item">
 										<span>Обратный звонок</span>
-									</div>
-									<div style="clear: both;"></div>
-								</div>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="#" class="nav-link ps-0 pt-1">
-								<div style="display: flex;" class="align-items-center">
-									<div class="nav-li-float-left">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/ico/calculator.svg">
-									</div>
-									<div class="nav-li-float-right link-item">
-										<span>Рассчитать стоимость</span>
 									</div>
 									<div style="clear: both;"></div>
 								</div>

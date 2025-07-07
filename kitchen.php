@@ -1175,19 +1175,6 @@
 								</div>
 							</a>
 						</li>
-						<li class="nav-item">
-							<a href="#" class="nav-link ps-0 pt-1">
-								<div style="display: flex;" class="align-items-center">
-									<div class="nav-li-float-left">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/ico/calculator.svg">
-									</div>
-									<div class="nav-li-float-right link-item">
-										<span>Рассчитать стоимость</span>
-									</div>
-									<div style="clear: both;"></div>
-								</div>
-							</a>
-						</li>
 					</ul>
 					<a href="tel:‪89307878068" class="contacts-phone">
 						<div style="display: flex;" class="align-items-center">
