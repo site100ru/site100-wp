@@ -59,7 +59,7 @@
 <body>
 
 	<!-- Header -->
-	<header class="header bg-secondary">
+	<header id="blog-header-2" class="header bg-secondary">
 		<!-- Menu -->
 		<div class="container">
 			<div class="lists me-5 w-100 d-flex flex-column align-items-end">

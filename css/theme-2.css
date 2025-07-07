@@ -338,6 +338,10 @@ p,
 	height: 340px;
 }
 
+#blog-header-2 {
+	height: 640px;
+}
+
 /* Main section */
 
 main {
@@ -1326,6 +1330,10 @@ main {
 		height: 310px;
 	}
 
+	#blog-header-2 {
+		height: 610px;
+	}
+
 	div:has(h1) {
 		padding-top: 10px;
 	}
@@ -1546,6 +1554,10 @@ main {
 		height: 310px;
 	}
 
+	#blog-header-2 {
+		height: 310px;
+	}
+
 	/* Main section */
 
 	#main-section {
@@ -1721,8 +1733,7 @@ header#blog-header {
 	background-position: center 75%;
 }
 
-
-header#blog-header .col h1, 
+header#blog-header .col h1,
 header#blog-header .col p {
 	color: #fff;
 }
