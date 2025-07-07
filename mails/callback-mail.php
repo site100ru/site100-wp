@@ -58,7 +58,8 @@ if (!verify_recaptcha($recaptcha_response)) {
 }
 
 // Формируем письмо
-$to = 'sidorov-vv3@mail.ru'; // Замените на ваш email
+// $to = 'sidorov-vv3@mail.ru'; // Замените на ваш email
+$to = 'vasilyev-r@mail.ru';
 $subject = 'Заказ обратного звонка с сайта ' . get_bloginfo('name');
 $message = "Новая заявка на обратный звонок\n\n";
 $message .= "Имя: {$name}\n";
