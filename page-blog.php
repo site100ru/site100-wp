@@ -477,6 +477,7 @@
 		</section> -->
 
 	<!-- ORDER-->
+	<div id="contacts-sp"></div>
 	<section class="orderLeftMenSection bg-white">
 		<div class="container">
 			<div class="row">
@@ -497,7 +498,8 @@
 							</div>
 							<div class="col-8 col-lg-5">
 								<label for="exampleFormControlInput2" class="form-label">Ваш телефон</label>
-								<input placeholder="+7 (___) ___ __ __" type="tel" class="form-control mb-3 mb-md-0 telMask" id="exampleFormControlInput2" required>
+								<input placeholder="+7 (___) ___ __ __" type="tel" class="form-control mb-3 mb-md-0 telMask"
+									id="exampleFormControlInput2" required>
 							</div>
 						</div>
 						<div class="row">

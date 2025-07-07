@@ -929,7 +929,7 @@
 							<a href="#" class="nav-link ps-0 pb-1">
 								<div style="display: flex;" class="align-items-center">
 									<div class="nav-li-float-left">
-										<<?php echo get_template_directory_uri(); ?>/img/ src="<?php echo get_template_directory_uri(); ?>/img//ico/location-ico.svg">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/ico/location-ico.svg">
 									</div>
 									<div class="nav-li-float-right link-item">
 										<span>гор. Москва, ул. Митинская, д. 43</span>
@@ -942,7 +942,7 @@
 							<a href="#" class="nav-link ps-0 py-1">
 								<div style="display: flex;" class="align-items-center">
 									<div class="nav-li-float-left">
-										<<?php echo get_template_directory_uri(); ?>/img/ src="<?php echo get_template_directory_uri(); ?>/img//ico/clock-ico.svg" class="pt-1">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/ico/clock-ico.svg" class="pt-1">
 									</div>
 									<div class="nav-li-float-right link-item">
 										<span>Пн-Вс, с 9:00 до 21:00</span>
@@ -955,7 +955,7 @@
 							<a href="mailto:vasilyev-r@mail.ru" class="nav-link ps-0 py-1">
 								<div style="display: flex;" class="align-items-center">
 									<div class="nav-li-float-left">
-										<<?php echo get_template_directory_uri(); ?>/img/ src="<?php echo get_template_directory_uri(); ?>/img//ico/email-ico.svg">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/ico/email-ico.svg">
 									</div>
 									<div class="nav-li-float-right link-item">
 										<span>vasilyev-r@mail.ru</span>
@@ -968,23 +968,10 @@
 							<a href="#" class="nav-link ps-0 pt-1" data-bs-toggle="modal" data-bs-target="#callbackModal">
 								<div style="display: flex;" class="align-items-center">
 									<div class="nav-li-float-left">
-										<<?php echo get_template_directory_uri(); ?>/img/ src="<?php echo get_template_directory_uri(); ?>/img//ico/callback-ico.svg" >
+										<img src="<?php echo get_template_directory_uri(); ?>/img/ico/callback-ico.svg">
 									</div>
 									<div class="nav-li-float-right link-item">
 										<span>Обратный звонок</span>
-									</div>
-									<div style="clear: both;"></div>
-								</div>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="#" class="nav-link ps-0 pt-1">
-								<div style="display: flex;" class="align-items-center">
-									<div class="nav-li-float-left">
-										<<?php echo get_template_directory_uri(); ?>/img/ src="<?php echo get_template_directory_uri(); ?>/img//ico/calculator.svg" >
-									</div>
-									<div class="nav-li-float-right link-item">
-										<span>Рассчитать стоимость</span>
 									</div>
 									<div style="clear: both;"></div>
 								</div>
@@ -994,7 +981,8 @@
 					<a href="tel:‪89307878068" class="contacts-phone">
 						<div style="display: flex;" class="align-items-center">
 							<div class="nav-li-float-left">
-								<<?php echo get_template_directory_uri(); ?>/img/ src="<?php echo get_template_directory_uri(); ?>/img//ico/mobile-phone-ico.svg" style="position: relative; bottom: 1px;">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/ico/mobile-phone-ico.svg"
+									style="position: relative; bottom: 1px;">
 							</div>
 							<div class="nav-li-float-right phone-link">
 								+7 <span>(930)</span> 78-78-0-68
@@ -1006,12 +994,12 @@
 						<li class="nav-item">
 							<a class="nav-link ico-button ps-0 pe-2" href="https://wa.me/79307878068?web=1&app_absent=1&"
 								target="_blank">
-								<<?php echo get_template_directory_uri(); ?>/img/ src="<?php echo get_template_directory_uri(); ?>/img//ico/whatsapp-ico.svg">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/ico/whatsapp-ico.svg">
 							</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link ico-button px-2" href="https://t.me/79307878068" target="_blank">
-								<<?php echo get_template_directory_uri(); ?>/img/ src="<?php echo get_template_directory_uri(); ?>/img//ico/telegram-ico.svg">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/ico/telegram-ico.svg">
 							</a>
 						</li>
 					</ul>
