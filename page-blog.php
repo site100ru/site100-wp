@@ -794,6 +794,46 @@
 
 	</footer>
 
+	<!-- Callback Modal -->
+	<div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="callbackModalLabel">Заказать звонок</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form method="post" action="<?php echo get_stylesheet_directory_uri(); ?>/mails/callback-mail.php">
+						<p><input type="text" name="name" class="form-control" placeholder="Имя"></p>
+						<p><input type="text" id="phone_mask_2" name="tel" class="form-control phone_mask_1" required></p>
+						<input type="hidden" id="g-recaptcha-response-callback" name="g-recaptcha-response">
+						<button type="submit" class="btn btn-danger" style="width: 100%;">Заказать</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div> <!-- /Modal callback -->
+
+
+	<!-- Modal order -->
+	<div class="modal fade" id="modalOrder" tabindex="-1" aria-labelledby="modalOrderLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="modalOrderLabel">Заявка на консультацию</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form method="post" action="<?php echo get_stylesheet_directory_uri(); ?>/mails/callback-mail.php">
+						<p><input type="text" name="name" class="form-control" placeholder="Имя"></p>
+						<p><input type="text" id="phone_mask_2" name="tel" class="form-control phone_mask_2" required></p>
+						<input type="hidden" id="g-recaptcha-response-order-modal" name="g-recaptcha-response">
+						<button type="submit" class="btn btn-danger" style="width: 100%;">Оставить заявку</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<script src='https://www.google.com/recaptcha/api.js?render=6LdV1IcUAAAAADRQAhpGL8dVj5_t0nZDPh9m_0tn'></script>
 	<script>
@@ -832,46 +872,6 @@
 			</div>
 		</div>
 		-->
-
-
-	<!-- Callback Modal -->
-	<!-- <div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="callbackModalLabel">Заказать звонок</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-						<form method="post" action="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/mails/callback-mail.php">
-							<p><input type="text" name="name" class="form-control" placeholder="Имя"></p>
-							<p><input type="text" id="phone_mask_1" name="tel" class="form-control phone_mask_1" required></p>
-							<button type="submit" class="btn btn-danger" style="width: 100%;">Заказать</button>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div> /Modal callback -->
-
-
-	<!-- Modal order -->
-	<!-- <div class="modal fade" id="modalOrder" tabindex="-1" aria-labelledby="modalOrderLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="modalOrderLabel">Заявка на консультацию</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-						<form method="post" action="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/mails/mail_2.php">
-							<p><input type="text" name="name" class="form-control" placeholder="Имя"></p>
-							<p><input type="text" id="phone_mask_2" name="tel" class="form-control phone_mask_2" required></p>
-							<button type="submit" class="btn btn-danger" style="width: 100%;">Оставить заявку</button>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div> -->
 
 	<!-- Показываем сообщение об успешной отправки -->
 	<!-- <div style="display: none;" onclick="f1();"> 
@@ -956,8 +956,8 @@
 		type="text/javascript"></script>
 
 	<!-- Messengers button JS -->
-	<script
-		src="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/<?php echo get_template_directory_uri(); ?>/js/messengers-button.js"></script>
+	<!-- <script
+		src="<?php echo get_template_directory_uri(); ?>/js/messengers-button.js"></script> -->
 
 	<!-- For second option -->
 	<!-- <script>

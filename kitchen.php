@@ -1399,6 +1399,47 @@
 	</script>
 	<!-- Main scripts -->
 
+
+	<div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="callbackModalLabel">Заказать звонок</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form method="post" action="<?php echo get_stylesheet_directory_uri(); ?>/mails/callback-mail.php">
+						<p><input type="text" name="name" class="form-control" placeholder="Имя"></p>
+						<p><input type="text" id="phone_mask_2" name="tel" class="form-control phone_mask_1" required></p>
+						<input type="hidden" id="g-recaptcha-response-callback" name="g-recaptcha-response">
+						<button type="submit" class="btn btn-danger" style="width: 100%;">Заказать</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div> <!-- /Modal callback -->
+
+
+	<!-- Modal order -->
+	<div class="modal fade" id="modalOrder" tabindex="-1" aria-labelledby="modalOrderLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="modalOrderLabel">Заявка на консультацию</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form method="post" action="<?php echo get_stylesheet_directory_uri(); ?>/mails/callback-mail.php">
+						<p><input type="text" name="name" class="form-control" placeholder="Имя"></p>
+						<p><input type="text" id="phone_mask_2" name="tel" class="form-control phone_mask_2" required></p>
+						<input type="hidden" id="g-recaptcha-response-order-modal" name="g-recaptcha-response">
+						<button type="submit" class="btn btn-danger" style="width: 100%;">Оставить заявку</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<!-- <script src="js/theme.js"></script> -->
 </body>
 

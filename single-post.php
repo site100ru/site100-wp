@@ -839,6 +839,7 @@
 					<form method="post" action="<?php echo get_stylesheet_directory_uri(); ?>/mails/callback-mail.php">
 						<p><input type="text" name="name" class="form-control" placeholder="Имя"></p>
 						<p><input type="text" id="phone_mask_2" name="tel" class="form-control phone_mask_1" required></p>
+						<input type="hidden" id="g-recaptcha-response-callback" name="g-recaptcha-response">
 						<button type="submit" class="btn btn-danger" style="width: 100%;">Заказать</button>
 					</form>
 				</div>
@@ -859,6 +860,7 @@
 					<form method="post" action="<?php echo get_stylesheet_directory_uri(); ?>/mails/callback-mail.php">
 						<p><input type="text" name="name" class="form-control" placeholder="Имя"></p>
 						<p><input type="text" id="phone_mask_2" name="tel" class="form-control phone_mask_2" required></p>
+						<input type="hidden" id="g-recaptcha-response-order-modal" name="g-recaptcha-response">
 						<button type="submit" class="btn btn-danger" style="width: 100%;">Оставить заявку</button>
 					</form>
 				</div>
