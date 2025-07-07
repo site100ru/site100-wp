@@ -183,7 +183,7 @@
 								</li>
 
 								<li class="nav-item">
-									<a class="nav-link last" href="#" data-target="contacts-page">КОНТАКТЫ</a>
+									<a class="nav-link last" href="#contacts-sp" data-target="contacts-page">КОНТАКТЫ</a>
 								</li>
 							</ul>
 							<div class="navbar-brand d-lg-none me-5 d-flex align-items-center">
@@ -285,7 +285,7 @@
 									</li>
 
 									<li class="nav-item">
-										<a class="nav-link last" href="#" data-target="contacts-page">КОНТАКТЫ</a>
+										<a class="nav-link last" href="#contacts-sp" data-target="contacts-page">КОНТАКТЫ</a>
 									</li>
 								</ul>
 								<div class="navbar-brand d-lg-none me-5 d-flex align-items-center">
@@ -575,7 +575,7 @@
 						</li>
 
 						<li class="nav-item">
-							<a class="nav-link last" href="#" data-target="contacts-page">КОНТАКТЫ</a>
+							<a class="nav-link last" href="#contacts-sp" data-target="contacts-page">КОНТАКТЫ</a>
 						</li>
 					</ul>
 				</div>
@@ -788,7 +788,7 @@
 									</ul>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link last" href="#">КОНТАКТЫ</a>
+									<a class="nav-link last" href="#contacts-sp">КОНТАКТЫ</a>
 								</li>
 							</ul>
 						</div>
