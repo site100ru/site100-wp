@@ -364,6 +364,10 @@ main {
 	background-position-y: calc(50% - 5vh);
 }
 
+#blog-header-2 #main-section::after {
+	height: 640px;
+}
+
 #main-section h5 {
 	font-family: Gilroy-Semibold;
 	font-size: clamp(26px, 2.2vw, 42px);
