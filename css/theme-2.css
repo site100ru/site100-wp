@@ -1750,6 +1750,6 @@ header#blog-header-2 .col p {
 }
 
 
-.wp-block-image figure img {
+figure.wp-block-image img {
 	width: 100%;
 }
