@@ -1748,3 +1748,8 @@ header#blog-header-2 .col p {
 	max-height: 234px;
 	width: 100%;
 }
+
+
+.wp-block-image figure img {
+	width: 100%;
+}
