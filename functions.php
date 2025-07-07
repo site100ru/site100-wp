@@ -54,5 +54,6 @@
 	}
 	/*** END ОБНОВЛЕНИЕ THEME ***/
 	
-	
+	require_once get_template_directory() . '/inc/transliteration.php';
+
 ?>
