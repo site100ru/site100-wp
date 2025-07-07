@@ -175,7 +175,7 @@
 								</li>
 
 								<li class="nav-item">
-									<a class="nav-link" href="<?php echo site_url('/blog/'); ?>" data-target="blog-page">Блог</a>
+									<a class="nav-link active" href="<?php echo site_url('/blog/'); ?>" data-target="blog-page">Блог</a>
 								</li>
 
 								<li class="nav-item d-none d-lg-inline">
@@ -277,7 +277,7 @@
 									</li>
 
 									<li class="nav-item">
-										<a class="nav-link" href="<?php echo site_url('/blog/'); ?>" data-target="blog-page">Блог</a>
+										<a class="nav-link active" href="<?php echo site_url('/blog/'); ?>" data-target="blog-page">Блог</a>
 									</li>
 
 									<li class="nav-item d-none d-lg-inline">
@@ -569,7 +569,7 @@
 						</li>
 
 						<li class="nav-item">
-							<a class="nav-link" href="<?php echo site_url('/blog/'); ?>" data-target="blog-page">Блог</a>
+							<a class="nav-link active" href="<?php echo site_url('/blog/'); ?>" data-target="blog-page">Блог</a>
 						</li>
 
 						<li class="nav-item d-none d-lg-inline">
