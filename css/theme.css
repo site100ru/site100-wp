@@ -661,11 +661,6 @@ form .form-label {
 	color: #323232;
 }
 
-form .btn,
-form .form-control {
-	width: 196px !important;
-}
-
 /*** /ORDER ***/
 
 @media (max-width: 1399.98px) {
@@ -766,4 +761,26 @@ form .form-control {
 	.orderLeftMenSection .order-section-men {
 		display: none;
 	}
+}
+
+.menu-item a {
+	color: rgba(255,255,255,.55);
+}
+
+.logo-wrapper {
+	width: auto;
+}
+
+@media (max-width: 992px) {
+	.logo-wrapper {
+		width: 100%;
+	}
+}
+
+#menu-main-menu-1 .menu-item a {
+	color: var(--default-color);
+}
+
+.menu-item.menu-item-type-custom {
+	text-align: start;
 }
