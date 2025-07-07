@@ -477,7 +477,7 @@
 		</section> -->
 
 	<!-- ORDER-->
-	<div id="contacts-sp"></div>
+	<!-- <div id="contacts-sp"></div>
 	<section class="orderLeftMenSection bg-white">
 		<div class="container">
 			<div class="row">
@@ -531,10 +531,10 @@
 					</div>
 				</div>
 			</div>
-	</section>
+	</section> -->
 	<!-- ORDER-->
 
-	<footer class="footer">
+	<footer class="footer" id="contacts-sp">
 		<div class="container pt-5 pb-3 d-none d-xl-block">
 			<div class="row align-items-center">
 				<div class="col-xl-3">
@@ -569,7 +569,7 @@
 						</li>
 
 						<li class="nav-item">
-							<a class="nav-link active" href="blog.html" data-target="blog-page">блог</a>
+							<a class="nav-link" href="<?php echo site_url('/blog/'); ?>" data-target="blog-page">Блог</a>
 						</li>
 
 						<li class="nav-item d-none d-lg-inline">

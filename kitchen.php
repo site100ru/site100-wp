@@ -161,7 +161,7 @@
 								</li>
 
 								<li class="nav-item">
-									<a class="nav-link" href="blog.html" data-target="blog-page">блог</a>
+									<a class="nav-link" href="<?php echo site_url('/blog/'); ?>" data-target="blog-page">Блог</a>
 								</li>
 
 								<li class="nav-item d-none d-lg-inline">
@@ -262,7 +262,7 @@
 								</li>
 
 								<li class="nav-item">
-									<a class="nav-link" href="/blog.html" data-target="blog-page">блог</a>
+									<a class="nav-link" href="<?php echo site_url('/blog/'); ?>" data-target="blog-page">Блог</a>
 								</li>
 
 								<li class="nav-item d-none d-lg-inline">
@@ -929,7 +929,7 @@
 	<!-- /CERTIFICATES-->
 
 	<!-- ORDER-->
-	 	<div id="contacts-sp"></div>
+	<div id="contacts-sp"></div>
 	<section class="orderLeftMenSection bg-white">
 		<div class="container">
 			<div class="row">
@@ -942,7 +942,7 @@
 					<p class="order-description mb-2" style="max-width: 570px;">Оставьте Ваши контакты и я перезвоню Вам в течение
 						10 минут или напишите мне в мессенджер и я подробно отвечу на Ваши вопросы.</p>
 					<img src="<?php echo get_template_directory_uri(); ?>/img/ico/section-title-decoration.svg" class="mb-5">
-					<form method="post" action="">
+					<form method="post" action="<?php echo get_stylesheet_directory_uri(); ?>/mails/callback-mail.php">
 						<div class="row">
 							<div class="col-8 col-lg-5">
 								<label for="exampleFormControlInput1" class="form-label">Ваше имя</label>
@@ -1020,7 +1020,7 @@
 						</li>
 
 						<li class="nav-item">
-							<a class="nav-link" href="blog.html" data-target="blog-page">блог</a>
+							<a class="nav-link" href="<?php echo site_url('/blog/'); ?>" data-target="blog-page">Блог</a>
 						</li>
 
 						<li class="nav-item d-none d-lg-inline">
