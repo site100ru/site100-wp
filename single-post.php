@@ -722,8 +722,14 @@
 		<div class="footer-bottom-block container-fluid">
 			<p class="footer-bottom-text text-start text-sm-center mb-0">Создание, продвижение и поддержка сайтов: <a
 					href="https://site100.ru">site100.ru</a></p>
-		</div>
 
+			<div class="policy-in-footer">
+				<a href="<?php echo get_template_directory_uri(); ?>/docs/Privacy-Policy.pdf" target="_blank">Политика
+					конфиденциальности</a> | <a
+					href="<?php echo get_template_directory_uri(); ?>/docs/Consent-to-the-processing-of-personal-data.pdf"
+					target="_blank">Согласие на обработку персональных данных</a>
+			</div>
+		</div>
 	</footer>
 
 
@@ -838,7 +844,21 @@
 				<div class="modal-body">
 					<form method="post" action="<?php echo get_stylesheet_directory_uri(); ?>/mails/callback-mail.php">
 						<p><input type="text" name="name" class="form-control" placeholder="Имя"></p>
-						<p><input type="text" id="phone_mask_2" name="tel" class="form-control phone_mask_1" required></p>
+						<p><input placeholder="+7 (___) ___ __ __" type="tel" class="form-control mb-3 mb-md-0 telMask"
+								id="exampleFormControlInput2" required></p>
+
+						<div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="gridCheck-3" checked>
+								<label class="form-check-label" for="gridCheck-3">
+									<p class="mb-0"><small>Даю согласие на обработку персональных данных. Подробнее об обработке
+											персональных данных в <a
+												href="<?php echo get_template_directory_uri(); ?>/docs/Privacy-Policy.pdf"
+												target="_blank">Политике конфиденциальности.</a></small></p>
+								</label>
+							</div>
+						</div>
+
 						<input type="hidden" id="g-recaptcha-response-callback" name="g-recaptcha-response">
 						<button type="submit" class="btn btn-danger" style="width: 100%;">Заказать</button>
 					</form>
@@ -860,6 +880,18 @@
 					<form method="post" action="<?php echo get_stylesheet_directory_uri(); ?>/mails/callback-mail.php">
 						<p><input type="text" name="name" class="form-control" placeholder="Имя"></p>
 						<p><input type="text" id="phone_mask_2" name="tel" class="form-control phone_mask_2" required></p>
+
+						<div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="gridCheck-3" checked>
+								<label class="form-check-label" for="gridCheck-3">
+									<p class="mb-0"><small>Даю согласие на обработку персональных данных. Подробнее об обработке
+											персональных данных в <a
+												href="<?php echo get_template_directory_uri(); ?>/docs/Privacy-Policy.pdf"
+												target="_blank">Политике конфиденциальности.</a></small></p>
+								</label>
+							</div>
+						</div>
 						<input type="hidden" id="g-recaptcha-response-order-modal" name="g-recaptcha-response">
 						<button type="submit" class="btn btn-danger" style="width: 100%;">Оставить заявку</button>
 					</form>
@@ -867,7 +899,6 @@
 			</div>
 		</div>
 	</div>
-
 	<!-- Messengers 2 --
 		<div class="messengers-2" style="position: fixed; width: 70px; height: 70px; bottom: 80px; right: 0;">
 			<div id="messengers-2-button" class="rounded-start" onclick="clickMessengers2Button();">
