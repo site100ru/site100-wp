@@ -335,7 +335,7 @@ p,
 }
 
 #blog-header {
-	height: 640px;
+	height: 340px;
 }
 
 /* Main section */
@@ -353,7 +353,7 @@ main {
 	position: absolute;
 	z-index: -1;
 	top: 0;
-	height: 640px;
+	height: 340px;
 	width: 100%;
 	background: url(../img/header-lg-bg.png) no-repeat center center;
 	background-size: cover;
@@ -1323,7 +1323,7 @@ main {
 	}
 
 	#blog-header {
-		height: 510px;
+		height: 310px;
 	}
 
 	div:has(h1) {
@@ -1543,7 +1543,7 @@ main {
 
 @media (max-width: 575.98px) {
 	#blog-header {
-		height: 460px;
+		height: 310px;
 	}
 
 	/* Main section */
@@ -1719,4 +1719,10 @@ header#blog-header {
 	background-image: url(../img/main-bg.jpg);
 	background-size: cover;
 	background-position: center 75%;
+}
+
+
+header#blog-header .col h1, 
+header#blog-header .col p {
+	color: #fff;
 }
