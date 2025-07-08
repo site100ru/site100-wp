@@ -888,7 +888,7 @@ main {
 
 .footer {
 	position: relative;
-	height: 423px;
+	height: 100%;
 }
 
 .footer::after {
@@ -896,7 +896,7 @@ main {
 	position: absolute;
 	z-index: -1;
 	top: 0;
-	height: 423px;
+	height: 100%;
 	width: 100%;
 	background-image: url(../img/footer-bg.jpg);
 	background-repeat: no-repeat;
@@ -996,12 +996,6 @@ main {
 	margin-top: 16px;
 }
 
-.footer-bottom-block {
-	height: 80px;
-	position: absolute;
-	bottom: 0;
-}
-
 .footer .logo-num {
 	row-gap: 20px;
 	height: 50px;
@@ -1009,10 +1003,17 @@ main {
 }
 
 .footer-bottom-text {
-	padding-top: 29px;
 	font-family: Gilroy-Light;
-	font-size: 16px;
+	font-size: 14px;
 	color: #fff;
+}
+
+@media (max-width: 768px) {
+	.footer-bottom-text,
+	.policy-in-footer a,
+	.policy-in-footer p {
+		font-size: 14px;
+	}
 }
 
 .footer-bottom-text a {
@@ -1236,16 +1237,6 @@ main {
 		background-size: contain;
 	}
 
-	.footer {
-		height: 595px;
-		padding-top: 0;
-	}
-
-	.footer::after {
-		background-image: url(../img/footer-lg-bg.png);
-		height: 595px;
-	}
-
 	.footer .nav-link:not(.arrow-element):after {
 		display: none;
 	}
@@ -1260,20 +1251,6 @@ main {
 
 	.footer .logo-num {
 		margin-top: 28px;
-	}
-
-	.footer-bottom-block {
-		height: 106px;
-	}
-
-	.footer-hr {
-		margin-top: 20px;
-		margin-bottom: 0;
-	}
-
-	.footer-bottom-text {
-		padding-top: 20px;
-		padding-bottom: 20px;
 	}
 }
 
@@ -1707,13 +1684,7 @@ main {
 	/* footer  */
 
 	.footer::after {
-		height: 595px;
 		background-position: -200px 0;
-	}
-
-	.footer-bottom-text {
-		padding-top: 7px;
-		padding-bottom: 0px;
 	}
 }
 
