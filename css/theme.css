@@ -789,6 +789,12 @@ form .form-label {
 	text-align: center;
 }
 
+@media (min-width: 1200px) {
+	.policy-in-footer a.links-one {
+		margin-right: 100px;
+	}
+}
+
 @media (max-width: 576px) {
 	.policy-in-footer {
 		text-align: start;

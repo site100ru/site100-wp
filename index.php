@@ -2051,7 +2051,8 @@
 			<p class="footer-bottom-text text-start text-sm-center mb-0">Создание, продвижение и поддержка сайтов: <a
 					href="https://site100.ru">site100.ru</a></p>
 			<div class="policy-in-footer">
-				<a href="<?php echo get_template_directory_uri(); ?>/docs/Privacy-Policy.pdf" target="_blank">Политика
+				<a class="links-one" href="<?php echo get_template_directory_uri(); ?>/docs/Privacy-Policy.pdf"
+					target="_blank">Политика
 					конфиденциальности</a> | <a
 					href="<?php echo get_template_directory_uri(); ?>/docs/Consent-to-the-processing-of-personal-data.pdf"
 					target="_blank">Согласие на обработку персональных данных</a>

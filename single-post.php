@@ -439,7 +439,7 @@
 										$related_posts->the_post();
 										?>
 										<div class="col-md-4 mt-5 project-entry">
-											<a href="<?php the_permalink(); ?>" class="d-block figure rounded shadow">
+											<a href="<?php the_permalink(); ?>" class="d-block figure rounded shadow w-100">
 												<?php if (has_post_thumbnail()): ?>
 													<?php the_post_thumbnail('medium', array('class' => 'img-fluid')); ?>
 												<?php else: ?>
@@ -724,7 +724,8 @@
 					href="https://site100.ru">site100.ru</a></p>
 
 			<div class="policy-in-footer">
-				<a href="<?php echo get_template_directory_uri(); ?>/docs/Privacy-Policy.pdf" target="_blank">Политика
+				<a class="links-one" href="<?php echo get_template_directory_uri(); ?>/docs/Privacy-Policy.pdf"
+					target="_blank">Политика
 					конфиденциальности</a> | <a
 					href="<?php echo get_template_directory_uri(); ?>/docs/Consent-to-the-processing-of-personal-data.pdf"
 					target="_blank">Согласие на обработку персональных данных</a>
