@@ -788,7 +788,7 @@
 
 		<hr class="footer-hr" style="border: none; background-color: #7D7D7D; height: 1px">
 		<div class="footer-bottom-block container">
-			<p class="footer-bottom-text text-start text-md-center mb-0">Создание, продвижение и поддержка сайтов: <a
+			<p class="footer-bottom-text text-start text-md-center mb-0">Создание и продвижение сайтов: <a
 					href="https://site100.ru">site100.ru</a></p>
 			<div class="policy-in-footer d-flex flex-column flex-md-row justify-content-start justify-content-md-center">
 				<a class="links-one" href="<?php echo get_template_directory_uri(); ?>/docs/Privacy-Policy.pdf"
