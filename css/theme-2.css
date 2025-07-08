@@ -289,6 +289,16 @@ p,
 
 .header .fixed-menu .nav-link {
 	color: #202020;
+	transition: all 0.3s;
+}
+
+.header .fixed-menu .nav-link:hover {
+	color: var(--corporate-color-1) !important;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+	color: var(--corporate-color-1) !important;
 }
 
 .header .fixed-menu .navbar-brand {
@@ -1003,7 +1013,7 @@ main {
 }
 
 .footer-bottom-text {
-	font-family: Gilroy-Light;
+	font-family: HelveticaNeueCyr-Light;
 	font-size: 16px;
 	color: #fff;
 }
@@ -1020,6 +1030,11 @@ main {
 	text-decoration: underline;
 	text-decoration-skip-ink: none;
 	color: inherit !important;
+	transition: all 0.3s;
+}
+
+.footer-bottom-text a:hover {
+	color: var(--corporate-color-1) !important;
 }
 
 @media (max-width: 1399.98px) {

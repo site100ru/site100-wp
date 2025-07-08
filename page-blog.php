@@ -754,7 +754,7 @@
 						<div class="col-6">
 							<ul class="nav flex-column">
 								<li class="nav-item dropdown">
-									<a class="nav-link ps-0 " aria-current="page" href="#">ГЛАВНАЯ</a>
+									<a class="nav-link ps-0" href="<?php echo site_url('/'); ?>" data-target="main-page">ГЛАВНАЯ</a>
 								</li>
 								<li class="nav-item">
 									<a class="nav-link ps-0 active" href="#">блог</a>
@@ -790,9 +790,10 @@
 		<div class="footer-bottom-block container">
 			<p class="footer-bottom-text text-start text-md-center mb-0">Создание и продвижение сайтов: <a
 					href="https://site100.ru">site100.ru</a></p>
-			<div class="policy-in-footer d-flex flex-column flex-md-row justify-content-start justify-content-md-center">
+			<div class="policy-in-footer">
 				<a class="links-one" href="<?php echo get_template_directory_uri(); ?>/docs/Privacy-Policy.pdf"
-					target="_blank">Политика конфиденциальности</a><span class="d-none d-md-block">&nbsp;|&nbsp;</span><a
+					target="_blank">Политика конфиденциальности</a><span class="d-block d-md-none"></span><span
+					class="d-none d-md-block">&nbsp;|&nbsp;</span><a
 					href="<?php echo get_template_directory_uri(); ?>/docs/Consent-to-the-processing-of-personal-data.pdf"
 					target="_blank">Согласие на обработку персональных данных</a>
 			</div>
