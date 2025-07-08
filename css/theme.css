@@ -785,12 +785,6 @@ form .form-label {
 	text-align: start;
 }
 
-@media (min-width: 1200px) {
-	.policy-in-footer a.links-one {
-		margin-left: 50px;
-	}
-}
-
 .policy-in-footer a {
 	color: #fff;
 	font-family: Gilroy-Light;
