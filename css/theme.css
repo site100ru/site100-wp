@@ -789,8 +789,16 @@ form .form-label {
 	text-align: center;
 }
 
+@media (max-width: 576px) {
+	.policy-in-footer {
+		text-align: start;
+	}
+}
+
 .policy-in-footer a {
 	color: #fff;
+	font-family: Gilroy-Light;
+	transition: all 0.3s;
 }
 
 .policy-in-footer a:hover {
