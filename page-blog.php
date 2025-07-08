@@ -422,6 +422,7 @@
 									</a>
 									<h3 class="mt-3 card-post-title"><?php the_title(); ?></h3>
 									<?php the_excerpt(); ?>
+									<a href="<?php echo the_permalink(); ?>" type="button" class="btn btn-sm btn-danger">Читать далее...</a>
 								</div>
 							<?php }
 
