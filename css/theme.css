@@ -791,7 +791,7 @@ form .form-label {
 
 @media (min-width: 1200px) {
 	.policy-in-footer a.links-one {
-		margin-right: 100px;
+		margin-left: 100px;
 	}
 }
 
@@ -821,23 +821,31 @@ form .form-label {
 	margin-top: auto;
 }
 
-/*** Всплывающая форма Политики конфиденциальности ***/
-.popup-form {
-	position: fixed;
-	bottom: -500px; /* Форма скрыта за пределами экрана */
-	left: 0;
-	width: 100%;
-	background: rgba(255, 255, 255, 0.8);
-	backdrop-filter: blur(8px); /* Размытие фона */
-	-webkit-backdrop-filter: blur(8px); /* Для Safari */
-	box-shadow: 0 -2px 20px rgba(0, 0, 0, 0.2);
-	padding: 10px;
-	box-sizing: border-box;
-	transition: bottom 0.5s ease-out;
-	z-index: 1000;
-	max-width: 100%;
+.card-post-title {
+	font-family: 'HelveticaNeueCyr', sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	color: #4b4b4b;
+	line-height: normal;
 }
 
-.popup-form.active {
-	bottom: 0; /* Форма появляется снизу */
+.card-post-title p {
+	margin-bottom: 0;
+
+	font-family: 'HelveticaNeueCyr', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+	color: #4b4b4b;
+}
+
+.project-entry .rounded {
+	overflow: hidden;
+}
+
+.project-entry img {
+	transition: all 0.3s;
+}
+
+.project-entry:hover img {
+	scale: 1.05;
 }
