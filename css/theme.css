@@ -789,8 +789,37 @@ form .form-label {
 	text-align: center;
 }
 
+.policy-in-footer a {
+	color: #fff;
+}
+
+.policy-in-footer a:hover {
+	color: #dc3545;
+}
+
 .project-entry {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+}
+
+/*** Всплывающая форма Политики конфиденциальности ***/
+.popup-form {
+	position: fixed;
+	bottom: -500px; /* Форма скрыта за пределами экрана */
+	left: 0;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.8);
+	backdrop-filter: blur(8px); /* Размытие фона */
+	-webkit-backdrop-filter: blur(8px); /* Для Safari */
+	box-shadow: 0 -2px 20px rgba(0, 0, 0, 0.2);
+	padding: 10px;
+	box-sizing: border-box;
+	transition: bottom 0.5s ease-out;
+	z-index: 1000;
+	max-width: 100%;
+}
+
+.popup-form.active {
+	bottom: 0; /* Форма появляется снизу */
 }
