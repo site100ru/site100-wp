@@ -803,6 +803,10 @@ form .form-label {
 	align-items: flex-start;
 }
 
+.project-entry .btn.btn-sm.btn-danger {
+	margin-top: auto;
+}
+
 /*** Всплывающая форма Политики конфиденциальности ***/
 .popup-form {
 	position: fixed;
