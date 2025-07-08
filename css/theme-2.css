@@ -407,8 +407,14 @@ main {
 
 #title-container {
 	position: relative;
-	padding-top: 0;
+	padding-top: 50px;
 	padding-bottom: 40px;
+}
+
+@media (max-width: 1400px) {
+	#title-container {
+		padding-top: 0;
+	}
 }
 
 #title-line-1,
@@ -1331,7 +1337,7 @@ main {
 	}
 
 	#blog-header-2 {
-		height: 610px;
+		height: 510px;
 	}
 
 	div:has(h1) {
@@ -1541,6 +1547,10 @@ main {
 		top: 509px;
 		left: 495px;
 	}
+
+	#blog-header-2 {
+		height: 440px;
+	}
 }
 
 @media (max-width: 626px) {
@@ -1555,7 +1565,7 @@ main {
 	}
 
 	#blog-header-2 {
-		height: 310px;
+		height: 410px;
 	}
 
 	/* Main section */
@@ -1755,5 +1765,5 @@ figure.wp-block-image img {
 
 .form-check-input:checked {
 	background-color: #dc3545;
-	border-color: #dc3545;	
+	border-color: #dc3545;
 }
