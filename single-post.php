@@ -703,8 +703,7 @@
 										<li><a class="dropdown-item" href="/#sp-create">создание сайтов</a></li>
 										<li><a class="dropdown-item" href="/#sp-promotion">продвижение сайтов</a></li>
 										<li><a class="dropdown-item" href="/#sp-support">поддержка сайтов</a></li>
-										<li><a class="dropdown-item"
-												href="/kitchen">клиенты
+										<li><a class="dropdown-item" href="/kitchen">клиенты
 												на корпусную мебель</a></li>
 									</ul>
 								</li>
@@ -719,14 +718,12 @@
 		</div>
 
 		<hr class="footer-hr" style="border: none; background-color: #7D7D7D; height: 1px">
-		<div class="footer-bottom-block container-fluid">
-			<p class="footer-bottom-text text-start text-sm-center mb-0">Создание, продвижение и поддержка сайтов: <a
+		<div class="footer-bottom-block container">
+			<p class="footer-bottom-text text-start text-md-center mb-0">Создание, продвижение и поддержка сайтов: <a
 					href="https://site100.ru">site100.ru</a></p>
-
-			<div class="policy-in-footer">
+			<div class="policy-in-footer d-flex flex-column flex-md-row justify-content-start justify-content-md-center">
 				<a class="links-one" href="<?php echo get_template_directory_uri(); ?>/docs/Privacy-Policy.pdf"
-					target="_blank">Политика
-					конфиденциальности</a> | <a
+					target="_blank">Политика конфиденциальности</a><span class="d-none d-md-block">&nbsp;|&nbsp;</span><a
 					href="<?php echo get_template_directory_uri(); ?>/docs/Consent-to-the-processing-of-personal-data.pdf"
 					target="_blank">Согласие на обработку персональных данных</a>
 			</div>
