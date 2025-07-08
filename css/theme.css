@@ -796,6 +796,12 @@ form .form-label {
 	color: #dc3545;
 }
 
+@media (max-width: 768px) {
+	.policy-in-footer a {
+		font-size: 14px;
+	}
+}
+
 .project-entry {
 	display: flex;
 	flex-direction: column;
