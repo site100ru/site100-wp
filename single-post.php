@@ -90,7 +90,7 @@
 	<!-- Header -->
 
 
-	<header id="blog-header-2" class="header align-items-center justify-content-end">
+	<header id="blog-header-2" class="header align-items-center justify-content-end single">
 		<!-- Menu -->
 		<div class="container">
 			<div class="lists me-5 w-100 d-flex flex-column align-items-end">

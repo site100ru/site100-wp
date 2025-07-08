@@ -1553,6 +1553,12 @@ main {
 	}
 }
 
+@media (max-width: 800px) {
+	#blog-header-2.single {
+		height: 410px;
+	}
+}
+
 @media (max-width: 626px) {
 	#title-container::after {
 		background-position: -246px -112px;
