@@ -9,22 +9,13 @@
 
 <?php
 
-// Простой дебаг в консоль
-echo "<script>";
-echo "console.log('Session status:', " . (session_status() === PHP_SESSION_ACTIVE ? 'true' : 'false') . ");";
-echo "console.log('Session ID:', '" . session_id() . "');";
-echo "console.log('Session win:', " . (isset($_SESSION['win']) ? '"' . $_SESSION['win'] . '"' : 'null') . ");";
-echo "console.log('Session recaptcha:', " . (isset($_SESSION['recaptcha']) ? '"exists"' : 'null') . ");";
-echo "</script>";
-
 if (isset($_SESSION['win'])) {
-   unset($_SESSION['win']);
-   $display = "block";
+	unset($_SESSION['win']);
+	$display = "block";
 } else {
-   $display = "none";
+	$display = "none";
 }
 
-echo "<script>console.log('Display:', '" . $display . "');</script>";
 ?>
 
 <!doctype html>
