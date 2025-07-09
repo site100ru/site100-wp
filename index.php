@@ -2348,7 +2348,7 @@ if (isset($_SESSION['win'])) {
 	<script src='https://www.google.com/recaptcha/api.js?render=6LdV1IcUAAAAADRQAhpGL8dVj5_t0nZDPh9m_0tn'></script>
 	<script>
 		grecaptcha.ready(function () {
-			grecaptcha.execute('6LdV1IcUAAAAADRQAhpGL8dVj5_t0nZDPh9m_0tn', { action: 'action_name' }).then(function (token) {
+			grecaptcha.execute('6LdV1IcUAAAAADRQAhpGL8dVj5_t0nZDPh9m_0tn', {action: 'action_name'}).then(function(token) {
 				if (document.getElementById('g-recaptcha-response-order-1-home')) {
 					document.getElementById('g-recaptcha-response-order-1-home').value = token;
 				}
