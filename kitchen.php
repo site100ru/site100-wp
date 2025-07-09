@@ -946,11 +946,11 @@
 						<div class="row">
 							<div class="col-8 col-lg-5">
 								<label for="exampleFormControlInput1" class="form-label">Ваше имя</label>
-								<input type="text" class="form-control mb-3 mb-md-0" id="exampleFormControlInput1">
+								<input type="text" name="name" class="form-control mb-3 mb-md-0" id="exampleFormControlInput1">
 							</div>
 							<div class="col-8 col-lg-5">
 								<label for="exampleFormControlInput2" class="form-label">Ваш телефон</label>
-								<input placeholder="+7 (___) ___ __ __" type="tel" class="form-control mb-3 mb-md-0 telMask"
+								<input placeholder="+7 (___) ___ __ __" name="tel" type="tel" class="form-control mb-3 mb-md-0 telMask"
 									id="exampleFormControlInput2" required>
 							</div>
 						</div>
