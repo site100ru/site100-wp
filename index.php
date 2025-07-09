@@ -2295,14 +2295,6 @@
 	</script>
 
 	<script>
-		/* Убираем сообщение об успешной отправки */
-		function f1() {
-			document.getElementById('background-msg').style.display = 'none';
-			document.getElementById('message').style.display = 'none';
-		}
-	</script>
-
-	<script>
 		window.addEventListener('scroll', function () {
 			const menu = document.querySelector('.fixed-menu');
 			const trigger = document.getElementById('site-create-section');
