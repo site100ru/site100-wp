@@ -7,7 +7,6 @@
 
 ?>
 <?php
-// session_start();
 
 if (isset($_SESSION['win'])) {
 	unset($_SESSION['win']);

@@ -56,4 +56,13 @@
 	
 	require_once get_template_directory() . '/inc/transliteration.php';
 
+
+	// Запуск сессий для WordPress
+	function start_session() {
+			if (!session_id()) {
+					session_start();
+			}
+	}
+	add_action('init', 'start_session', 1);
+
 ?>
