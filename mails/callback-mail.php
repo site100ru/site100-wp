@@ -4,7 +4,7 @@
  */
 
 // Подключаем WordPress
-require_once('../../../../wp-load.php');
+require_once(dirname(__FILE__) . '/../../../../wp-load.php');
 
 session_start();
 
