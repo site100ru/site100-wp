@@ -38,11 +38,6 @@ if ($_POST) {
 		header("Location: " . $_SERVER['HTTP_REFERER']);
 	}
 
-	echo "<script>";
-	echo "console.log('Callback: win set to', " . $_SESSION['win'] . ");";
-	echo "console.log('Callback: message set');";
-	echo "</script>";
-
 	header("Location: " . $_SERVER['HTTP_REFERER']);
 	exit();
 }
