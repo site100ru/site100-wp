@@ -785,6 +785,12 @@ form .form-label {
 	text-align: start;
 }
 
+@media (min-width: 778px) {
+	.policy-in-footer {
+		justify-self: center;
+	}
+}
+
 .policy-in-footer a {
 	color: #fff;
 	font-family: HelveticaNeueCyr-Light;

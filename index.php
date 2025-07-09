@@ -2053,7 +2053,7 @@
 			<div class="policy-in-footer">
 				<a class="links-one" href="<?php echo get_template_directory_uri(); ?>/docs/Privacy-Policy.pdf"
 					target="_blank">Политика конфиденциальности</a><span class="d-block d-md-none"></span><span
-					class="d-none d-md-block">&nbsp;|&nbsp;</span><a
+					class="d-none d-md-inline-block">&nbsp;|&nbsp;</span><a
 					href="<?php echo get_template_directory_uri(); ?>/docs/Consent-to-the-processing-of-personal-data.pdf"
 					target="_blank">Согласие на обработку персональных данных</a>
 			</div>
