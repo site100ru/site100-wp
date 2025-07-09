@@ -1023,13 +1023,13 @@
 		</div>
 	</div>
 
-	<!-- <script>
+	<script>
 			/* Убираем сообщение об успешной отправки */
 			function f1 () {
 				document.getElementById('background-msg').style.display = 'none';
 				document.getElementById('message').style.display = 'none';
 			}
-		</script> -->
+		</script>
 
 	<script>
 		window.addEventListener('scroll', function () {

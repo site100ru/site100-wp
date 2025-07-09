@@ -2334,6 +2334,13 @@
 		</div>
 	</div>
 
+	<script>
+		/* Убираем сообщение об успешной отправки */
+		function f1() {
+			document.getElementById("background-msg").style.display = "none";
+			document.getElementById("message").style.display = "none";
+		}
+	</script>
 
 	<script src='https://www.google.com/recaptcha/api.js?render=6LdV1IcUAAAAADRQAhpGL8dVj5_t0nZDPh9m_0tn'></script>
 	<script>
