@@ -1,7 +1,7 @@
 <?php
 	session_start();
 	$win = "true";
-	
+
 	// Если существует переменная POST, то
 	if ( $_POST ) {
 		// Отправляем данные в Google
@@ -30,6 +30,7 @@
 				$_SESSION['win'] = 1;
 				$_SESSION['recaptcha'] = '<p class="text-light">Спасибо за обращение в компанию «Декор-Север». Мы ответим Вам в&#160;ближайшее время.</p>';
 				header("Location: ".$_SERVER['HTTP_REFERER']);
+				exit();
 			} else {
 				// Если поле с телефоно НЕ заполненно
 				$_SESSION['win'] = 1;
@@ -44,6 +45,7 @@
 			$_SESSION['win'] = 1;
 			$_SESSION['recaptcha'] = '<p class="text-light"><strong>Извините!</strong><br>Ваши действия похожи на робота. Пожалуйста повторите попытку!</p>';
 			header("Location: ".$_SERVER['HTTP_REFERER']);
+			exit();
 		}
 	}
 ?>
