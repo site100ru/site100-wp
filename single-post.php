@@ -1,18 +1,18 @@
+<?php
+session_start();
+
+if (isset($_SESSION['win'])) {
+	unset($_SESSION['win']);
+	$display = "block";
+} else
+	$display = "none";
+?>
+
+
 <!doctype html>
 <html lang="ru">
 
 <head>
-	<?php
-
-	session_start();
-
-	if (isset($_SESSION['win'])) {
-		unset($_SESSION['win']);
-		$display = "block";
-	} else
-		$display = "none";
-	?>
-	
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -854,7 +854,7 @@
 				<div class="modal-body">
 					<form method="post" action="<?php echo get_stylesheet_directory_uri(); ?>/mails/callback-mail.php">
 						<p><input type="text" name="name" class="form-control" placeholder="Имя"></p>
-						<p><input placeholder="+7 (___) ___ __ __" type="tel" name="tel" class="form-control mb-3 mb-md-0 telMask"
+						<p><input placeholder="Ваш телефон"type="tel" name="tel" class="form-control mb-3 mb-md-0 telMask"
 								id="exampleFormControlInput2" required></p>
 
 						<div>
@@ -889,7 +889,7 @@
 				<div class="modal-body">
 					<form method="post" action="<?php echo get_stylesheet_directory_uri(); ?>/mails/callback-mail.php">
 						<p><input type="text" class="form-control" name="name" placeholder="Имя"></p>
-						<p><input placeholder="+7 (___) ___ __ __" type="tel" name="tel" class="form-control mb-3 mb-md-0 telMask"
+						<p><input placeholder="Ваш телефон"type="tel" name="tel" class="form-control mb-3 mb-md-0 telMask"
 								id="exampleFormControlInput2" required></p>
 
 						<div>
@@ -964,20 +964,6 @@
 	<!-- Messengers button JS -->
 	<script src="https://site100.ru/wp-content/themes/site100-theme/js/messengers-button.js"></script>
 
-	<!-- For second option -->
-	<script>
-		$(document).ready(function () {
-			// Настройка маски для телефона
-			$.mask.definitions['9'] = false;
-			$.mask.definitions['_'] = "[0-9]";
-
-			// Применяем маску ко всем полям с классом telMask
-			$(".telMask").mask("+7 (___) ___-__-__");
-
-			// Устанавливаем placeholder для всех полей с классом telMask
-			$(".telMask").attr('placeholder', '+7 (___) ___-__-__');
-		});
-	</script>
 
 
 	<!-- Показываем сообщение об успешной отправки -->
@@ -1045,6 +1031,14 @@
 				}
 			});
 		});
+	</script>
+
+
+	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/inputmask.min.js"></script>
+	<script>
+		var telMask = document.getElementsByClassName("telMask");
+		var im = new Inputmask("+7(999)999-99-99");
+		im.mask(telMask);
 	</script>
 
 

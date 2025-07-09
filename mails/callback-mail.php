@@ -1,5 +1,4 @@
 <?php
-
 session_start();
 $win = "true";
 
@@ -20,9 +19,16 @@ if ($_POST) {
 
 		$name = $_POST['name'];
 		$tel = $_POST['tel'];
-		mail("sidorov-vv3@mail.ru, vasilyev-r@yandex.ru, vasilyev-r@mail.ru", "Заказ обратного звонка с сайта гарантшкаф.рф.", "Потенциальный клиент " . $name . " просит перезвонить Вас на номер " . $tel);
+
+		mail(
+			"sidorov-vv3@mail.ru, vasilyev-r@yandex.ru, vasilyev-r@mail.ru",
+			"Заказ обратного звонка с сайта site100.ru",
+			"
+            Клиент: " . $name . "\n
+            Телефон: " . $tel
+		);
 		$_SESSION['win'] = 1;
-		$_SESSION['recaptcha'] = '<p class="text-light">Спасибо за обращение в компанию «ГАРАНТШКАФ». Мы ответим Вам в&#160;ближайшее время.</p>';
+		$_SESSION['recaptcha'] = '<p class="text-light">Спасибо за обращение! Мы ответим Вам в&#160;ближайшее время.</p>';
 		header("Location: " . $_SERVER['HTTP_REFERER']);
 
 	} else {
@@ -31,5 +37,13 @@ if ($_POST) {
 		$_SESSION['recaptcha'] = '<p class="text-light"><strong>Извините!</strong><br>Ваши действия похожи на робота. Пожалуйста повторите попытку!</p>';
 		header("Location: " . $_SERVER['HTTP_REFERER']);
 	}
+
+	echo "<script>";
+	echo "console.log('Callback: win set to', " . $_SESSION['win'] . ");";
+	echo "console.log('Callback: message set');";
+	echo "</script>";
+
+	header("Location: " . $_SERVER['HTTP_REFERER']);
+	exit();
 }
 ?>

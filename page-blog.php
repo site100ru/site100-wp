@@ -7,21 +7,20 @@
 
 ?>
 
+<?php
+session_start();
+
+if (isset($_SESSION['win'])) {
+	unset($_SESSION['win']);
+	$display = "block";
+} else
+	$display = "none";
+?>
 
 <!doctype html>
 <html lang="ru">
 
 <head>
-	<?php
-
-	session_start();
-
-	if (isset($_SESSION['win'])) {
-		unset($_SESSION['win']);
-		$display = "block";
-	} else
-		$display = "none";
-	?>
 
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
@@ -509,7 +508,7 @@
 							</div>
 							<div class="col-8 col-lg-5">
 								<label for="exampleFormControlInput2" class="form-label">Ваш телефон</label>
-								<input placeholder="+7 (___) ___ __ __" type="tel" class="form-control mb-3 mb-md-0 telMask"
+								<input placeholder="Ваш телефон"type="tel" class="form-control mb-3 mb-md-0 telMask"
 									id="exampleFormControlInput2" required>
 							</div>
 						</div>
@@ -822,7 +821,7 @@
 				<div class="modal-body">
 					<form method="post" action="<?php echo get_stylesheet_directory_uri(); ?>/mails/callback-mail.php">
 						<p><input type="text" name="name" class="form-control" placeholder="Имя"></p>
-						<p><input placeholder="+7 (___) ___ __ __" type="tel" name="tel" class="form-control mb-3 mb-md-0 telMask"
+						<p><input placeholder="Ваш телефон"type="tel" name="tel" class="form-control mb-3 mb-md-0 telMask"
 								id="exampleFormControlInput2" required></p>
 
 						<div>
@@ -857,7 +856,7 @@
 				<div class="modal-body">
 					<form method="post" action="<?php echo get_stylesheet_directory_uri(); ?>/mails/callback-mail.php">
 						<p><input type="text" class="form-control" name="name" placeholder="Имя"></p>
-						<p><input placeholder="+7 (___) ___ __ __" type="tel" name="tel" class="form-control mb-3 mb-md-0 telMask"
+						<p><input placeholder="Ваш телефон"type="tel" name="tel" class="form-control mb-3 mb-md-0 telMask"
 								id="exampleFormControlInput2" required></p>
 
 						<div>
@@ -1008,20 +1007,6 @@
 	<!-- <script
 		src="<?php echo get_template_directory_uri(); ?>/js/messengers-button.js"></script> -->
 
-	<!-- For second option -->
-	<script>
-		$(document).ready(function () {
-			// Настройка маски для телефона
-			$.mask.definitions['9'] = false;
-			$.mask.definitions['_'] = "[0-9]";
-
-			// Применяем маску ко всем полям с классом telMask
-			$(".telMask").mask("+7 (___) ___-__-__");
-
-			// Устанавливаем placeholder для всех полей с классом telMask
-			$(".telMask").attr('placeholder', '+7 (___) ___-__-__');
-		});
-	</script>
 
 	<!-- Показываем сообщение об успешной отправки -->
 	<div style="display: <?php echo $display; ?>;" onclick="f1();">
@@ -1104,6 +1089,12 @@
 	</script>
 
 
+	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/inputmask.min.js"></script>
+	<script>
+		var telMask = document.getElementsByClassName("telMask");
+		var im = new Inputmask("+7(999)999-99-99");
+		im.mask(telMask);
+	</script>
 	<!-- Site create portfolio carousel -->
 	<!--script>
 			let port_prev = document.getElementById('carousel-sites-create-portfolio-control-prev');
