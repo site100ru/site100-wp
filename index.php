@@ -13,8 +13,10 @@
 
 <head>
 	<?php
-
 	session_start();
+
+	$_SESSION['win'] = 1;
+	$_SESSION['recaptcha'] = '<p class="text-light">Тестовое сообщение</p>';
 
 	if (isset($_SESSION['win'])) {
 		unset($_SESSION['win']);
@@ -22,7 +24,7 @@
 	} else
 		$display = "none";
 	?>
-	
+
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
