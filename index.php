@@ -2172,7 +2172,7 @@
 				<div class="modal-body">
 					<form method="post" action="<?php echo get_stylesheet_directory_uri(); ?>/mails/callback-mail.php">
 						<p><input type="text" name="name" class="form-control" placeholder="Имя"></p>
-						<p><input placeholder="+7 (___) ___ __ __" type="tel" class="form-control mb-3 mb-md-0 telMask"
+						<p><input placeholder="+7 (___) ___ __ __" type="tel" name="tel" class="form-control mb-3 mb-md-0 telMask"
 								id="exampleFormControlInput2" required></p>
 
 						<div>
@@ -2206,8 +2206,8 @@
 				</div>
 				<div class="modal-body">
 					<form method="post" action="<?php echo get_stylesheet_directory_uri(); ?>/mails/callback-mail.php">
-						<p><input type="text" name="name" class="form-control" placeholder="Имя"></p>
-						<p><input placeholder="+7 (___) ___ __ __" type="tel" class="form-control mb-3 mb-md-0 telMask"
+						<p><input type="text" class="form-control" name="name" placeholder="Имя"></p>
+						<p><input placeholder="+7 (___) ___ __ __" type="tel" name="tel" class="form-control mb-3 mb-md-0 telMask"
 								id="exampleFormControlInput2" required></p>
 
 						<div>
