@@ -898,7 +898,6 @@ main {
 
 .footer {
 	position: relative;
-	height: 100%;
 }
 
 .footer::after {
