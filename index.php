@@ -8,9 +8,7 @@
 ?>
 
 <?php
-if (session_status() !== PHP_SESSION_ACTIVE) {
-    session_start();
-}
+session_start();
 
 // Простой дебаг в консоль
 echo "<script>";
