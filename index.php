@@ -2279,20 +2279,19 @@
 	<script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.js"
 		type="text/javascript"></script>
 
-	<!-- Messengers button JS -->
-	<script src="https://site100.ru/wp-content/themes/site100-theme/js/messengers-button.js"></script>
-
 	<!-- For second option -->
 	<script>
-		$.mask.definitions['9'] = false;
-		$.mask.definitions['_'] = "[0-9]";
-		document.getElementById('phone_mask_1').placeholder = "+7(___)___-__-__";
-		$(".phone_mask_1").mask("+7(___)___-__-__");
+		$(document).ready(function () {
+			// Настройка маски для телефона
+			$.mask.definitions['9'] = false;
+			$.mask.definitions['_'] = "[0-9]";
 
-		$.mask.definitions['9'] = false;
-		$.mask.definitions['_'] = "[0-9]";
-		document.getElementById('phone_mask_2').placeholder = "+7(___)___-__-__";
-		$(".phone_mask_2").mask("+7(___)___-__-__");
+			// Применяем маску ко всем полям с классом telMask
+			$(".telMask").mask("+7 (___) ___-__-__");
+
+			// Устанавливаем placeholder для всех полей с классом telMask
+			$(".telMask").attr('placeholder', '+7 (___) ___-__-__');
+		});
 	</script>
 
 	<script>
@@ -2322,6 +2321,18 @@
 		});
 
 	</script>
+
+
+	<!-- Показываем сообщение об успешной отправки -->
+	<div style="display: <?php echo $display; ?>;" onclick="f1();">
+		<!-- Присваиваем свойству display значение переменной $display -->
+		<div id="background-msg" style="display: <?php echo $display; ?>;"></div> <!-- Показываем background -->
+		<!-- Показываем сообщение об успешной отправке данных -->
+		<div id="message">
+			<?php echo $_SESSION['recaptcha'];
+			unset($_SESSION['recaptcha']); ?>
+		</div>
+	</div>
 
 
 	<script src='https://www.google.com/recaptcha/api.js?render=6LdV1IcUAAAAADRQAhpGL8dVj5_t0nZDPh9m_0tn'></script>

@@ -1280,6 +1280,37 @@
 		});
 	</script>
 
+	<!-- For phone mask -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.js"
+		type="text/javascript"></script>
+
+	<!-- For second option -->
+	<script>
+		$(document).ready(function () {
+			// Настройка маски для телефона
+			$.mask.definitions['9'] = false;
+			$.mask.definitions['_'] = "[0-9]";
+
+			// Применяем маску ко всем полям с классом telMask
+			$(".telMask").mask("+7 (___) ___-__-__");
+
+			// Устанавливаем placeholder для всех полей с классом telMask
+			$(".telMask").attr('placeholder', '+7 (___) ___-__-__');
+		});
+	</script>
+
+	<!-- Показываем сообщение об успешной отправки -->
+	<div style="display: <?php echo $display; ?>;" onclick="f1();">
+		<!-- Присваиваем свойству display значение переменной $display -->
+		<div id="background-msg" style="display: <?php echo $display; ?>;"></div> <!-- Показываем background -->
+		<!-- Показываем сообщение об успешной отправке данных -->
+		<div id="message">
+			<?php echo $_SESSION['recaptcha'];
+			unset($_SESSION['recaptcha']); ?>
+		</div>
+	</div>
+
 	<script>
 		window.addEventListener('scroll', function () {
 			const menu = document.querySelector('.fixed-menu');
