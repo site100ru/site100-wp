@@ -1,5 +1,6 @@
 <?php
 	session_start();
+	$win = "true";
 	
 	// Если существует переменная POST, то
 	if ( $_POST ) {
@@ -34,6 +35,7 @@
 				$_SESSION['win'] = 1;
 				$_SESSION['recaptcha'] = '<p class="text-light">Обязательное поле с номером телефона не заполненно! Пожалуйста, повторите попытку и заполенте поле с номером телефона.</p>';
 				header("Location: ".$_SERVER['HTTP_REFERER']);
+				exit();
 			}
 			
 		

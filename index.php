@@ -7,20 +7,21 @@
 
 ?>
 
+<?php
+session_start();
+
+if (isset($_SESSION['win'])) {
+	unset($_SESSION['win']);
+	$display = "block";
+} else
+	$display = "none";
+?>
+
 
 <!doctype html>
 <html lang="ru">
 
 <head>
-	<?php
-	session_start();
-
-	if (isset($_SESSION['win'])) {
-		unset($_SESSION['win']);
-		$display = "block";
-	} else
-		$display = "none";
-	?>
 
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
