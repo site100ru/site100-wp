@@ -1,6 +1,5 @@
 <?php
 	session_start();
-	$win = "true";
 	
 	// Если существует переменная POST, то
 	if ( $_POST ) {

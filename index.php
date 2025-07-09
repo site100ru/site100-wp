@@ -15,9 +15,6 @@
 	<?php
 	session_start();
 
-	$_SESSION['win'] = 1;
-	$_SESSION['recaptcha'] = '<p class="text-light">Тестовое сообщение</p>';
-
 	if (isset($_SESSION['win'])) {
 		unset($_SESSION['win']);
 		$display = "block";
