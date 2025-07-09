@@ -1,86 +1,48 @@
 <?php
-/**
- * Обработчик формы обратного звонка
- */
-
-// Подключаем WordPress
-require_once(dirname(__FILE__) . '/../../../../wp-load.php');
-
-session_start();
-
-// Проверяем, что форма отправлена методом POST
-if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-	wp_redirect(home_url());
-	exit;
-}
-
-// Получаем данные формы
-$name = sanitize_text_field($_POST['name'] ?? '');
-$tel = sanitize_text_field($_POST['tel'] ?? '');
-$recaptcha_response = $_POST['g-recaptcha-response'] ?? '';
-
-// Проверяем обязательные поля
-if (empty($name) || empty($tel)) {
-	$_SESSION['recaptcha'] = '<p class="text-danger">Пожалуйста, заполните все обязательные поля.</p>';
-	wp_redirect($_SERVER['HTTP_REFERER']);
-	exit;
-}
-
-// Функция проверки reCAPTCHA
-function verify_recaptcha($response)
-{
-	$secret_key = '6LdV1IcUAAAAABnQ0mXIp5Yh7tLEcAXzdqG6rx9Y';
-	$verify_url = 'https://www.google.com/recaptcha/api/siteverify';
-
-	$response = wp_remote_post($verify_url, array(
-		'body' => array(
-			'secret' => $secret_key,
-			'response' => $response
-		)
-	));
-
-	if (is_wp_error($response)) {
-		return false;
+	session_start();
+	$win = "true";
+	
+	// Если существует переменная POST, то
+	if ( $_POST ) {
+		// Отправляем данные в Google
+		function getCaptcha($SecretKey){
+			$Response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=6LdV1IcUAAAAABnQ0mXIp5Yh7tLEcAXzdqG6rx9Y&response={$SecretKey}");
+			
+			$Return = json_decode($Response);
+			return $Return;
+		}
+		
+		/* Принимаем данные обратно */
+		$Return = getCaptcha($_POST['g-recaptcha-response']);
+		// Если вероятность робота более 0.5, то считаем отправителя человеком и выполняем отправку почты
+		if( $Return->success == true && $Return->score > .125 ){
+			
+			$name = $_POST['name'];	
+			$tel = $_POST['tel'];
+			
+			/* Проверям что заполнено поле с телефоном */
+			if ( $_POST['tel'] ) {
+				// Если поле с телефоно заполненно
+				mail( "sidorov-vv3@mail.ru", "Заказ обратного звонка с сайта dekorsever.ru", "
+					Клиент: " . $name ."\n
+					Телефон: " . $tel
+				);
+				$_SESSION['win'] = 1;
+				$_SESSION['recaptcha'] = '<p class="text-light">Спасибо за обращение в компанию «Декор-Север». Мы ответим Вам в&#160;ближайшее время.</p>';
+				header("Location: ".$_SERVER['HTTP_REFERER']);
+			} else {
+				// Если поле с телефоно НЕ заполненно
+				$_SESSION['win'] = 1;
+				$_SESSION['recaptcha'] = '<p class="text-light">Обязательное поле с номером телефона не заполненно! Пожалуйста, повторите попытку и заполенте поле с номером телефона.</p>';
+				header("Location: ".$_SERVER['HTTP_REFERER']);
+			}
+			
+		
+		} else {
+			// Иначе считаем отправителя роботом и выводим сообщение с просьбой повторить попытку
+			$_SESSION['win'] = 1;
+			$_SESSION['recaptcha'] = '<p class="text-light"><strong>Извините!</strong><br>Ваши действия похожи на робота. Пожалуйста повторите попытку!</p>';
+			header("Location: ".$_SERVER['HTTP_REFERER']);
+		}
 	}
-
-	$body = wp_remote_retrieve_body($response);
-	$result = json_decode($body, true);
-
-	return isset($result['success']) && $result['success'] === true &&
-		isset($result['score']) && $result['score'] > 0.125;
-}
-
-// Проверяем reCAPTCHA
-if (!verify_recaptcha($recaptcha_response)) {
-	$_SESSION['recaptcha'] = '<p class="text-danger"><strong>Извините!</strong><br>Ваши действия похожи на робота. Пожалуйста, повторите попытку!</p>';
-	wp_redirect($_SERVER['HTTP_REFERER']);
-	exit;
-}
-
-// Формируем письмо
-$to = 'sidorov-vv3@mail.ru'; // Замените на ваш email
-// $to = 'vasilyev-r@yandex.ru,  vasilyev-r@mail.ru, sidorov-vv3@mail.ru';
-$subject = 'Заказ обратного звонка с сайта ' . get_bloginfo('name');
-$message = "Новая заявка на обратный звонок\n\n";
-$message .= "Имя: {$name}\n";
-$message .= "Телефон: {$tel}\n";
-$message .= "Сайт: " . home_url() . "\n";
-$message .= "Дата: " . current_time('Y-m-d H:i:s') . "\n";
-
-$headers = array(
-	'Content-Type: text/plain; charset=UTF-8',
-	'From: ' . get_bloginfo('name') . ' <noreply@' . $_SERVER['SERVER_NAME'] . '>'
-);
-
-// Отправляем письмо
-$mail_sent = wp_mail($to, $subject, $message, $headers);
-
-if ($mail_sent) {
-	$_SESSION['recaptcha'] = '<p class="text-success">Спасибо за обращение! Мы ответим Вам в ближайшее время.</p>';
-} else {
-	$_SESSION['recaptcha'] = '<p class="text-danger">Произошла ошибка при отправке сообщения. Попробуйте еще раз.</p>';
-}
-
-// Перенаправляем обратно
-wp_redirect($_SERVER['HTTP_REFERER']);
-exit;
+?>
