@@ -2,6 +2,16 @@
 <html lang="ru">
 
 <head>
+	<?php
+
+	session_start();
+
+	if (isset($_SESSION['win'])) {
+		unset($_SESSION['win']);
+		$display = "block";
+	} else
+		$display = "none";
+	?>
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -979,7 +989,7 @@
 			unset($_SESSION['recaptcha']); ?>
 		</div>
 	</div>
-	
+
 	<script>
 		/* Убираем сообщение об успешной отправки */
 		function f1() {
