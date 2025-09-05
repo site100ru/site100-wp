@@ -280,7 +280,7 @@ if (isset($_SESSION['win'])) {
 													сайтов</a></li>
 											<li><a class="dropdown-item" href="/#sp-support" data-target="service-support">поддержка
 													сайтов</a></li>
-											<li><a class="dropdown-item" href="/kitchen" data-target="service-kitchen">клиенты на
+											<li><a class="dropdown-item" href="https://site100.ru/uslugi/klienty-na-korpusnuyu-mebel/" data-target="service-kitchen">клиенты на
 													корпусную мебель</a></li>
 										</ul>
 									</li>
@@ -572,7 +572,7 @@ if (isset($_SESSION['win'])) {
 								<li><a class="dropdown-item" href="/#sp-promotion" data-target="service-promotion">продвижение
 										сайтов</a></li>
 								<li><a class="dropdown-item" href="/#sp-support" data-target="service-support">поддержка сайтов</a></li>
-								<li><a class="dropdown-item" href="/kitchen" data-target="service-kitchen">клиенты на корпусную
+								<li><a class="dropdown-item" href="https://site100.ru/uslugi/klienty-na-korpusnuyu-mebel/" data-target="service-kitchen">клиенты на корпусную
 										мебель</a></li>
 							</ul>
 						</li>
@@ -781,7 +781,7 @@ if (isset($_SESSION['win'])) {
 										<li><a class="dropdown-item" href="#sp-create">создание сайтов</a></li>
 										<li><a class="dropdown-item" href="#sp-promotion">продвижение сайтов</a></li>
 										<li><a class="dropdown-item" href="#sp-support">поддержка сайтов</a></li>
-										<li><a class="dropdown-item" href="/kitchen">клиенты
+										<li><a class="dropdown-item" href="https://site100.ru/uslugi/klienty-na-korpusnuyu-mebel/">клиенты
 												на корпусную мебель</a></li>
 									</ul>
 								</li>
