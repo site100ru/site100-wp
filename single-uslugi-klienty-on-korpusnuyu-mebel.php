@@ -1,8 +1,8 @@
 <?php
 
 /**
- * Template Name: Kitchen
- * Template Post Type: page
+ * Template Name: Клиенты на корпусную мебель
+ * Template Post Type: page, uslugi
  */
 
 ?>
