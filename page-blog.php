@@ -178,7 +178,7 @@ if (isset($_SESSION['win'])) {
 												сайтов</a></li>
 										<li><a class="dropdown-item" href="/#sp-support" data-target="service-support">поддержка сайтов</a>
 										</li>
-										<li><a class="dropdown-item" href="/kitchen" data-target="service-kitchen">клиенты на корпусную
+										<li><a class="dropdown-item" href="https://site100.ru/uslugi/klienty-na-korpusnuyu-mebel/" data-target="service-kitchen">клиенты на корпусную
 												мебель</a></li>
 									</ul>
 								</li>
