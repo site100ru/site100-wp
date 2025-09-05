@@ -797,7 +797,8 @@ if (isset($_SESSION['win'])) {
 	</section>
 	<!-- /ADVANTAGE -->
 
-	<!-- CERTIFICATES-->
+	
+	<!-- CERTIFICATES -->
 	<section class="certificates bg-light">
 		<div class="container">
 			<div class="row">
@@ -811,7 +812,7 @@ if (isset($_SESSION['win'])) {
 						<div class="certificates-card col-md-3 mb-5 me-lg-4">
 							<a onClick="certGalleryOn('certificates','img-certificate-1');">
 								<div class="light">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/ico/Certificate1.png"
+									<img src="<?php echo get_template_directory_uri(); ?>/img/yandex-direct-certificate-2024.webp"
 										class="d-block w-100 lazyload" loading="lazy" alt="..." />
 									<div class="magnifier"></div>
 								</div>
@@ -820,7 +821,7 @@ if (isset($_SESSION['win'])) {
 						<div class="certificates-card col-md-3 mb-5">
 							<a onClick="certGalleryOn('certificates','img-certificate-2');">
 								<div class="light">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/ico/Certificate1.png"
+									<img src="<?php echo get_template_directory_uri(); ?>/img/yandex-direct-certificate-2023.webp"
 										class="d-block w-100 lazyload" loading="lazy" alt="..." />
 									<div class="magnifier"></div>
 								</div>
@@ -829,7 +830,7 @@ if (isset($_SESSION['win'])) {
 						<div class="certificates-card col-md-3 mb-5 ms-lg-4">
 							<a onClick="certGalleryOn('certificates','img-certificate-3');">
 								<div class="light">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/ico/Certificate1.png"
+									<img src="<?php echo get_template_directory_uri(); ?>/img/yandex-direct-certificate-2022.webp"
 										class="d-block w-100 lazyload" loading="lazy" alt="..." />
 									<div class="magnifier"></div>
 								</div>
@@ -852,24 +853,24 @@ if (isset($_SESSION['win'])) {
 								<div id="img-certificate-1" class="carousel-item h-100">
 									<div class="row align-items-center h-100">
 										<div class="col text-center">
-											<img src="<?php echo get_template_directory_uri(); ?>/img/ico/Certificate1.png"
-												class="img-fluid lazyload" loading="lazy" style="max-width: 75vw; max-height: 75vh" alt="..." />
+											<img src="<?php echo get_template_directory_uri(); ?>/img/yandex-direct-certificate-2024.webp"
+												class="img-fluid lazyload" loading="lazy" style="max-width: 90vw; max-height: 90vh" alt="..." />
 										</div>
 									</div>
 								</div>
 								<div id="img-certificate-2" class="carousel-item h-100">
 									<div class="row align-items-center h-100">
 										<div class="col text-center">
-											<img src="<?php echo get_template_directory_uri(); ?>/img/ico/Certificate1.png"
-												class="img-fluid lazyload" loading="lazy" style="max-width: 75vw; max-height: 75vh" alt="..." />
+											<img src="<?php echo get_template_directory_uri(); ?>/img/yandex-direct-certificate-2023.webp"
+												class="img-fluid lazyload" loading="lazy" style="max-width: 90vw; max-height: 90vh" alt="..." />
 										</div>
 									</div>
 								</div>
 								<div id="img-certificate-3" class="carousel-item h-100">
 									<div class="row align-items-center h-100">
 										<div class="col text-center">
-											<img src="<?php echo get_template_directory_uri(); ?>/img/ico/Certificate1.png"
-												class="img-fluid lazyload" loading="lazy" style="max-width: 75vw; max-height: 75vh" alt="..." />
+											<img src="<?php echo get_template_directory_uri(); ?>/img/yandex-direct-certificate-2022.webp"
+												class="img-fluid lazyload" loading="lazy" style="max-width: 90vw; max-height: 90vh" alt="..." />
 										</div>
 									</div>
 								</div>
