@@ -49,27 +49,11 @@ if (isset($_SESSION['win'])) {
 	<link href="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/css//messengers-button.css"
 		rel="stylesheet">
 
-	<!-- Yandex.Metrika counter -->
-	<script type="text/javascript">
-		(function (m, e, t, r, i, k, a) {
-			m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
-			m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
-		})
-			(window, document, "script", "https://mc.yandex.ru/metrika/tag.<?php echo get_template_directory_uri(); ?>/js/", "ym");
-
-		ym(70423057, "init", {
-			clickmap: true,
-			trackLinks: true,
-			accurateTrackBounce: true,
-			webvisor: true
-		});
-	</script>
-	<noscript>
-		<div><<?php echo get_template_directory_uri(); ?>/img/ src="https://mc.yandex.ru/watch/70423057"
-				style="position:absolute; left:-9999px;" alt="" /></div>
-	</noscript>
-
-	<!-- /Yandex.Metrika counter -->
+	<?php if ($counter_head = get_theme_mod('mytheme_counter_head')): ?>
+        <!-- Код счетчика в (head) -->
+        <?php echo $counter_head; ?>
+    <?php endif; ?>
+	
 	<style>
 		li {
 			font-size: 1.125rem;
