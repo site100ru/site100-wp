@@ -45,24 +45,12 @@ if (isset($_SESSION['win'])) {
 	<link href="<?php echo get_template_directory_uri(); ?>/css/theme.css" rel="stylesheet">
 
 	<title>Как правильно создавать и продвигать сайты для бизнеса</title>
-	<!-- Yandex.Metrika counter -->
-	<script type="text/javascript">
-		(function (m, e, t, r, i, k, a) {
-			m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
-			m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
-		})
-			(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-		ym(70423057, "init", {
-			clickmap: true,
-			trackLinks: true,
-			accurateTrackBounce: true,
-			webvisor: true
-		});
-	</script>
-	<noscript>
-		<div><img src="https://mc.yandex.ru/watch/70423057" style="position:absolute; left:-9999px;" alt="" /></div>
-	</noscript>
-	<!-- /Yandex.Metrika counter -->
+	
+	<?php if ($counter_head = get_theme_mod('mytheme_counter_head')): ?>
+        <!-- Код счетчика в (head) -->
+        <?php echo $counter_head; ?>
+    <?php endif; ?>
+	
 </head>
 
 <body>

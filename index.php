@@ -51,6 +51,11 @@ if (isset($_SESSION['win'])) {
 	<link href="https://fonts.googleapis.com/css2?family=Glory:wght@600&display=swap" rel="stylesheet">
 
 	<title>Создание, продвижение и поддержка сайтов в Москве и МО | site100.ru | 8 (930) 787-80-68</title>
+	
+	<?php if ($counter_head = get_theme_mod('mytheme_counter_head')): ?>
+        <!-- Код счетчика в (head) -->
+        <?php echo $counter_head; ?>
+    <?php endif; ?>
 
 </head>
 

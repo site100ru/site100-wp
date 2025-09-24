@@ -46,8 +46,7 @@ if (isset($_SESSION['win'])) {
 	<meta property="og:url" content="index.php" />
 
 	<!-- Messengers button css -->
-	<link href="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/css//messengers-button.css"
-		rel="stylesheet">
+	<link href="https://xn--100-5cd9b6bj.xn--p1ai/wp-content/themes/site100-theme/css//messengers-button.css" rel="stylesheet">
 
 	<?php if ($counter_head = get_theme_mod('mytheme_counter_head')): ?>
         <!-- Код счетчика в (head) -->
