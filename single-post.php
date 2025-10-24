@@ -33,12 +33,10 @@ if (isset($_SESSION['win'])) {
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/theme-2.css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/theme.css">
 
-	<meta name="description"
-		content="В этой статье я поделюсь с Вами своим опытом и расскажу о том, как найти клиентов в интернете." />
-	<meta name="keywords" content="Создание и продвижение сайтов для бизнеса" />
-	<meta property="og:title" content="Как найти клиентов в интернете" />
-	<meta property="og:description"
-		content="В этой статье я поделюсь с Вами своим опытом и расскажу о том, как найти клиентов в интернете." />
+	<meta name="description" content="<?php echo get_the_excerpt(); ?>" />
+	<meta name="keywords" content="<?php echo wp_get_document_title(); ?>" />
+	<meta property="og:title" content="<?php echo wp_get_document_title(); ?>" />
+	<meta property="og:description" content="<?php echo get_the_excerpt(); ?>" />
 	<meta property="og:locale" content="ru_RU" />
 	<meta property="og:type" content="website" />
 	<meta property="og:site_name" content='site100.ru' />
@@ -72,9 +70,9 @@ if (isset($_SESSION['win'])) {
 		}
 	</style>
 
-	<!-- Yandex.RTB -->
+	<!-- Yandex.RTB
 	<script>window.yaContextCb = window.yaContextCb || []</script>
-	<script src="https://yandex.ru/ads/system/context/js/" async></script>
+	<script src="https://yandex.ru/ads/system/context/js/" async></script> -->
 
 	<title><?php wp_title('', true); ?></title>
 </head>
